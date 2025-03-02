@@ -1,7 +1,7 @@
 digraph reach_error {
-599 [shape="circle" label="N599\n3"]
-600 [shape="circle" label="N600\n2"]
-900 [shape="circle" label="N900\n0"]
-599 -> 600 [label="Function start dummy edge" fontname="Courier New"]
-600 -> 900 [label="__assert_fail(\"0\", \"CWE127_Buffer_Underread---s02---CWE127_Buffer_Underread__malloc_char_memmove_15_good.i\", 1337, \"reach_error\");" fontname="Courier New"]
+591 [shape="circle" label="N591\n3"]
+592 [shape="circle" label="N592\n2"]
+911 [shape="circle" label="N911\n0"]
+591 -> 592 [label="Function start dummy edge" fontname="Courier New"]
+592 -> 911 [label="__assert_fail(\"0\", \"CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i\", 1371, \"reach_error\");" fontname="Courier New"]
 }

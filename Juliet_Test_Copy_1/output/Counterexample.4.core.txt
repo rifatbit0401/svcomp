@@ -1,4 +1,4 @@
-line 867:	N359 -{srand((unsigned int)tmp);}-> N360
+line 1001:	N404 -{srand((unsigned int)tmp);}-> N405
 	GLOBAL_CONST_TRUE == 1;
 	GLOBAL_CONST_FALSE == 0;
 	GLOBAL_CONST_FIVE == 5;
@@ -7,16 +7,16 @@ line 867:	N359 -{srand((unsigned int)tmp);}-> N360
 	globalFive == 5;
 	globalArgc == 0;
 	globalArgv == 0LL;
-line 869:	N360 -{printLine("Calling bad()...")}-> N1
-line 203:	N2 -{[line != ((const char *)0)]}-> N4
-line 204:	N4 -{printf("%s\n", line);}-> N6
-line 871:	N361 -{CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad()}-> N345
-line 847:	N348 -{memset((void *)(&dataBuffer), 65, 99UL);}-> N349
-line 853:	N351 -{CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink(data)}-> N371
-line 896:	N373 -{memset((void *)(&source), 67, 99UL);}-> N374
-line 900:	N375 -{ldv_strncpy_1(data, (const char *)(&source), 99UL)}-> N381
-line 914:	N383 -{ldv_strncpy(ldv_func_arg1, ldv_func_arg2, ldv_func_arg3)}-> N464
-line 1070:	N466 -{i = 0UL;}-> N467
-line 1082:	N473 -{[i < n]}-> N477
-line 1082:	N477 -{[((int)(*(src + i))) != 0]}-> N475
-line 1083:	N475 -{Goto: ldv_1432}-> N469
+line 1003:	N405 -{printLine("Calling bad()...")}-> N1
+line 241:	N2 -{[line != ((const char *)0)]}-> N4
+line 242:	N4 -{printf("%s\n", line);}-> N6
+line 1005:	N406 -{CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad()}-> N345
+line 930:	N354 -{connectSocket = socket(2, 1, 6);}-> N355
+line 932:	N355 -{[!(connectSocket == -1)]}-> N358
+line 935:	N356 -{memset((void *)(&service), 0, 16UL);}-> N360
+line 943:	N363 -{tmp = connect(connectSocket, (const struct sockaddr *)(&service), 16U);}-> N364
+line 945:	N364 -{[!(tmp == -1)]}-> N367
+line 948:	N365 -{tmp_0 = recv(connectSocket, (void *)(&inputBuffer), 25UL, 0);}-> N369
+line 950:	N369 -{recvResult = (int)tmp_0;}-> N370
+line 952:	N370 -{[!(recvResult == -1)]}-> N374
+line 952:	N374 -{[!(recvResult == 0)]}-> N373

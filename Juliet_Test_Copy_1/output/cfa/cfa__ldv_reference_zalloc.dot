@@ -1,7 +1,7 @@
 digraph ldv_reference_zalloc {
-686 [shape="circle" label="N686\n4"]
-687 [shape="circle" label="N687\n3"]
-687 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">687</td><td align="left">void *tmp;</td></tr><tr><td align="right">688</td><td align="left">tmp = calloc(1UL, size);</td></tr><tr><td align="right">689</td><td align="left">return tmp;</td></tr></table>>]
-687 -> 685[label=""]
-686 -> 687 [label="Function start dummy edge" fontname="Courier New"]
+678 [shape="circle" label="N678\n4"]
+679 [shape="circle" label="N679\n3"]
+679 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">679</td><td align="left">void *tmp;</td></tr><tr><td align="right">680</td><td align="left">tmp = calloc(1UL, size);</td></tr><tr><td align="right">681</td><td align="left">return tmp;</td></tr></table>>]
+679 -> 677[label=""]
+678 -> 679 [label="Function start dummy edge" fontname="Courier New"]
 }

@@ -22,7 +22,7 @@
  <key attr.name="startoffset" attr.type="int" for="edge" id="startoffset"/>
  <key attr.name="endoffset" attr.type="int" for="edge" id="endoffset"/>
  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
-  <default>CWE124/CWE124_Buffer_Underwrite---s01---CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad.i</default>
+  <default>CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i</default>
  </key>
  <key attr.name="control" attr.type="string" for="edge" id="control"/>
  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
@@ -38,98 +38,119 @@
   <data key="specification">CHECK( init(main()), LTL(G valid-free) )</data>
   <data key="specification">CHECK( init(main()), LTL(G valid-deref) )</data>
   <data key="specification">CHECK( init(main()), LTL(G valid-memtrack) )</data>
-  <data key="programfile">CWE124/CWE124_Buffer_Underwrite---s01---CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad.i</data>
-  <data key="programhash">947b14d3ef8c1c113bd0b0829b519ea5efc55628866920b7e6cf43a168469407</data>
+  <data key="programfile">CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i</data>
+  <data key="programhash">a034b324554fe326b2f5fb290ab7276b1b4c995d597752dafc77b5b567765999</data>
   <data key="architecture">32bit</data>
-  <data key="creationtime">2025-03-01T22:42:24-08:00</data>
-  <node id="A3">
+  <data key="creationtime">2025-03-01T23:14:39-08:00</data>
+  <node id="A2">
    <data key="entry">true</data>
   </node>
-  <node id="A19_152_1"/>
-  <edge source="A3" target="A19_152_1">
-   <data key="startline">684</data>
-   <data key="endline">684</data>
-   <data key="startoffset">9019</data>
-   <data key="endoffset">9048</data>
+  <node id="A28_173_1"/>
+  <edge source="A2" target="A28_173_1">
+   <data key="startline">993</data>
+   <data key="endline">993</data>
+   <data key="startoffset">14016</data>
+   <data key="endoffset">14045</data>
    <data key="enterFunction">main</data>
   </edge>
-  <node id="A19"/>
-  <edge source="A19_152_1" target="A19">
-   <data key="startline">692</data>
-   <data key="endline">692</data>
-   <data key="startoffset">9133</data>
-   <data key="endoffset">9156</data>
+  <node id="A28"/>
+  <edge source="A28_173_1" target="A28">
+   <data key="startline">1001</data>
+   <data key="endline">1001</data>
+   <data key="startoffset">14130</data>
+   <data key="endoffset">14153</data>
    <data key="assumption">GLOBAL_CONST_TRUE == (1); GLOBAL_CONST_FALSE == (0); GLOBAL_CONST_FIVE == (5); globalTrue == (1); globalFalse == (0); globalFive == (5); globalArgc == (0);</data>
    <data key="assumption.scope">main</data>
   </edge>
-  <node id="A37"/>
-  <edge source="A19" target="A37">
-   <data key="startline">694</data>
-   <data key="endline">694</data>
-   <data key="startoffset">9168</data>
-   <data key="endoffset">9195</data>
+  <node id="A29"/>
+  <edge source="A28" target="A29">
+   <data key="startline">1003</data>
+   <data key="endline">1003</data>
+   <data key="startoffset">14165</data>
+   <data key="endoffset">14192</data>
    <data key="enterFunction">printLine</data>
   </edge>
-  <node id="A47"/>
-  <edge source="A37" target="A47">
-   <data key="startline">203</data>
-   <data key="endline">203</data>
-   <data key="startoffset">3235</data>
-   <data key="endoffset">3257</data>
+  <node id="A32"/>
+  <edge source="A29" target="A32">
+   <data key="startline">241</data>
+   <data key="endline">241</data>
+   <data key="startoffset">3829</data>
+   <data key="endoffset">3851</data>
    <data key="control">condition-true</data>
   </edge>
   <node id="sink">
    <data key="sink">true</data>
   </node>
-  <edge source="A37" target="sink">
-   <data key="startline">203</data>
-   <data key="endline">203</data>
-   <data key="startoffset">3235</data>
-   <data key="endoffset">3257</data>
+  <edge source="A29" target="sink">
+   <data key="startline">241</data>
+   <data key="endline">241</data>
+   <data key="startoffset">3829</data>
+   <data key="endoffset">3851</data>
    <data key="control">condition-false</data>
   </edge>
-  <node id="A56"/>
-  <edge source="A47" target="A56">
-   <data key="startline">206</data>
-   <data key="endline">206</data>
-   <data key="startoffset">3325</data>
-   <data key="endoffset">3331</data>
+  <node id="A40"/>
+  <edge source="A32" target="A40">
+   <data key="startline">244</data>
+   <data key="endline">244</data>
+   <data key="startoffset">3919</data>
+   <data key="endoffset">3925</data>
    <data key="returnFrom">printLine</data>
   </edge>
-  <node id="A65"/>
-  <edge source="A56" target="A65">
-   <data key="startline">696</data>
-   <data key="endline">696</data>
-   <data key="startoffset">9208</data>
-   <data key="endoffset">9261</data>
-   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad</data>
+  <node id="A43"/>
+  <edge source="A40" target="A43">
+   <data key="startline">1005</data>
+   <data key="endline">1005</data>
+   <data key="startoffset">14205</data>
+   <data key="endoffset">14270</data>
+   <data key="enterFunction">CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad</data>
   </edge>
-  <node id="A95"/>
-  <edge source="A65" target="A95">
-   <data key="startline">678</data>
-   <data key="endline">678</data>
-   <data key="startoffset">8937</data>
-   <data key="endoffset">8998</data>
-   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53b_badSink</data>
+  <edge source="A43" target="sink">
+   <data key="startline">932</data>
+   <data key="endline">932</data>
+   <data key="startoffset">12627</data>
+   <data key="endoffset">12645</data>
+   <data key="control">condition-true</data>
   </edge>
-  <node id="A97"/>
-  <edge source="A95" target="A97">
-   <data key="startline">655</data>
-   <data key="endline">655</data>
-   <data key="startoffset">8552</data>
-   <data key="endoffset">8613</data>
-   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53c_badSink</data>
+  <node id="A143"/>
+  <edge source="A43" target="A143">
+   <data key="startline">932</data>
+   <data key="endline">932</data>
+   <data key="startoffset">12627</data>
+   <data key="endoffset">12645</data>
+   <data key="control">condition-false</data>
   </edge>
-  <node id="A99">
+  <edge source="A143" target="sink">
+   <data key="startline">945</data>
+   <data key="endline">945</data>
+   <data key="startoffset">13005</data>
+   <data key="endoffset">13013</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="A161"/>
+  <edge source="A143" target="A161">
+   <data key="startline">945</data>
+   <data key="endline">945</data>
+   <data key="startoffset">13005</data>
+   <data key="endoffset">13013</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="A183">
    <data key="violation">true</data>
-   <data key="violatedProperty">valid-deref: invalid pointer dereference in line 633</data>
+   <data key="violatedProperty">valid-deref: invalid pointer dereference in line 955</data>
   </node>
-  <edge source="A97" target="A99">
-   <data key="startline">646</data>
-   <data key="endline">646</data>
-   <data key="startoffset">8388</data>
-   <data key="endoffset">8449</data>
-   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53d_badSink</data>
+  <edge source="A161" target="A183">
+   <data key="startline">952</data>
+   <data key="endline">952</data>
+   <data key="startoffset">13194</data>
+   <data key="endoffset">13208</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <edge source="A161" target="sink">
+   <data key="startline">952</data>
+   <data key="endline">952</data>
+   <data key="startoffset">13174</data>
+   <data key="endoffset">13208</data>
+   <data key="control">condition-true</data>
   </edge>
  </graph>
 </graphml>

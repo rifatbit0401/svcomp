@@ -1,7 +1,7 @@
 digraph ldv_undef_uint {
-622 [shape="circle" label="N622\n4"]
-623 [shape="circle" label="N623\n3"]
-623 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">623</td><td align="left">unsigned int tmp;</td></tr><tr><td align="right">624</td><td align="left">tmp = __VERIFIER_nondet_uint();</td></tr><tr><td align="right">625</td><td align="left">return tmp;</td></tr></table>>]
-623 -> 621[label=""]
-622 -> 623 [label="Function start dummy edge" fontname="Courier New"]
+614 [shape="circle" label="N614\n4"]
+615 [shape="circle" label="N615\n3"]
+615 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">615</td><td align="left">unsigned int tmp;</td></tr><tr><td align="right">616</td><td align="left">tmp = __VERIFIER_nondet_uint();</td></tr><tr><td align="right">617</td><td align="left">return tmp;</td></tr></table>>]
+615 -> 613[label=""]
+614 -> 615 [label="Function start dummy edge" fontname="Courier New"]
 }

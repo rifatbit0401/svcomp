@@ -3,7 +3,7 @@ import pandas as pd
 import subprocess
 import yaml
 
-root_dir = 'CWE122/'
+root_dir = 'CWE789/'
 results = []
 count = 0
 
@@ -49,7 +49,7 @@ for root, dirs, files in os.walk(root_dir):
                     except Exception as ex:
                             print("exception: " + ex)
 df = pd.DataFrame(results, columns=["Input File", "Property File", "Command", "Process Output", "Expected Verdict", "Verdict"])
-csv_filename = "CWE122_juliet_final_verification_results.csv"
+csv_filename = "CWE789_juliet_final_verification_results.csv"
 df.to_csv(csv_filename, index=False)
 
 print(f"CSV file '{csv_filename}' created successfully!")

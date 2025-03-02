@@ -1,0 +1,1021 @@
+digraph CFA {
+400 [shape="circle" label="N400\n186"]
+736 [shape="circle" label="N736\n185"]
+737 [shape="circle" label="N737\n184"]
+738 [shape="circle" label="N738\n183"]
+739 [shape="circle" label="N739\n182"]
+740 [shape="circle" label="N740\n181"]
+741 [shape="circle" label="N741\n180"]
+742 [shape="circle" label="N742\n179"]
+743 [shape="circle" label="N743\n178"]
+744 [shape="circle" label="N744\n177"]
+745 [shape="circle" label="N745\n176"]
+746 [shape="circle" label="N746\n175"]
+747 [shape="circle" label="N747\n174"]
+748 [shape="circle" label="N748\n173"]
+749 [shape="circle" label="N749\n172"]
+750 [shape="circle" label="N750\n171"]
+751 [shape="circle" label="N751\n170"]
+752 [shape="circle" label="N752\n169"]
+753 [shape="circle" label="N753\n168"]
+754 [shape="circle" label="N754\n167"]
+755 [shape="circle" label="N755\n166"]
+756 [shape="circle" label="N756\n165"]
+757 [shape="circle" label="N757\n164"]
+758 [shape="circle" label="N758\n163"]
+759 [shape="circle" label="N759\n162"]
+760 [shape="circle" label="N760\n161"]
+761 [shape="circle" label="N761\n160"]
+762 [shape="circle" label="N762\n159"]
+763 [shape="circle" label="N763\n158"]
+764 [shape="circle" label="N764\n157"]
+765 [shape="circle" label="N765\n156"]
+766 [shape="circle" label="N766\n155"]
+767 [shape="circle" label="N767\n154"]
+768 [shape="circle" label="N768\n153"]
+769 [shape="circle" label="N769\n152"]
+770 [shape="circle" label="N770\n151"]
+771 [shape="circle" label="N771\n150"]
+772 [shape="circle" label="N772\n149"]
+773 [shape="circle" label="N773\n148"]
+774 [shape="circle" label="N774\n147"]
+775 [shape="circle" label="N775\n146"]
+776 [shape="circle" label="N776\n145"]
+777 [shape="circle" label="N777\n144"]
+778 [shape="circle" label="N778\n143"]
+779 [shape="circle" label="N779\n142"]
+780 [shape="circle" label="N780\n141"]
+781 [shape="circle" label="N781\n140"]
+782 [shape="circle" label="N782\n139"]
+783 [shape="circle" label="N783\n138"]
+784 [shape="circle" label="N784\n137"]
+785 [shape="circle" label="N785\n136"]
+786 [shape="circle" label="N786\n135"]
+787 [shape="circle" label="N787\n134"]
+788 [shape="circle" label="N788\n133"]
+789 [shape="circle" label="N789\n132"]
+790 [shape="circle" label="N790\n131"]
+791 [shape="circle" label="N791\n130"]
+792 [shape="circle" label="N792\n129"]
+793 [shape="circle" label="N793\n128"]
+794 [shape="circle" label="N794\n127"]
+795 [shape="circle" label="N795\n126"]
+796 [shape="circle" label="N796\n125"]
+797 [shape="circle" label="N797\n124"]
+798 [shape="circle" label="N798\n123"]
+799 [shape="circle" label="N799\n122"]
+800 [shape="circle" label="N800\n121"]
+801 [shape="circle" label="N801\n120"]
+802 [shape="circle" label="N802\n119"]
+803 [shape="circle" label="N803\n118"]
+804 [shape="circle" label="N804\n117"]
+805 [shape="circle" label="N805\n116"]
+806 [shape="circle" label="N806\n115"]
+807 [shape="circle" label="N807\n114"]
+808 [shape="circle" label="N808\n113"]
+809 [shape="circle" label="N809\n112"]
+810 [shape="circle" label="N810\n111"]
+811 [shape="circle" label="N811\n110"]
+812 [shape="circle" label="N812\n109"]
+813 [shape="circle" label="N813\n108"]
+814 [shape="circle" label="N814\n107"]
+815 [shape="circle" label="N815\n106"]
+816 [shape="circle" label="N816\n105"]
+817 [shape="circle" label="N817\n104"]
+818 [shape="circle" label="N818\n103"]
+819 [shape="circle" label="N819\n102"]
+820 [shape="circle" label="N820\n101"]
+821 [shape="circle" label="N821\n100"]
+822 [shape="circle" label="N822\n99"]
+823 [shape="circle" label="N823\n98"]
+824 [shape="circle" label="N824\n97"]
+825 [shape="circle" label="N825\n96"]
+826 [shape="circle" label="N826\n95"]
+827 [shape="circle" label="N827\n94"]
+828 [shape="circle" label="N828\n93"]
+829 [shape="circle" label="N829\n92"]
+830 [shape="circle" label="N830\n91"]
+831 [shape="circle" label="N831\n90"]
+832 [shape="circle" label="N832\n89"]
+833 [shape="circle" label="N833\n88"]
+834 [shape="circle" label="N834\n87"]
+835 [shape="circle" label="N835\n86"]
+836 [shape="circle" label="N836\n85"]
+837 [shape="circle" label="N837\n84"]
+838 [shape="circle" label="N838\n83"]
+839 [shape="circle" label="N839\n82"]
+840 [shape="circle" label="N840\n81"]
+841 [shape="circle" label="N841\n80"]
+842 [shape="circle" label="N842\n79"]
+843 [shape="circle" label="N843\n78"]
+844 [shape="circle" label="N844\n77"]
+845 [shape="circle" label="N845\n76"]
+846 [shape="circle" label="N846\n75"]
+847 [shape="circle" label="N847\n74"]
+848 [shape="circle" label="N848\n73"]
+849 [shape="circle" label="N849\n72"]
+850 [shape="circle" label="N850\n71"]
+851 [shape="circle" label="N851\n70"]
+852 [shape="circle" label="N852\n69"]
+853 [shape="circle" label="N853\n68"]
+854 [shape="circle" label="N854\n67"]
+855 [shape="circle" label="N855\n66"]
+856 [shape="circle" label="N856\n65"]
+857 [shape="circle" label="N857\n64"]
+858 [shape="circle" label="N858\n63"]
+859 [shape="circle" label="N859\n62"]
+860 [shape="circle" label="N860\n61"]
+861 [shape="circle" label="N861\n60"]
+862 [shape="circle" label="N862\n59"]
+863 [shape="circle" label="N863\n58"]
+864 [shape="circle" label="N864\n57"]
+865 [shape="circle" label="N865\n56"]
+866 [shape="circle" label="N866\n55"]
+867 [shape="circle" label="N867\n54"]
+868 [shape="circle" label="N868\n53"]
+869 [shape="circle" label="N869\n52"]
+870 [shape="circle" label="N870\n51"]
+871 [shape="circle" label="N871\n50"]
+872 [shape="circle" label="N872\n49"]
+873 [shape="circle" label="N873\n48"]
+874 [shape="circle" label="N874\n47"]
+875 [shape="circle" label="N875\n46"]
+876 [shape="circle" label="N876\n45"]
+877 [shape="circle" label="N877\n44"]
+878 [shape="circle" label="N878\n43"]
+879 [shape="circle" label="N879\n42"]
+880 [shape="circle" label="N880\n41"]
+881 [shape="circle" label="N881\n40"]
+882 [shape="circle" label="N882\n39"]
+883 [shape="circle" label="N883\n38"]
+884 [shape="circle" label="N884\n37"]
+885 [shape="circle" label="N885\n36"]
+886 [shape="circle" label="N886\n35"]
+887 [shape="circle" label="N887\n34"]
+888 [shape="circle" label="N888\n33"]
+889 [shape="circle" label="N889\n32"]
+890 [shape="circle" label="N890\n31"]
+891 [shape="circle" label="N891\n30"]
+892 [shape="circle" label="N892\n29"]
+893 [shape="circle" label="N893\n28"]
+894 [shape="circle" label="N894\n27"]
+895 [shape="circle" label="N895\n26"]
+896 [shape="circle" label="N896\n25"]
+897 [shape="circle" label="N897\n24"]
+898 [shape="circle" label="N898\n23"]
+899 [shape="circle" label="N899\n22"]
+900 [shape="circle" label="N900\n21"]
+901 [shape="circle" label="N901\n20"]
+902 [shape="circle" label="N902\n19"]
+903 [shape="circle" label="N903\n18"]
+904 [shape="circle" label="N904\n17"]
+905 [shape="circle" label="N905\n16"]
+906 [shape="circle" label="N906\n15"]
+907 [shape="circle" label="N907\n14"]
+908 [shape="circle" label="N908\n13"]
+909 [shape="circle" label="N909\n12"]
+401 [shape="circle" label="N401\n11"]
+402 [shape="circle" label="N402\n10"]
+403 [shape="circle" label="N403\n9"]
+404 [shape="circle" label="N404\n8"]
+405 [shape="circle" label="N405\n7"]
+1 [shape="circle" label="N1\n6"]
+2 [shape="diamond" label="N2\n5"]
+5 [shape="circle" label="N5\n4"]
+3 [shape="circle" label="N3\n1"]
+0 [shape="circle" label="N0\n0"]
+408 [shape="circle" label="N408\n4"]
+409 [shape="circle" label="N409\n3"]
+412 [shape="circle" label="N412\n2"]
+413 [shape="circle" label="N413\n1"]
+399 [shape="circle" label="N399\n0"]
+406 [shape="circle" label="N406\n6"]
+345 [shape="circle" label="N345\n50"]
+346 [shape="circle" label="N346\n49"]
+347 [shape="circle" label="N347\n48"]
+348 [shape="circle" label="N348\n47"]
+349 [shape="circle" label="N349\n46"]
+350 [shape="circle" label="N350\n45"]
+351 [shape="circle" label="N351\n44"]
+352 [shape="circle" label="N352\n43"]
+353 [shape="circle" label="N353\n42"]
+354 [shape="circle" label="N354\n41"]
+355 [shape="diamond" label="N355\n40"]
+358 [shape="circle" label="N358\n39"]
+356 [shape="circle" label="N356\n38"]
+360 [shape="circle" label="N360\n37"]
+361 [shape="circle" label="N361\n36"]
+362 [shape="circle" label="N362\n35"]
+363 [shape="circle" label="N363\n34"]
+364 [shape="diamond" label="N364\n33"]
+367 [shape="circle" label="N367\n32"]
+365 [shape="circle" label="N365\n31"]
+369 [shape="circle" label="N369\n30"]
+370 [shape="diamond" label="N370\n29"]
+374 [shape="diamond" label="N374\n28"]
+373 [shape="circle" label="N373\n27"]
+371 [shape="circle" label="N371\n26"]
+376 [shape="circle" label="N376\n25"]
+377 [shape="circle" label="N377\n24"]
+378 [shape="diamond" label="N378\n20"]
+381 [shape="circle" label="N381\n19"]
+379 [shape="circle" label="N379\n16"]
+383 [shape="circle" label="N383\n15"]
+384 [shape="circle" label="N384\n14"]
+416 [shape="circle" label="N416\n4"]
+417 [shape="circle" label="N417\n3"]
+418 [shape="circle" label="N418\n2"]
+490 [shape="circle" label="N490\n14"]
+491 [shape="circle" label="N491\n13"]
+492 [shape="circle" label="N492\n12"]
+493 [shape="circle" label="N493\n11"]
+494 [shape="circle" label="N494\n10"]
+499 [shape="doublecircle" label="N499\n9"]
+502 [shape="circle" label="N502\n8"]
+505 [shape="circle" label="N505\n7"]
+506 [shape="circle" label="N506\n6"]
+507 [shape="circle" label="N507\n5"]
+489 [shape="circle" label="N489\n4"]
+419 [shape="circle" label="N419\n1"]
+415 [shape="circle" label="N415\n0"]
+385 [shape="diamond" label="N385\n13"]
+388 [shape="circle" label="N388\n12"]
+397 [shape="circle" label="N397\n11"]
+386 [shape="circle" label="N386\n1"]
+344 [shape="circle" label="N344\n0"]
+407 [shape="circle" label="N407\n5"]
+387 [shape="circle" label="N387\n10"]
+389 [shape="diamond" label="N389\n9"]
+392 [shape="circle" label="N392\n8"]
+390 [shape="circle" label="N390\n5"]
+427 [shape="circle" label="N427\n4"]
+428 [shape="circle" label="N428\n3"]
+429 [shape="circle" label="N429\n2"]
+543 [shape="circle" label="N543\n5"]
+544 [shape="circle" label="N544\n4"]
+545 [shape="circle" label="N545\n3"]
+546 [shape="circle" label="N546\n2"]
+547 [shape="circle" label="N547\n1"]
+542 [shape="circle" label="N542\n0"]
+430 [shape="circle" label="N430\n1"]
+426 [shape="circle" label="N426\n0"]
+394 [shape="circle" label="N394\n4"]
+395 [shape="circle" label="N395\n3"]
+396 [shape="circle" label="N396\n2"]
+391 [shape="circle" label="N391\n7"]
+422 [shape="circle" label="N422\n3"]
+423 [shape="circle" label="N423\n2"]
+460 [shape="circle" label="N460\n3"]
+461 [shape="circle" label="N461\n2"]
+454 [shape="circle" label="N454\n5"]
+455 [shape="diamond" label="N455\n4"]
+456 [shape="circle" label="N456\n1"]
+453 [shape="circle" label="N453\n0"]
+636 [shape="circle" label="N636\n1"]
+631 [shape="circle" label="N631\n0"]
+445 [shape="circle" label="N445\n4"]
+446 [shape="circle" label="N446\n3"]
+450 [shape="circle" label="N450\n2"]
+451 [shape="circle" label="N451\n1"]
+432 [shape="circle" label="N432\n0"]
+650 [shape="circle" label="N650\n1"]
+645 [shape="circle" label="N645\n0"]
+643 [shape="circle" label="N643\n1"]
+638 [shape="circle" label="N638\n0"]
+734 [shape="circle" label="N734\n1"]
+729 [shape="circle" label="N729\n0"]
+582 [shape="circle" label="N582\n1"]
+578 [shape="circle" label="N578\n0"]
+727 [shape="circle" label="N727\n1"]
+722 [shape="circle" label="N722\n0"]
+576 [shape="circle" label="N576\n1"]
+572 [shape="circle" label="N572\n0"]
+478 [shape="circle" label="N478\n7"]
+479 [shape="circle" label="N479\n6"]
+480 [shape="circle" label="N480\n5"]
+481 [shape="circle" label="N481\n4"]
+482 [shape="circle" label="N482\n3"]
+486 [shape="circle" label="N486\n2"]
+487 [shape="circle" label="N487\n1"]
+464 [shape="circle" label="N464\n0"]
+443 [shape="circle" label="N443\n6"]
+444 [shape="circle" label="N444\n5"]
+632 [shape="circle" label="N632\n5"]
+633 [shape="circle" label="N633\n4"]
+634 [shape="circle" label="N634\n3"]
+600 [shape="circle" label="N600\n4"]
+601 [shape="circle" label="N601\n3"]
+602 [shape="circle" label="N602\n2"]
+603 [shape="circle" label="N603\n1"]
+599 [shape="circle" label="N599\n0"]
+635 [shape="circle" label="N635\n2"]
+649 [shape="circle" label="N649\n2"]
+642 [shape="circle" label="N642\n2"]
+470 [shape="diamond" label="N470\n15"]
+473 [shape="circle" label="N473\n14"]
+484 [shape="circle" label="N484\n13"]
+472 [shape="circle" label="N472\n12"]
+474 [shape="circle" label="N474\n11"]
+475 [shape="circle" label="N475\n10"]
+476 [shape="circle" label="N476\n9"]
+477 [shape="circle" label="N477\n8"]
+573 [shape="circle" label="N573\n4"]
+574 [shape="circle" label="N574\n3"]
+575 [shape="circle" label="N575\n2"]
+723 [shape="circle" label="N723\n5"]
+724 [shape="circle" label="N724\n4"]
+725 [shape="circle" label="N725\n3"]
+726 [shape="circle" label="N726\n2"]
+707 [shape="diamond" label="N707\n17"]
+710 [shape="circle" label="N710\n16"]
+717 [shape="circle" label="N717\n15"]
+719 [shape="circle" label="N719\n2"]
+720 [shape="circle" label="N720\n1"]
+688 [shape="circle" label="N688\n0"]
+588 [shape="circle" label="N588\n1"]
+584 [shape="circle" label="N584\n0"]
+709 [shape="circle" label="N709\n14"]
+711 [shape="circle" label="N711\n13"]
+712 [shape="circle" label="N712\n12"]
+713 [shape="circle" label="N713\n11"]
+714 [shape="circle" label="N714\n10"]
+715 [shape="circle" label="N715\n9"]
+658 [shape="diamond" label="N658\n9"]
+661 [shape="circle" label="N661\n8"]
+666 [shape="circle" label="N666\n7"]
+668 [shape="circle" label="N668\n2"]
+669 [shape="circle" label="N669\n1"]
+652 [shape="circle" label="N652\n0"]
+553 [shape="circle" label="N553\n1"]
+549 [shape="circle" label="N549\n0"]
+660 [shape="circle" label="N660\n6"]
+662 [shape="circle" label="N662\n5"]
+663 [shape="circle" label="N663\n4"]
+664 [shape="circle" label="N664\n3"]
+438 [shape="diamond" label="N438\n11"]
+441 [shape="circle" label="N441\n10"]
+448 [shape="circle" label="N448\n9"]
+440 [shape="circle" label="N440\n8"]
+442 [shape="circle" label="N442\n7"]
+462 [shape="circle" label="N462\n1"]
+459 [shape="circle" label="N459\n0"]
+424 [shape="circle" label="N424\n1"]
+421 [shape="circle" label="N421\n0"]
+393 [shape="circle" label="N393\n6"]
+457 [shape="circle" label="N457\n3"]
+910 [shape="circle" label="N910\n0"]
+501 [shape="circle" label="N501\n3"]
+496 [shape="doubleoctagon" label="N496\n2"]
+497 [shape="circle" label="N497\n1"]
+498 [shape="circle" label="N498\n0"]
+380 [shape="circle" label="N380\n18"]
+382 [shape="circle" label="N382\n17"]
+372 [shape="circle" label="N372\n23"]
+366 [shape="circle" label="N366\n22"]
+357 [shape="circle" label="N357\n21"]
+4 [shape="circle" label="N4\n3"]
+6 [shape="circle" label="N6\n2"]
+node [shape="circle"]
+subgraph cluster_CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad {
+label="CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad()"
+345 -> 346 [label="Function start dummy edge"]
+346 -> 347 [label="size_t data;"]
+347 -> 348 [label="data = 0UL;"]
+348 -> 349 [label="int recvResult;"]
+349 -> 350 [label="struct sockaddr_in service;"]
+350 -> 351 [label="char inputBuffer[26U];"]
+351 -> 352 [label="int tmp;"]
+352 -> 353 [label="ssize_t tmp_0;"]
+353 -> 354 [label="int connectSocket = -1;"]
+354 -> 355 [label="connectSocket = socket(2, 1, 6);"]
+355 -> 357 [label="[connectSocket == -1]"]
+355 -> 358 [label="[!(connectSocket == -1)]"]
+358 -> 356 [label=""]
+356 -> 360 [label="memset((void *)(&service), 0, 16UL);"]
+360 -> 361 [label="service.sin_family = 2U;"]
+361 -> 362 [label="service.sin_addr.s_addr = inet_addr(\"127.0.0.1\");"]
+362 -> 363 [label="service.sin_port = htons(27015U);"]
+363 -> 364 [label="tmp = connect(connectSocket, (const struct sockaddr *)(&service), 16U);"]
+364 -> 366 [label="[tmp == -1]"]
+364 -> 367 [label="[!(tmp == -1)]"]
+367 -> 365 [label=""]
+365 -> 369 [label="tmp_0 = recv(connectSocket, (void *)(&inputBuffer), 25UL, 0);"]
+369 -> 370 [label="recvResult = (int)tmp_0;"]
+370 -> 372 [label="[recvResult == -1]"]
+370 -> 374 [label="[!(recvResult == -1)]"]
+374 -> 372 [label="[recvResult == 0]"]
+374 -> 373 [label="[!(recvResult == 0)]"]
+373 -> 371 [label=""]
+371 -> 376 [label="inputBuffer[recvResult] = 0;"]
+376 -> 377 [label="data = strtoul((const char *)(&inputBuffer), (char **)0, 0);"]
+377 -> 378 [label="Label: ldv_4160"]
+378 -> 380 [label="[connectSocket != -1]"]
+378 -> 381 [label="[!(connectSocket != -1)]"]
+381 -> 379 [label=""]
+379 -> 383 [label="char *myString;"]
+383 -> 384 [label="size_t tmp_2;"]
+384 -> 385 [label="tmp_2 = ldv_strlen_1(\"hello\");" style="dotted" arrowhead="empty"]
+385 -> 387 [label="[tmp_2 < data]"]
+385 -> 388 [label="[!(tmp_2 < data)]"]
+388 -> 397 [label="printLine(\"Input is less than the length of the source string\");" style="dotted" arrowhead="empty"]
+397 -> 386 [label=""]
+386 -> 344 [label="return;"]
+387 -> 389 [label="myString = malloc(data);"]
+389 -> 391 [label="[myString == ((char *)0)]"]
+389 -> 392 [label="[!(myString == ((char *)0))]"]
+392 -> 390 [label=""]
+390 -> 394 [label="ldv_strcpy_3(myString, \"hello\");" style="dotted" arrowhead="empty"]
+394 -> 395 [label="printLine((const char *)myString);" style="dotted" arrowhead="empty"]
+395 -> 396 [label="free((void *)myString);"]
+396 -> 386 [label=""]
+391 -> 393 [label="ldv_exit_2(-1);" style="dotted" arrowhead="empty"]
+393 -> 390 [label=""]
+380 -> 382 [label="close(connectSocket);"]
+382 -> 379 [label=""]
+372 -> 378 [label="Goto: ldv_4160"]
+366 -> 378 [label="Goto: ldv_4160"]
+357 -> 378 [label="Goto: ldv_4160"]}
+subgraph cluster_assume_abort_if_not {
+label="assume_abort_if_not()"
+454 -> 455 [label="Function start dummy edge"]
+455 -> 457 [label="[cond == 0]"]
+455 -> 456 [label="[!(cond == 0)]"]
+456 -> 453 [label="default return"]
+457 -> 910 [label="abort();"]}
+subgraph cluster_bad1 {
+label="bad1()"
+}
+subgraph cluster_bad2 {
+label="bad2()"
+}
+subgraph cluster_bad3 {
+label="bad3()"
+}
+subgraph cluster_bad4 {
+label="bad4()"
+}
+subgraph cluster_bad5 {
+label="bad5()"
+}
+subgraph cluster_bad6 {
+label="bad6()"
+}
+subgraph cluster_bad7 {
+label="bad7()"
+}
+subgraph cluster_bad8 {
+label="bad8()"
+}
+subgraph cluster_bad9 {
+label="bad9()"
+}
+subgraph cluster_decodeHexChars {
+label="decodeHexChars()"
+}
+subgraph cluster_decodeHexWChars {
+label="decodeHexWChars()"
+}
+subgraph cluster_globalReturnsFalse {
+label="globalReturnsFalse()"
+}
+subgraph cluster_globalReturnsTrue {
+label="globalReturnsTrue()"
+}
+subgraph cluster_globalReturnsTrueOrFalse {
+label="globalReturnsTrueOrFalse()"
+}
+subgraph cluster_good1 {
+label="good1()"
+}
+subgraph cluster_good2 {
+label="good2()"
+}
+subgraph cluster_good3 {
+label="good3()"
+}
+subgraph cluster_good4 {
+label="good4()"
+}
+subgraph cluster_good5 {
+label="good5()"
+}
+subgraph cluster_good6 {
+label="good6()"
+}
+subgraph cluster_good7 {
+label="good7()"
+}
+subgraph cluster_good8 {
+label="good8()"
+}
+subgraph cluster_good9 {
+label="good9()"
+}
+subgraph cluster_internal_start {
+label="internal_start()"
+}
+subgraph cluster_ldv_asprintf {
+label="ldv_asprintf()"
+445 -> 446 [label="__retres = tmp_0;"]
+446 -> 450 [label="Goto: return_label"]
+450 -> 451 [label="Label: return_label"]
+451 -> 432 [label="return __retres;"]
+443 -> 444 [label="*ptr = new;"]
+444 -> 445 [label="tmp_0 = ldv_undef_int_positive();" style="dotted" arrowhead="empty"]
+438 -> 440 [label="[tmp_1 != 0]"]
+438 -> 441 [label="[!(tmp_1 != 0)]"]
+441 -> 448 [label="__retres = -1;"]
+448 -> 450 [label="Goto: return_label"]
+440 -> 442 [label="int tmp_0;"]
+442 -> 443 [label="new = ldv_xmalloc(1UL);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_calloc {
+label="ldv_calloc()"
+}
+subgraph cluster_ldv_error {
+label="ldv_error()"
+}
+subgraph cluster_ldv_exit {
+label="ldv_exit()"
+460 -> 461 [label="Function start dummy edge"]
+461 -> 462 [label="assume_abort_if_not(0);" style="dotted" arrowhead="empty"]
+462 -> 459 [label="return;"]}
+subgraph cluster_ldv_exit_2 {
+label="ldv_exit_2()"
+422 -> 423 [label="Function start dummy edge"]
+423 -> 424 [label="ldv_exit();" style="dotted" arrowhead="empty"]
+424 -> 421 [label="return;"]}
+subgraph cluster_ldv_free {
+label="ldv_free()"
+}
+subgraph cluster_ldv_malloc {
+label="ldv_malloc()"
+553 -> 549 [label="return tmp;"]}
+subgraph cluster_ldv_realloc {
+label="ldv_realloc()"
+588 -> 584 [label="return tmp;"]}
+subgraph cluster_ldv_reference_calloc {
+label="ldv_reference_calloc()"
+}
+subgraph cluster_ldv_reference_free {
+label="ldv_reference_free()"
+}
+subgraph cluster_ldv_reference_malloc {
+label="ldv_reference_malloc()"
+658 -> 660 [label="[tmp != 0]"]
+658 -> 661 [label="[!(tmp != 0)]"]
+661 -> 666 [label="__retres = (void *)0;"]
+666 -> 668 [label="Goto: return_label"]
+668 -> 669 [label="Label: return_label"]
+669 -> 652 [label="return __retres;"]
+660 -> 662 [label="res = malloc(size);"]
+662 -> 663 [label="assume_abort_if_not(res != ((void *)0));" style="dotted" arrowhead="empty"]
+663 -> 664 [label="__retres = res;"]
+664 -> 668 [label="Goto: return_label"]}
+subgraph cluster_ldv_reference_realloc {
+label="ldv_reference_realloc()"
+707 -> 709 [label="[tmp != 0]"]
+707 -> 710 [label="[!(tmp != 0)]"]
+710 -> 717 [label="__retres = (void *)0;"]
+717 -> 719 [label="Goto: return_label"]
+719 -> 720 [label="Label: return_label"]
+720 -> 688 [label="return __retres;"]
+709 -> 711 [label="res = malloc(size);"]
+711 -> 712 [label="assume_abort_if_not(res != ((void *)0));" style="dotted" arrowhead="empty"]
+712 -> 713 [label="memcpy(res, (const void *)ptr, size);"]
+713 -> 714 [label="free(ptr);"]
+714 -> 715 [label="__retres = res;"]
+715 -> 719 [label="Goto: return_label"]}
+subgraph cluster_ldv_reference_xmalloc {
+label="ldv_reference_xmalloc()"
+727 -> 722 [label="return res;"]
+723 -> 724 [label="Function start dummy edge"]
+724 -> 725 [label="void *res;"]
+725 -> 726 [label="res = malloc(size);"]
+726 -> 727 [label="assume_abort_if_not(res != ((void *)0));" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_reference_xzalloc {
+label="ldv_reference_xzalloc()"
+734 -> 729 [label="return res;"]}
+subgraph cluster_ldv_reference_zalloc {
+label="ldv_reference_zalloc()"
+}
+subgraph cluster_ldv_strcpy {
+label="ldv_strcpy()"
+543 -> 544 [label="Function start dummy edge"]
+544 -> 545 [label="size_t tmp;"]
+545 -> 546 [label="tmp = ldv_strlen(src);" style="dotted" arrowhead="empty"]
+546 -> 547 [label="memcpy((void *)dest, (const void *)src, tmp);"]
+547 -> 542 [label="return dest;"]}
+subgraph cluster_ldv_strcpy_3 {
+label="ldv_strcpy_3()"
+427 -> 428 [label="Function start dummy edge"]
+428 -> 429 [label="char *tmp;"]
+429 -> 430 [label="tmp = ldv_strcpy(ldv_func_arg1, ldv_func_arg2);" style="dotted" arrowhead="empty"]
+430 -> 426 [label="return tmp;"]}
+subgraph cluster_ldv_strdup {
+label="ldv_strdup()"
+478 -> 479 [label="new = (char *)tmp_0;"]
+479 -> 480 [label="tmp_1 = ldv_strlen(s);" style="dotted" arrowhead="empty"]
+480 -> 481 [label="memcpy((void *)new, (const void *)s, tmp_1);"]
+481 -> 482 [label="__retres = new;"]
+482 -> 486 [label="Goto: return_label"]
+486 -> 487 [label="Label: return_label"]
+487 -> 464 [label="return __retres;"]
+470 -> 472 [label="[tmp_2 != 0]"]
+470 -> 473 [label="[!(tmp_2 != 0)]"]
+473 -> 484 [label="__retres = (char *)0;"]
+484 -> 486 [label="Goto: return_label"]
+472 -> 474 [label="void *tmp_0;"]
+474 -> 475 [label="size_t tmp;"]
+475 -> 476 [label="size_t tmp_1;"]
+476 -> 477 [label="tmp = ldv_strlen(s);" style="dotted" arrowhead="empty"]
+477 -> 478 [label="tmp_0 = ldv_xmalloc(tmp);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_strlen {
+label="ldv_strlen()"
+490 -> 491 [label="Function start dummy edge"]
+491 -> 492 [label="size_t __retres;"]
+492 -> 493 [label="const char *s;"]
+493 -> 494 [label="s = str;"]
+494 -> 499 [label="Goto: ldv_1424"]
+499 -> 501 [label="[((int)(*s)) != 0]"]
+499 -> 502 [label="[!(((int)(*s)) != 0)]"]
+502 -> 505 [label="Goto: ldv_1425"]
+505 -> 506 [label="Label: ldv_1425"]
+506 -> 507 [label="__retres = (unsigned long)(((long)s) - ((long)str));"]
+507 -> 489 [label="return __retres;"]
+501 -> 496 [label="Goto: ldv_1423"]
+496 -> 497 [label="Label: ldv_1423"]
+497 -> 498 [label="s = s + 1;"]
+498 -> 499 [label="Label: ldv_1424"]}
+subgraph cluster_ldv_strlen_1 {
+label="ldv_strlen_1()"
+416 -> 417 [label="Function start dummy edge"]
+417 -> 418 [label="size_t tmp;"]
+418 -> 419 [label="tmp = ldv_strlen(ldv_func_arg1);" style="dotted" arrowhead="empty"]
+419 -> 415 [label="return tmp;"]}
+subgraph cluster_ldv_strncpy {
+label="ldv_strncpy()"
+}
+subgraph cluster_ldv_undef_int {
+label="ldv_undef_int()"
+600 -> 601 [label="Function start dummy edge"]
+601 -> 602 [label="int tmp;"]
+602 -> 603 [label="tmp = __VERIFIER_nondet_int();"]
+603 -> 599 [label="return tmp;"]}
+subgraph cluster_ldv_undef_int_negative {
+label="ldv_undef_int_negative()"
+643 -> 638 [label="return ret;"]
+642 -> 643 [label="assume_abort_if_not(ret < 0);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_undef_int_nonpositive {
+label="ldv_undef_int_nonpositive()"
+650 -> 645 [label="return ret;"]
+649 -> 650 [label="assume_abort_if_not(ret <= 0);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_undef_int_positive {
+label="ldv_undef_int_positive()"
+636 -> 631 [label="return ret;"]
+632 -> 633 [label="Function start dummy edge"]
+633 -> 634 [label="int ret;"]
+634 -> 635 [label="ret = ldv_undef_int();" style="dotted" arrowhead="empty"]
+635 -> 636 [label="assume_abort_if_not(ret > 0);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_undef_long {
+label="ldv_undef_long()"
+}
+subgraph cluster_ldv_undef_uint {
+label="ldv_undef_uint()"
+}
+subgraph cluster_ldv_undef_ulong {
+label="ldv_undef_ulong()"
+}
+subgraph cluster_ldv_undef_ulonglong {
+label="ldv_undef_ulonglong()"
+}
+subgraph cluster_ldv_xmalloc {
+label="ldv_xmalloc()"
+576 -> 572 [label="return tmp;"]
+573 -> 574 [label="Function start dummy edge"]
+574 -> 575 [label="void *tmp;"]
+575 -> 576 [label="tmp = ldv_reference_xmalloc(size);" style="dotted" arrowhead="empty"]}
+subgraph cluster_ldv_xzalloc {
+label="ldv_xzalloc()"
+582 -> 578 [label="return tmp;"]}
+subgraph cluster_ldv_zalloc {
+label="ldv_zalloc()"
+}
+subgraph cluster_main {
+label="main()"
+400 -> 736 [label="INIT GLOBAL VARS"]
+736 -> 737 [label="typedef unsigned long size_t;"]
+737 -> 738 [label="typedef int wchar_t;"]
+738 -> 739 [label="typedef long __int64_t;"]
+739 -> 740 [label="typedef __int64_t int64_t;"]
+740 -> 741 [label="typedef unsigned int wint_t;"]
+741 -> 742 [label="struct _twoIntsStruct {   int intOne;   int intTwo; } ;"]
+742 -> 743 [label="typedef struct _twoIntsStruct twoIntsStruct;"]
+743 -> 744 [label="struct __pthread_internal_list {   struct __pthread_internal_list *__prev;   struct __pthread_internal_list *__next; } ;"]
+744 -> 745 [label="typedef struct __pthread_internal_list __pthread_list_t;"]
+745 -> 746 [label="struct __pthread_mutex_s {   int __lock;   unsigned int __count;   int __owner;   unsigned int __nusers;   int __kind;   short __spins;   short __elision;   __pthread_list_t __list; } ;"]
+746 -> 747 [label="typedef unsigned long pthread_t;"]
+747 -> 748 [label="union __anonunion_pthread_mutexattr_t_36 {   char __size[4U];   int __align; } ;"]
+748 -> 749 [label="typedef union __anonunion_pthread_mutexattr_t_36 pthread_mutexattr_t;"]
+749 -> 750 [label="union pthread_attr_t {   char __size[56U];   long __align; } ;"]
+750 -> 751 [label="typedef union pthread_attr_t pthread_attr_t;"]
+751 -> 752 [label="union __anonunion_pthread_mutex_t_38 {   struct __pthread_mutex_s __data;   char __size[40U];   long __align; } ;"]
+752 -> 753 [label="typedef union __anonunion_pthread_mutex_t_38 pthread_mutex_t;"]
+753 -> 754 [label="struct _stdThread ;"]
+754 -> 755 [label="typedef struct _stdThread *stdThread;"]
+755 -> 756 [label="struct _stdThreadLock ;"]
+756 -> 757 [label="typedef struct _stdThreadLock *stdThreadLock;"]
+757 -> 758 [label="struct _stdThread {   pthread_t handle;   void (*start)(void *);   void *args; } ;"]
+758 -> 759 [label="struct _stdThreadLock {   pthread_mutex_t mutex; } ;"]
+759 -> 760 [label="typedef unsigned short __uint16_t;"]
+760 -> 761 [label="typedef unsigned int __uint32_t;"]
+761 -> 762 [label="typedef long __time_t;"]
+762 -> 763 [label="typedef long __ssize_t;"]
+763 -> 764 [label="typedef unsigned int __socklen_t;"]
+764 -> 765 [label="typedef __ssize_t ssize_t;"]
+765 -> 766 [label="typedef __time_t time_t;"]
+766 -> 767 [label="typedef __uint16_t uint16_t;"]
+767 -> 768 [label="typedef __uint32_t uint32_t;"]
+768 -> 769 [label="typedef __socklen_t socklen_t;"]
+769 -> 770 [label="typedef unsigned short sa_family_t;"]
+770 -> 771 [label="struct sockaddr {   sa_family_t sa_family;   char sa_data[14U]; } ;"]
+771 -> 772 [label="typedef uint32_t in_addr_t;"]
+772 -> 773 [label="struct in_addr {   in_addr_t s_addr; } ;"]
+773 -> 774 [label="typedef uint16_t in_port_t;"]
+774 -> 775 [label="struct sockaddr_in {   sa_family_t sin_family;   in_port_t sin_port;   struct in_addr sin_addr;   unsigned char sin_zero[8U]; } ;"]
+775 -> 776 [label="int printf(const char *, ...);"]
+776 -> 777 [label="int sscanf(const char *, const char *, ...);"]
+777 -> 778 [label="int puts(const char *);"]
+778 -> 779 [label="int rand();"]
+779 -> 780 [label="int iswxdigit(wint_t );"]
+780 -> 781 [label="const unsigned short **__ctype_b_loc();"]
+781 -> 782 [label="const int GLOBAL_CONST_TRUE;"]
+782 -> 783 [label="const int GLOBAL_CONST_FALSE;"]
+783 -> 784 [label="const int GLOBAL_CONST_FIVE;"]
+784 -> 785 [label="int globalTrue;"]
+785 -> 786 [label="int globalFalse;"]
+786 -> 787 [label="int globalFive;"]
+787 -> 788 [label="void printLine(const char *line);"]
+788 -> 789 [label="void printWLine(const wchar_t *line);"]
+789 -> 790 [label="void printIntLine(int intNumber);"]
+790 -> 791 [label="void printShortLine(short shortNumber);"]
+791 -> 792 [label="void printFloatLine(float floatNumber);"]
+792 -> 793 [label="void printLongLine(long longNumber);"]
+793 -> 794 [label="void printLongLongLine(int64_t longLongIntNumber);"]
+794 -> 795 [label="void printSizeTLine(size_t sizeTNumber);"]
+795 -> 796 [label="void printHexCharLine(char charHex);"]
+796 -> 797 [label="void printWcharLine(wchar_t wideChar);"]
+797 -> 798 [label="void printUnsignedLine(unsigned int unsignedNumber);"]
+798 -> 799 [label="void printHexUnsignedCharLine(unsigned char unsignedCharacter);"]
+799 -> 800 [label="void printDoubleLine(double doubleNumber);"]
+800 -> 801 [label="void printStructLine(const twoIntsStruct *structTwoIntsStruct);"]
+801 -> 802 [label="void printBytesLine(const unsigned char *bytes, size_t numBytes);"]
+802 -> 803 [label="size_t decodeHexChars(unsigned char *bytes, size_t numBytes, const char *hex);"]
+803 -> 804 [label="size_t decodeHexWChars(unsigned char *bytes, size_t numBytes, const wchar_t *hex);"]
+804 -> 805 [label="int globalReturnsTrue();"]
+805 -> 806 [label="int globalReturnsFalse();"]
+806 -> 807 [label="int globalReturnsTrueOrFalse();"]
+807 -> 808 [label="int globalArgc;"]
+808 -> 809 [label="char **globalArgv;"]
+809 -> 810 [label="int wprintf(const wchar_t *, ...);"]
+810 -> 811 [label="int swscanf(const wchar_t *, const wchar_t *, ...);"]
+811 -> 812 [label="const int GLOBAL_CONST_TRUE = 1;"]
+812 -> 813 [label="const int GLOBAL_CONST_FALSE = 0;"]
+813 -> 814 [label="const int GLOBAL_CONST_FIVE = 5;"]
+814 -> 815 [label="int globalTrue = 1;"]
+815 -> 816 [label="int globalFalse = 0;"]
+816 -> 817 [label="int globalFive = 5;"]
+817 -> 818 [label="void good1();"]
+818 -> 819 [label="void good2();"]
+819 -> 820 [label="void good3();"]
+820 -> 821 [label="void good4();"]
+821 -> 822 [label="void good5();"]
+822 -> 823 [label="void good6();"]
+823 -> 824 [label="void good7();"]
+824 -> 825 [label="void good8();"]
+825 -> 826 [label="void good9();"]
+826 -> 827 [label="void bad1();"]
+827 -> 828 [label="void bad2();"]
+828 -> 829 [label="void bad3();"]
+829 -> 830 [label="void bad4();"]
+830 -> 831 [label="void bad5();"]
+831 -> 832 [label="void bad6();"]
+832 -> 833 [label="void bad7();"]
+833 -> 834 [label="void bad8();"]
+834 -> 835 [label="void bad9();"]
+835 -> 836 [label="int globalArgc = 0;"]
+836 -> 837 [label="char **globalArgv = (char **)0;"]
+837 -> 838 [label="void *malloc(size_t );"]
+838 -> 839 [label="void free(void *);"]
+839 -> 840 [label="int pthread_create(pthread_t *, const pthread_attr_t *, void *(*)(void *), void *);"]
+840 -> 841 [label="void pthread_exit(void *);"]
+841 -> 842 [label="int pthread_join(pthread_t , void **);"]
+842 -> 843 [label="int pthread_mutex_init(pthread_mutex_t *, const pthread_mutexattr_t *);"]
+843 -> 844 [label="int pthread_mutex_destroy(pthread_mutex_t *);"]
+844 -> 845 [label="int pthread_mutex_lock(pthread_mutex_t *);"]
+845 -> 846 [label="int pthread_mutex_unlock(pthread_mutex_t *);"]
+846 -> 847 [label="int stdThreadCreate(void (*start)(void *), void *args, stdThread *thread);"]
+847 -> 848 [label="int stdThreadJoin(stdThread thread);"]
+848 -> 849 [label="int stdThreadDestroy(stdThread thread);"]
+849 -> 850 [label="int stdThreadLockCreate(stdThreadLock *lock);"]
+850 -> 851 [label="void stdThreadLockAcquire(stdThreadLock lock);"]
+851 -> 852 [label="void stdThreadLockRelease(stdThreadLock lock);"]
+852 -> 853 [label="void stdThreadLockDestroy(stdThreadLock lock);"]
+853 -> 854 [label="void *internal_start(void *args);"]
+854 -> 855 [label="void ldv_exit();"]
+855 -> 856 [label="char *ldv_strcpy(char *dest, const char *src);"]
+856 -> 857 [label="size_t ldv_strlen(const char *str);"]
+857 -> 858 [label="unsigned long int strtoul(const char *, char **, int);"]
+858 -> 859 [label="void srand(unsigned int);"]
+859 -> 860 [label="void ldv_exit_2(int ldv_func_arg1);"]
+860 -> 861 [label="time_t time(time_t *);"]
+861 -> 862 [label="void *memset(void *, int, size_t );"]
+862 -> 863 [label="char *ldv_strcpy_3(char *ldv_func_arg1, const char *ldv_func_arg2);"]
+863 -> 864 [label="size_t ldv_strlen_1(const char *ldv_func_arg1);"]
+864 -> 865 [label="int socket(int, int, int);"]
+865 -> 866 [label="int connect(int, const struct sockaddr *, socklen_t );"]
+866 -> 867 [label="ssize_t recv(int, void *, size_t , int);"]
+867 -> 868 [label="uint16_t htons(uint16_t );"]
+868 -> 869 [label="in_addr_t inet_addr(const char *);"]
+869 -> 870 [label="int close(int);"]
+870 -> 871 [label="void CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad();"]
+871 -> 872 [label="int main(int argc, char **argv);"]
+872 -> 873 [label="void *ldv_xmalloc(size_t size);"]
+873 -> 874 [label="int ldv_undef_int();"]
+874 -> 875 [label="int ldv_undef_int_positive();"]
+875 -> 876 [label="int ldv_asprintf(char **ptr);"]
+876 -> 877 [label="void abort();"]
+877 -> 878 [label="void assume_abort_if_not(int cond);"]
+878 -> 879 [label="void *memcpy(void *, const void *, size_t );"]
+879 -> 880 [label="char *ldv_strdup(const char *s);"]
+880 -> 881 [label="char *ldv_strncpy(char *dest, const char *src, size_t n);"]
+881 -> 882 [label="void *ldv_malloc(size_t size);"]
+882 -> 883 [label="void *ldv_calloc(size_t nmemb, size_t size);"]
+883 -> 884 [label="void *ldv_zalloc(size_t size);"]
+884 -> 885 [label="void ldv_free(void *s);"]
+885 -> 886 [label="void *ldv_realloc(void *ptr, size_t size);"]
+886 -> 887 [label="void *ldv_xzalloc(size_t size);"]
+887 -> 888 [label="void *ldv_reference_malloc(size_t size);"]
+888 -> 889 [label="void *ldv_reference_calloc(size_t nmemb, size_t size);"]
+889 -> 890 [label="void *ldv_reference_zalloc(size_t size);"]
+890 -> 891 [label="void ldv_reference_free(void *s);"]
+891 -> 892 [label="void *ldv_reference_realloc(void *ptr, size_t size);"]
+892 -> 893 [label="void *ldv_reference_xmalloc(size_t size);"]
+893 -> 894 [label="void *ldv_reference_xzalloc(size_t size);"]
+894 -> 895 [label="void __assert_fail(const char *, const char *, unsigned int, const char *);"]
+895 -> 896 [label="void reach_error();"]
+896 -> 897 [label="void ldv_error();"]
+897 -> 898 [label="int ldv_undef_long();"]
+898 -> 899 [label="unsigned int ldv_undef_uint();"]
+899 -> 900 [label="unsigned long int ldv_undef_ulong();"]
+900 -> 901 [label="unsigned long long int ldv_undef_ulonglong();"]
+901 -> 902 [label="int ldv_undef_int_negative();"]
+902 -> 903 [label="int ldv_undef_int_nonpositive();"]
+903 -> 904 [label="int __VERIFIER_nondet_int();"]
+904 -> 905 [label="long int __VERIFIER_nondet_long();"]
+905 -> 906 [label="unsigned int __VERIFIER_nondet_uint();"]
+906 -> 907 [label="unsigned long int __VERIFIER_nondet_ulong();"]
+907 -> 908 [label="unsigned long long int __VERIFIER_nondet_ulonglong();"]
+908 -> 909 [label="void *calloc(size_t , size_t );"]
+909 -> 401 [label="Function start dummy edge"]
+401 -> 402 [label="int __retres;"]
+402 -> 403 [label="time_t tmp;"]
+403 -> 404 [label="tmp = time((time_t *)0L);"]
+404 -> 405 [label="srand((unsigned int)tmp);"]
+405 -> 406 [label="printLine(\"Calling bad()...\");" style="dotted" arrowhead="empty"]
+408 -> 409 [label="__retres = 0;"]
+409 -> 412 [label="Goto: return_label"]
+412 -> 413 [label="Label: return_label"]
+413 -> 399 [label="return __retres;"]
+406 -> 407 [label="CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad();" style="dotted" arrowhead="empty"]
+407 -> 408 [label="printLine(\"Finished bad()\");" style="dotted" arrowhead="empty"]}
+subgraph cluster_printBytesLine {
+label="printBytesLine()"
+}
+subgraph cluster_printDoubleLine {
+label="printDoubleLine()"
+}
+subgraph cluster_printFloatLine {
+label="printFloatLine()"
+}
+subgraph cluster_printHexCharLine {
+label="printHexCharLine()"
+}
+subgraph cluster_printHexUnsignedCharLine {
+label="printHexUnsignedCharLine()"
+}
+subgraph cluster_printIntLine {
+label="printIntLine()"
+}
+subgraph cluster_printLine {
+label="printLine()"
+1 -> 2 [label="Function start dummy edge"]
+2 -> 4 [label="[line != ((const char *)0)]"]
+2 -> 5 [label="[!(line != ((const char *)0))]"]
+5 -> 3 [label=""]
+3 -> 0 [label="return;"]
+4 -> 6 [label="printf(\"%s\n\", line);"]
+6 -> 3 [label=""]}
+subgraph cluster_printLongLine {
+label="printLongLine()"
+}
+subgraph cluster_printSizeTLine {
+label="printSizeTLine()"
+}
+subgraph cluster_printStructLine {
+label="printStructLine()"
+}
+subgraph cluster_printUnsignedLine {
+label="printUnsignedLine()"
+}
+subgraph cluster_printWLine {
+label="printWLine()"
+}
+subgraph cluster_printWcharLine {
+label="printWcharLine()"
+}
+subgraph cluster_reach_error {
+label="reach_error()"
+}
+subgraph cluster_stdThreadCreate {
+label="stdThreadCreate()"
+}
+subgraph cluster_stdThreadDestroy {
+label="stdThreadDestroy()"
+}
+subgraph cluster_stdThreadJoin {
+label="stdThreadJoin()"
+}
+subgraph cluster_stdThreadLockAcquire {
+label="stdThreadLockAcquire()"
+}
+subgraph cluster_stdThreadLockCreate {
+label="stdThreadLockCreate()"
+}
+subgraph cluster_stdThreadLockDestroy {
+label="stdThreadLockDestroy()"
+}
+subgraph cluster_stdThreadLockRelease {
+label="stdThreadLockRelease()"
+}
+405 -> 1 [label="printLine(\"Calling bad()...\")"]
+0 -> 397 [label="Return edge from printLine to CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad: printLine(\"Input is less than the length of the source string\");"]
+0 -> 395 [label="Return edge from printLine to CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad: printLine((const char *)myString);"]
+0 -> 406 [label="Return edge from printLine to main: printLine(\"Calling bad()...\");"]
+0 -> 408 [label="Return edge from printLine to main: printLine(\"Finished bad()\");"]
+406 -> 345 [label="CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad()"]
+384 -> 416 [label="ldv_strlen_1(\"hello\")"]
+418 -> 490 [label="ldv_strlen(ldv_func_arg1)"]
+489 -> 546 [label="Return edge from ldv_strlen to ldv_strcpy: tmp = ldv_strlen(src);"]
+489 -> 477 [label="Return edge from ldv_strlen to ldv_strdup: tmp = ldv_strlen(s);"]
+489 -> 480 [label="Return edge from ldv_strlen to ldv_strdup: tmp_1 = ldv_strlen(s);"]
+489 -> 419 [label="Return edge from ldv_strlen to ldv_strlen_1: tmp = ldv_strlen(ldv_func_arg1);"]
+415 -> 385 [label="Return edge from ldv_strlen_1 to CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad: tmp_2 = ldv_strlen_1(\"hello\");"]
+388 -> 1 [label="printLine(\"Input is less than the length of the source string\")"]
+344 -> 407 [label="Return edge from CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad to main: CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad();"]
+407 -> 1 [label="printLine(\"Finished bad()\")"]
+390 -> 427 [label="ldv_strcpy_3(myString, \"hello\")"]
+429 -> 543 [label="ldv_strcpy(ldv_func_arg1, ldv_func_arg2)"]
+545 -> 490 [label="ldv_strlen(src)"]
+542 -> 430 [label="Return edge from ldv_strcpy to ldv_strcpy_3: tmp = ldv_strcpy(ldv_func_arg1, ldv_func_arg2);"]
+426 -> 394 [label="Return edge from ldv_strcpy_3 to CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad: ldv_strcpy_3(myString, \"hello\");"]
+394 -> 1 [label="printLine((const char *)myString)"]
+391 -> 422 [label="ldv_exit_2(-1)"]
+423 -> 460 [label="ldv_exit()"]
+461 -> 454 [label="assume_abort_if_not(0)"]
+453 -> 462 [label="Return edge from assume_abort_if_not to ldv_exit: assume_abort_if_not(0);"]
+453 -> 663 [label="Return edge from assume_abort_if_not to ldv_reference_malloc: assume_abort_if_not(res != ((void *)0));"]
+453 -> 712 [label="Return edge from assume_abort_if_not to ldv_reference_realloc: assume_abort_if_not(res != ((void *)0));"]
+453 -> 727 [label="Return edge from assume_abort_if_not to ldv_reference_xmalloc: assume_abort_if_not(res != ((void *)0));"]
+453 -> 734 [label="Return edge from assume_abort_if_not to ldv_reference_xzalloc: assume_abort_if_not(res != ((void *)0));"]
+453 -> 643 [label="Return edge from assume_abort_if_not to ldv_undef_int_negative: assume_abort_if_not(ret < 0);"]
+453 -> 650 [label="Return edge from assume_abort_if_not to ldv_undef_int_nonpositive: assume_abort_if_not(ret <= 0);"]
+453 -> 636 [label="Return edge from assume_abort_if_not to ldv_undef_int_positive: assume_abort_if_not(ret > 0);"]
+631 -> 445 [label="Return edge from ldv_undef_int_positive to ldv_asprintf: tmp_0 = ldv_undef_int_positive();"]
+729 -> 582 [label="Return edge from ldv_reference_xzalloc to ldv_xzalloc: tmp = ldv_reference_xzalloc(size);"]
+722 -> 576 [label="Return edge from ldv_reference_xmalloc to ldv_xmalloc: tmp = ldv_reference_xmalloc(size);"]
+572 -> 443 [label="Return edge from ldv_xmalloc to ldv_asprintf: new = ldv_xmalloc(1UL);"]
+572 -> 478 [label="Return edge from ldv_xmalloc to ldv_strdup: tmp_0 = ldv_xmalloc(tmp);"]
+479 -> 490 [label="ldv_strlen(s)"]
+444 -> 632 [label="ldv_undef_int_positive()"]
+634 -> 600 [label="ldv_undef_int()"]
+599 -> 438 [label="Return edge from ldv_undef_int to ldv_asprintf: tmp_1 = ldv_undef_int();"]
+599 -> 658 [label="Return edge from ldv_undef_int to ldv_reference_malloc: tmp = ldv_undef_int();"]
+599 -> 707 [label="Return edge from ldv_undef_int to ldv_reference_realloc: tmp = ldv_undef_int();"]
+599 -> 470 [label="Return edge from ldv_undef_int to ldv_strdup: tmp_2 = ldv_undef_int();"]
+599 -> 642 [label="Return edge from ldv_undef_int to ldv_undef_int_negative: ret = ldv_undef_int();"]
+599 -> 649 [label="Return edge from ldv_undef_int to ldv_undef_int_nonpositive: ret = ldv_undef_int();"]
+599 -> 635 [label="Return edge from ldv_undef_int to ldv_undef_int_positive: ret = ldv_undef_int();"]
+635 -> 454 [label="assume_abort_if_not(ret > 0)"]
+649 -> 454 [label="assume_abort_if_not(ret <= 0)"]
+642 -> 454 [label="assume_abort_if_not(ret < 0)"]
+476 -> 490 [label="ldv_strlen(s)"]
+477 -> 573 [label="ldv_xmalloc(tmp)"]
+575 -> 723 [label="ldv_reference_xmalloc(size)"]
+726 -> 454 [label="assume_abort_if_not(res != ((void *)0))"]
+688 -> 588 [label="Return edge from ldv_reference_realloc to ldv_realloc: tmp = ldv_reference_realloc(ptr, size);"]
+711 -> 454 [label="assume_abort_if_not(res != ((void *)0))"]
+652 -> 553 [label="Return edge from ldv_reference_malloc to ldv_malloc: tmp = ldv_reference_malloc(size);"]
+662 -> 454 [label="assume_abort_if_not(res != ((void *)0))"]
+442 -> 573 [label="ldv_xmalloc(1UL)"]
+459 -> 424 [label="Return edge from ldv_exit to ldv_exit_2: ldv_exit();"]
+421 -> 393 [label="Return edge from ldv_exit_2 to CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad: ldv_exit_2(-1);"]}

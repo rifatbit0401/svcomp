@@ -1,176 +1,198 @@
-none:	N355 -{INIT GLOBAL VARS}-> N690
-line 11:	N690 -{typedef unsigned long size_t;}-> N691
-line 13:	N691 -{typedef int wchar_t;}-> N692
-line 15:	N692 -{typedef long __int64_t;}-> N693
-line 17:	N693 -{typedef __int64_t int64_t;}-> N694
-line 19:	N694 -{typedef unsigned int wint_t;}-> N695
-lines 21-24:	N695 -{struct _twoIntsStruct {   int intOne;   int intTwo; } ;}-> N696
-line 26:	N696 -{typedef struct _twoIntsStruct twoIntsStruct;}-> N697
-lines 28-31:	N697 -{struct __pthread_internal_list {   struct __pthread_internal_list *__prev;   struct __pthread_internal_list *__next; } ;}-> N698
-line 33:	N698 -{typedef struct __pthread_internal_list __pthread_list_t;}-> N699
-lines 35-44:	N699 -{struct __pthread_mutex_s {   int __lock;   unsigned int __count;   int __owner;   unsigned int __nusers;   int __kind;   short __spins;   short __elision;   __pthread_list_t __list; } ;}-> N700
-line 46:	N700 -{typedef unsigned long pthread_t;}-> N701
-lines 48-51:	N701 -{union __anonunion_pthread_mutexattr_t_36 {   char __size[4U];   int __align; } ;}-> N702
-line 53:	N702 -{typedef union __anonunion_pthread_mutexattr_t_36 pthread_mutexattr_t;}-> N703
-lines 55-58:	N703 -{union pthread_attr_t {   char __size[56U];   long __align; } ;}-> N704
-line 60:	N704 -{typedef union pthread_attr_t pthread_attr_t;}-> N705
-lines 62-66:	N705 -{union __anonunion_pthread_mutex_t_38 {   struct __pthread_mutex_s __data;   char __size[40U];   long __align; } ;}-> N706
-line 68:	N706 -{typedef union __anonunion_pthread_mutex_t_38 pthread_mutex_t;}-> N707
-line 70:	N707 -{struct _stdThread ;}-> N708
-line 72:	N708 -{typedef struct _stdThread *stdThread;}-> N709
-line 74:	N709 -{struct _stdThreadLock ;}-> N710
-line 76:	N710 -{typedef struct _stdThreadLock *stdThreadLock;}-> N711
-lines 78-82:	N711 -{struct _stdThread {   pthread_t handle;   void (*start)(void *);   void *args; } ;}-> N712
-lines 84-86:	N712 -{struct _stdThreadLock {   pthread_mutex_t mutex; } ;}-> N713
-line 88:	N713 -{typedef long __time_t;}-> N714
-line 90:	N714 -{typedef __time_t time_t;}-> N715
-line 92:	N715 -{int printf(const char *, ...);}-> N716
-line 95:	N716 -{int sscanf(const char *, const char *, ...);}-> N717
-line 98:	N717 -{int puts(const char *);}-> N718
-line 101:	N718 -{int rand();}-> N719
-line 104:	N719 -{int iswxdigit(wint_t );}-> N720
-line 107:	N720 -{const unsigned short **__ctype_b_loc();}-> N721
-line 110:	N721 -{const int GLOBAL_CONST_TRUE;}-> N722
+none:	N400 -{INIT GLOBAL VARS}-> N736
+line 11:	N736 -{typedef unsigned long size_t;}-> N737
+line 13:	N737 -{typedef int wchar_t;}-> N738
+line 15:	N738 -{typedef long __int64_t;}-> N739
+line 17:	N739 -{typedef __int64_t int64_t;}-> N740
+line 19:	N740 -{typedef unsigned int wint_t;}-> N741
+lines 21-24:	N741 -{struct _twoIntsStruct {   int intOne;   int intTwo; } ;}-> N742
+line 26:	N742 -{typedef struct _twoIntsStruct twoIntsStruct;}-> N743
+lines 28-31:	N743 -{struct __pthread_internal_list {   struct __pthread_internal_list *__prev;   struct __pthread_internal_list *__next; } ;}-> N744
+line 33:	N744 -{typedef struct __pthread_internal_list __pthread_list_t;}-> N745
+lines 35-44:	N745 -{struct __pthread_mutex_s {   int __lock;   unsigned int __count;   int __owner;   unsigned int __nusers;   int __kind;   short __spins;   short __elision;   __pthread_list_t __list; } ;}-> N746
+line 46:	N746 -{typedef unsigned long pthread_t;}-> N747
+lines 48-51:	N747 -{union __anonunion_pthread_mutexattr_t_36 {   char __size[4U];   int __align; } ;}-> N748
+line 53:	N748 -{typedef union __anonunion_pthread_mutexattr_t_36 pthread_mutexattr_t;}-> N749
+lines 55-58:	N749 -{union pthread_attr_t {   char __size[56U];   long __align; } ;}-> N750
+line 60:	N750 -{typedef union pthread_attr_t pthread_attr_t;}-> N751
+lines 62-66:	N751 -{union __anonunion_pthread_mutex_t_38 {   struct __pthread_mutex_s __data;   char __size[40U];   long __align; } ;}-> N752
+line 68:	N752 -{typedef union __anonunion_pthread_mutex_t_38 pthread_mutex_t;}-> N753
+line 70:	N753 -{struct _stdThread ;}-> N754
+line 72:	N754 -{typedef struct _stdThread *stdThread;}-> N755
+line 74:	N755 -{struct _stdThreadLock ;}-> N756
+line 76:	N756 -{typedef struct _stdThreadLock *stdThreadLock;}-> N757
+lines 78-82:	N757 -{struct _stdThread {   pthread_t handle;   void (*start)(void *);   void *args; } ;}-> N758
+lines 84-86:	N758 -{struct _stdThreadLock {   pthread_mutex_t mutex; } ;}-> N759
+line 88:	N759 -{typedef unsigned short __uint16_t;}-> N760
+line 90:	N760 -{typedef unsigned int __uint32_t;}-> N761
+line 92:	N761 -{typedef long __time_t;}-> N762
+line 94:	N762 -{typedef long __ssize_t;}-> N763
+line 96:	N763 -{typedef unsigned int __socklen_t;}-> N764
+line 98:	N764 -{typedef __ssize_t ssize_t;}-> N765
+line 100:	N765 -{typedef __time_t time_t;}-> N766
+line 102:	N766 -{typedef __uint16_t uint16_t;}-> N767
+line 104:	N767 -{typedef __uint32_t uint32_t;}-> N768
+line 106:	N768 -{typedef __socklen_t socklen_t;}-> N769
+line 108:	N769 -{typedef unsigned short sa_family_t;}-> N770
+lines 110-113:	N770 -{struct sockaddr {   sa_family_t sa_family;   char sa_data[14U]; } ;}-> N771
+line 115:	N771 -{typedef uint32_t in_addr_t;}-> N772
+lines 117-119:	N772 -{struct in_addr {   in_addr_t s_addr; } ;}-> N773
+line 121:	N773 -{typedef uint16_t in_port_t;}-> N774
+lines 123-128:	N774 -{struct sockaddr_in {   sa_family_t sin_family;   in_port_t sin_port;   struct in_addr sin_addr;   unsigned char sin_zero[8U]; } ;}-> N775
+line 130:	N775 -{int printf(const char *, ...);}-> N776
+line 133:	N776 -{int sscanf(const char *, const char *, ...);}-> N777
+line 136:	N777 -{int puts(const char *);}-> N778
+line 139:	N778 -{int rand();}-> N779
+line 142:	N779 -{int iswxdigit(wint_t );}-> N780
+line 145:	N780 -{const unsigned short **__ctype_b_loc();}-> N781
+line 148:	N781 -{const int GLOBAL_CONST_TRUE;}-> N782
 	GLOBAL_CONST_TRUE == 1;
-line 113:	N722 -{const int GLOBAL_CONST_FALSE;}-> N723
+line 151:	N782 -{const int GLOBAL_CONST_FALSE;}-> N783
 	GLOBAL_CONST_FALSE == 0;
-line 116:	N723 -{const int GLOBAL_CONST_FIVE;}-> N724
+line 154:	N783 -{const int GLOBAL_CONST_FIVE;}-> N784
 	GLOBAL_CONST_FIVE == 5;
-line 119:	N724 -{int globalTrue;}-> N725
+line 157:	N784 -{int globalTrue;}-> N785
 	globalTrue == 1;
-line 122:	N725 -{int globalFalse;}-> N726
+line 160:	N785 -{int globalFalse;}-> N786
 	globalFalse == 0;
-line 125:	N726 -{int globalFive;}-> N727
+line 163:	N786 -{int globalFive;}-> N787
 	globalFive == 5;
-line 128:	N727 -{void printLine(const char *line);}-> N728
-line 131:	N728 -{void printWLine(const wchar_t *line);}-> N729
-line 134:	N729 -{void printIntLine(int intNumber);}-> N730
-line 137:	N730 -{void printShortLine(short shortNumber);}-> N731
-line 140:	N731 -{void printFloatLine(float floatNumber);}-> N732
-line 143:	N732 -{void printLongLine(long longNumber);}-> N733
-line 146:	N733 -{void printLongLongLine(int64_t longLongIntNumber);}-> N734
-line 149:	N734 -{void printSizeTLine(size_t sizeTNumber);}-> N735
-line 152:	N735 -{void printHexCharLine(char charHex);}-> N736
-line 155:	N736 -{void printWcharLine(wchar_t wideChar);}-> N737
-line 158:	N737 -{void printUnsignedLine(unsigned int unsignedNumber);}-> N738
-line 161:	N738 -{void printHexUnsignedCharLine(unsigned char unsignedCharacter);}-> N739
-line 164:	N739 -{void printDoubleLine(double doubleNumber);}-> N740
-line 167:	N740 -{void printStructLine(const twoIntsStruct *structTwoIntsStruct);}-> N741
-line 170:	N741 -{void printBytesLine(const unsigned char *bytes, size_t numBytes);}-> N742
-line 173:	N742 -{size_t decodeHexChars(unsigned char *bytes, size_t numBytes, const char *hex);}-> N743
-line 176:	N743 -{size_t decodeHexWChars(unsigned char *bytes, size_t numBytes, const wchar_t *hex);}-> N744
-line 179:	N744 -{int globalReturnsTrue();}-> N745
-line 182:	N745 -{int globalReturnsFalse();}-> N746
-line 185:	N746 -{int globalReturnsTrueOrFalse();}-> N747
-line 188:	N747 -{int globalArgc;}-> N748
+line 166:	N787 -{void printLine(const char *line);}-> N788
+line 169:	N788 -{void printWLine(const wchar_t *line);}-> N789
+line 172:	N789 -{void printIntLine(int intNumber);}-> N790
+line 175:	N790 -{void printShortLine(short shortNumber);}-> N791
+line 178:	N791 -{void printFloatLine(float floatNumber);}-> N792
+line 181:	N792 -{void printLongLine(long longNumber);}-> N793
+line 184:	N793 -{void printLongLongLine(int64_t longLongIntNumber);}-> N794
+line 187:	N794 -{void printSizeTLine(size_t sizeTNumber);}-> N795
+line 190:	N795 -{void printHexCharLine(char charHex);}-> N796
+line 193:	N796 -{void printWcharLine(wchar_t wideChar);}-> N797
+line 196:	N797 -{void printUnsignedLine(unsigned int unsignedNumber);}-> N798
+line 199:	N798 -{void printHexUnsignedCharLine(unsigned char unsignedCharacter);}-> N799
+line 202:	N799 -{void printDoubleLine(double doubleNumber);}-> N800
+line 205:	N800 -{void printStructLine(const twoIntsStruct *structTwoIntsStruct);}-> N801
+line 208:	N801 -{void printBytesLine(const unsigned char *bytes, size_t numBytes);}-> N802
+line 211:	N802 -{size_t decodeHexChars(unsigned char *bytes, size_t numBytes, const char *hex);}-> N803
+line 214:	N803 -{size_t decodeHexWChars(unsigned char *bytes, size_t numBytes, const wchar_t *hex);}-> N804
+line 217:	N804 -{int globalReturnsTrue();}-> N805
+line 220:	N805 -{int globalReturnsFalse();}-> N806
+line 223:	N806 -{int globalReturnsTrueOrFalse();}-> N807
+line 226:	N807 -{int globalArgc;}-> N808
 	globalArgc == 0;
-line 191:	N748 -{char **globalArgv;}-> N749
+line 229:	N808 -{char **globalArgv;}-> N809
 	globalArgv == 0LL;
-line 194:	N749 -{int wprintf(const wchar_t *, ...);}-> N750
-line 197:	N750 -{int swscanf(const wchar_t *, const wchar_t *, ...);}-> N751
-line 477:	N751 -{const int GLOBAL_CONST_TRUE = 1;}-> N752
+line 232:	N809 -{int wprintf(const wchar_t *, ...);}-> N810
+line 235:	N810 -{int swscanf(const wchar_t *, const wchar_t *, ...);}-> N811
+line 515:	N811 -{const int GLOBAL_CONST_TRUE = 1;}-> N812
 	GLOBAL_CONST_TRUE == 1;
-line 479:	N752 -{const int GLOBAL_CONST_FALSE = 0;}-> N753
+line 517:	N812 -{const int GLOBAL_CONST_FALSE = 0;}-> N813
 	GLOBAL_CONST_FALSE == 0;
-line 481:	N753 -{const int GLOBAL_CONST_FIVE = 5;}-> N754
+line 519:	N813 -{const int GLOBAL_CONST_FIVE = 5;}-> N814
 	GLOBAL_CONST_FIVE == 5;
-line 483:	N754 -{int globalTrue = 1;}-> N755
+line 521:	N814 -{int globalTrue = 1;}-> N815
 	globalTrue == 1;
-line 485:	N755 -{int globalFalse = 0;}-> N756
+line 523:	N815 -{int globalFalse = 0;}-> N816
 	globalFalse == 0;
-line 487:	N756 -{int globalFive = 5;}-> N757
+line 525:	N816 -{int globalFive = 5;}-> N817
 	globalFive == 5;
-lines 489-493:	N757 -{void good1();}-> N758
-lines 496-500:	N758 -{void good2();}-> N759
-lines 503-507:	N759 -{void good3();}-> N760
-lines 510-514:	N760 -{void good4();}-> N761
-lines 517-521:	N761 -{void good5();}-> N762
-lines 524-528:	N762 -{void good6();}-> N763
-lines 531-535:	N763 -{void good7();}-> N764
-lines 538-542:	N764 -{void good8();}-> N765
-lines 545-549:	N765 -{void good9();}-> N766
-lines 552-556:	N766 -{void bad1();}-> N767
-lines 559-563:	N767 -{void bad2();}-> N768
-lines 566-570:	N768 -{void bad3();}-> N769
-lines 573-577:	N769 -{void bad4();}-> N770
-lines 580-584:	N770 -{void bad5();}-> N771
-lines 587-591:	N771 -{void bad6();}-> N772
-lines 594-598:	N772 -{void bad7();}-> N773
-lines 601-605:	N773 -{void bad8();}-> N774
-lines 608-612:	N774 -{void bad9();}-> N775
-line 615:	N775 -{int globalArgc = 0;}-> N776
+lines 527-531:	N817 -{void good1();}-> N818
+lines 534-538:	N818 -{void good2();}-> N819
+lines 541-545:	N819 -{void good3();}-> N820
+lines 548-552:	N820 -{void good4();}-> N821
+lines 555-559:	N821 -{void good5();}-> N822
+lines 562-566:	N822 -{void good6();}-> N823
+lines 569-573:	N823 -{void good7();}-> N824
+lines 576-580:	N824 -{void good8();}-> N825
+lines 583-587:	N825 -{void good9();}-> N826
+lines 590-594:	N826 -{void bad1();}-> N827
+lines 597-601:	N827 -{void bad2();}-> N828
+lines 604-608:	N828 -{void bad3();}-> N829
+lines 611-615:	N829 -{void bad4();}-> N830
+lines 618-622:	N830 -{void bad5();}-> N831
+lines 625-629:	N831 -{void bad6();}-> N832
+lines 632-636:	N832 -{void bad7();}-> N833
+lines 639-643:	N833 -{void bad8();}-> N834
+lines 646-650:	N834 -{void bad9();}-> N835
+line 653:	N835 -{int globalArgc = 0;}-> N836
 	globalArgc == 0;
-line 617:	N776 -{char **globalArgv = (char **)0;}-> N777
+line 655:	N836 -{char **globalArgv = (char **)0;}-> N837
 	globalArgv == 0LL;
-line 619:	N777 -{void *malloc(size_t );}-> N778
-line 622:	N778 -{void free(void *);}-> N779
-line 625:	N779 -{int pthread_create(pthread_t *, const pthread_attr_t *, void *(*)(void *), void *);}-> N780
-line 628:	N780 -{void pthread_exit(void *);}-> N781
-line 631:	N781 -{int pthread_join(pthread_t , void **);}-> N782
-line 634:	N782 -{int pthread_mutex_init(pthread_mutex_t *, const pthread_mutexattr_t *);}-> N783
-line 637:	N783 -{int pthread_mutex_destroy(pthread_mutex_t *);}-> N784
-line 640:	N784 -{int pthread_mutex_lock(pthread_mutex_t *);}-> N785
-line 643:	N785 -{int pthread_mutex_unlock(pthread_mutex_t *);}-> N786
-line 646:	N786 -{int stdThreadCreate(void (*start)(void *), void *args, stdThread *thread);}-> N787
-line 649:	N787 -{int stdThreadJoin(stdThread thread);}-> N788
-line 652:	N788 -{int stdThreadDestroy(stdThread thread);}-> N789
-line 655:	N789 -{int stdThreadLockCreate(stdThreadLock *lock);}-> N790
-line 658:	N790 -{void stdThreadLockAcquire(stdThreadLock lock);}-> N791
-line 661:	N791 -{void stdThreadLockRelease(stdThreadLock lock);}-> N792
-line 664:	N792 -{void stdThreadLockDestroy(stdThreadLock lock);}-> N793
-lines 667-680:	N793 -{void *internal_start(void *args);}-> N794
-line 830:	N794 -{void srand(unsigned int);}-> N795
-line 833:	N795 -{time_t time(time_t *);}-> N796
-line 836:	N796 -{void *memset(void *, int, size_t );}-> N797
-line 839:	N797 -{void CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink(char *data);}-> N798
-lines 842-856:	N798 -{void CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad();}-> N799
-lines 859-883:	N799 -{int main(int argc, char **argv);}-> N800
-line 886:	N800 -{char *ldv_strncpy(char *dest, const char *src, size_t n);}-> N801
-line 889:	N801 -{char *ldv_strncpy_1(char *ldv_func_arg1, const char *ldv_func_arg2, size_t ldv_func_arg3);}-> N802
-line 920:	N802 -{void *ldv_xmalloc(size_t size);}-> N803
-line 923:	N803 -{int ldv_undef_int();}-> N804
-line 926:	N804 -{int ldv_undef_int_positive();}-> N805
-line 929:	N805 -{int ldv_asprintf(char **ptr);}-> N806
-line 964:	N806 -{void abort();}-> N807
-lines 965-967:	N807 -{void assume_abort_if_not(int cond);}-> N808
-line 970:	N808 -{void ldv_exit();}-> N809
-line 985:	N809 -{void *memcpy(void *, const void *, size_t );}-> N810
-line 988:	N810 -{char *ldv_strdup(const char *s);}-> N811
-line 991:	N811 -{char *ldv_strcpy(char *dest, const char *src);}-> N812
-line 994:	N812 -{size_t ldv_strlen(const char *str);}-> N813
-line 1124:	N813 -{void *ldv_malloc(size_t size);}-> N814
-line 1127:	N814 -{void *ldv_calloc(size_t nmemb, size_t size);}-> N815
-line 1130:	N815 -{void *ldv_zalloc(size_t size);}-> N816
-line 1133:	N816 -{void ldv_free(void *s);}-> N817
-line 1136:	N817 -{void *ldv_realloc(void *ptr, size_t size);}-> N818
-line 1139:	N818 -{void *ldv_xzalloc(size_t size);}-> N819
-line 1148:	N819 -{void *ldv_reference_malloc(size_t size);}-> N820
-line 1151:	N820 -{void *ldv_reference_calloc(size_t nmemb, size_t size);}-> N821
-line 1154:	N821 -{void *ldv_reference_zalloc(size_t size);}-> N822
-line 1157:	N822 -{void ldv_reference_free(void *s);}-> N823
-line 1160:	N823 -{void *ldv_reference_realloc(void *ptr, size_t size);}-> N824
-line 1163:	N824 -{void *ldv_reference_xmalloc(size_t size);}-> N825
-line 1166:	N825 -{void *ldv_reference_xzalloc(size_t size);}-> N826
-line 1255:	N826 -{void __assert_fail(const char *, const char *, unsigned int, const char *);}-> N827
-line 1256:	N827 -{void reach_error();}-> N828
-line 1259:	N828 -{void ldv_error();}-> N829
-line 1274:	N829 -{int ldv_undef_long();}-> N830
-line 1277:	N830 -{unsigned int ldv_undef_uint();}-> N831
-line 1280:	N831 -{unsigned long int ldv_undef_ulong();}-> N832
-line 1283:	N832 -{unsigned long long int ldv_undef_ulonglong();}-> N833
-line 1288:	N833 -{int ldv_undef_int_negative();}-> N834
-line 1291:	N834 -{int ldv_undef_int_nonpositive();}-> N835
-line 1296:	N835 -{int __VERIFIER_nondet_int();}-> N836
-line 1299:	N836 -{long int __VERIFIER_nondet_long();}-> N837
-line 1302:	N837 -{unsigned int __VERIFIER_nondet_uint();}-> N838
-line 1305:	N838 -{unsigned long int __VERIFIER_nondet_ulong();}-> N839
-line 1308:	N839 -{unsigned long long int __VERIFIER_nondet_ulonglong();}-> N840
-line 1405:	N840 -{void *calloc(size_t , size_t );}-> N841
-none:	N841 -{Function start dummy edge}-> N356
-line 861:	N356 -{int __retres;}-> N357
-line 863:	N357 -{time_t tmp;}-> N358
-line 865:	N358 -{tmp = time((time_t *)0L);}-> N359
-line 867:	N359 -{srand((unsigned int)tmp);}-> N360
+line 657:	N837 -{void *malloc(size_t );}-> N838
+line 660:	N838 -{void free(void *);}-> N839
+line 663:	N839 -{int pthread_create(pthread_t *, const pthread_attr_t *, void *(*)(void *), void *);}-> N840
+line 666:	N840 -{void pthread_exit(void *);}-> N841
+line 669:	N841 -{int pthread_join(pthread_t , void **);}-> N842
+line 672:	N842 -{int pthread_mutex_init(pthread_mutex_t *, const pthread_mutexattr_t *);}-> N843
+line 675:	N843 -{int pthread_mutex_destroy(pthread_mutex_t *);}-> N844
+line 678:	N844 -{int pthread_mutex_lock(pthread_mutex_t *);}-> N845
+line 681:	N845 -{int pthread_mutex_unlock(pthread_mutex_t *);}-> N846
+line 684:	N846 -{int stdThreadCreate(void (*start)(void *), void *args, stdThread *thread);}-> N847
+line 687:	N847 -{int stdThreadJoin(stdThread thread);}-> N848
+line 690:	N848 -{int stdThreadDestroy(stdThread thread);}-> N849
+line 693:	N849 -{int stdThreadLockCreate(stdThreadLock *lock);}-> N850
+line 696:	N850 -{void stdThreadLockAcquire(stdThreadLock lock);}-> N851
+line 699:	N851 -{void stdThreadLockRelease(stdThreadLock lock);}-> N852
+line 702:	N852 -{void stdThreadLockDestroy(stdThreadLock lock);}-> N853
+lines 705-718:	N853 -{void *internal_start(void *args);}-> N854
+line 868:	N854 -{void ldv_exit();}-> N855
+line 871:	N855 -{char *ldv_strcpy(char *dest, const char *src);}-> N856
+line 874:	N856 -{size_t ldv_strlen(const char *str);}-> N857
+line 877:	N857 -{unsigned long int strtoul(const char *, char **, int);}-> N858
+line 880:	N858 -{void srand(unsigned int);}-> N859
+line 883:	N859 -{void ldv_exit_2(int ldv_func_arg1);}-> N860
+line 886:	N860 -{time_t time(time_t *);}-> N861
+line 889:	N861 -{void *memset(void *, int, size_t );}-> N862
+line 892:	N862 -{char *ldv_strcpy_3(char *ldv_func_arg1, const char *ldv_func_arg2);}-> N863
+line 895:	N863 -{size_t ldv_strlen_1(const char *ldv_func_arg1);}-> N864
+line 898:	N864 -{int socket(int, int, int);}-> N865
+line 901:	N865 -{int connect(int, const struct sockaddr *, socklen_t );}-> N866
+line 904:	N866 -{ssize_t recv(int, void *, size_t , int);}-> N867
+line 907:	N867 -{uint16_t htons(uint16_t );}-> N868
+line 910:	N868 -{in_addr_t inet_addr(const char *);}-> N869
+line 913:	N869 -{int close(int);}-> N870
+lines 916-990:	N870 -{void CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad();}-> N871
+lines 993-1017:	N871 -{int main(int argc, char **argv);}-> N872
+line 1049:	N872 -{void *ldv_xmalloc(size_t size);}-> N873
+line 1052:	N873 -{int ldv_undef_int();}-> N874
+line 1055:	N874 -{int ldv_undef_int_positive();}-> N875
+line 1058:	N875 -{int ldv_asprintf(char **ptr);}-> N876
+line 1093:	N876 -{void abort();}-> N877
+lines 1094-1096:	N877 -{void assume_abort_if_not(int cond);}-> N878
+line 1111:	N878 -{void *memcpy(void *, const void *, size_t );}-> N879
+line 1114:	N879 -{char *ldv_strdup(const char *s);}-> N880
+line 1117:	N880 -{char *ldv_strncpy(char *dest, const char *src, size_t n);}-> N881
+line 1247:	N881 -{void *ldv_malloc(size_t size);}-> N882
+line 1250:	N882 -{void *ldv_calloc(size_t nmemb, size_t size);}-> N883
+line 1253:	N883 -{void *ldv_zalloc(size_t size);}-> N884
+line 1256:	N884 -{void ldv_free(void *s);}-> N885
+line 1259:	N885 -{void *ldv_realloc(void *ptr, size_t size);}-> N886
+line 1262:	N886 -{void *ldv_xzalloc(size_t size);}-> N887
+line 1271:	N887 -{void *ldv_reference_malloc(size_t size);}-> N888
+line 1274:	N888 -{void *ldv_reference_calloc(size_t nmemb, size_t size);}-> N889
+line 1277:	N889 -{void *ldv_reference_zalloc(size_t size);}-> N890
+line 1280:	N890 -{void ldv_reference_free(void *s);}-> N891
+line 1283:	N891 -{void *ldv_reference_realloc(void *ptr, size_t size);}-> N892
+line 1286:	N892 -{void *ldv_reference_xmalloc(size_t size);}-> N893
+line 1289:	N893 -{void *ldv_reference_xzalloc(size_t size);}-> N894
+line 1378:	N894 -{void __assert_fail(const char *, const char *, unsigned int, const char *);}-> N895
+line 1379:	N895 -{void reach_error();}-> N896
+line 1382:	N896 -{void ldv_error();}-> N897
+line 1397:	N897 -{int ldv_undef_long();}-> N898
+line 1400:	N898 -{unsigned int ldv_undef_uint();}-> N899
+line 1403:	N899 -{unsigned long int ldv_undef_ulong();}-> N900
+line 1406:	N900 -{unsigned long long int ldv_undef_ulonglong();}-> N901
+line 1411:	N901 -{int ldv_undef_int_negative();}-> N902
+line 1414:	N902 -{int ldv_undef_int_nonpositive();}-> N903
+line 1419:	N903 -{int __VERIFIER_nondet_int();}-> N904
+line 1422:	N904 -{long int __VERIFIER_nondet_long();}-> N905
+line 1425:	N905 -{unsigned int __VERIFIER_nondet_uint();}-> N906
+line 1428:	N906 -{unsigned long int __VERIFIER_nondet_ulong();}-> N907
+line 1431:	N907 -{unsigned long long int __VERIFIER_nondet_ulonglong();}-> N908
+line 1528:	N908 -{void *calloc(size_t , size_t );}-> N909
+none:	N909 -{Function start dummy edge}-> N401
+line 995:	N401 -{int __retres;}-> N402
+line 997:	N402 -{time_t tmp;}-> N403
+line 999:	N403 -{tmp = time((time_t *)0L);}-> N404
+line 1001:	N404 -{srand((unsigned int)tmp);}-> N405
 	GLOBAL_CONST_TRUE == 1;
 	GLOBAL_CONST_FALSE == 0;
 	GLOBAL_CONST_FIVE == 5;
@@ -179,36 +201,37 @@ line 867:	N359 -{srand((unsigned int)tmp);}-> N360
 	globalFive == 5;
 	globalArgc == 0;
 	globalArgv == 0LL;
-line 869:	N360 -{printLine("Calling bad()...")}-> N1
+line 1003:	N405 -{printLine("Calling bad()...")}-> N1
 none:	N1 -{Function start dummy edge}-> N2
-line 203:	N2 -{[line != ((const char *)0)]}-> N4
+line 241:	N2 -{[line != ((const char *)0)]}-> N4
 	(const char *)0 == 0
-line 204:	N4 -{printf("%s\n", line);}-> N6
+line 242:	N4 -{printf("%s\n", line);}-> N6
 none:	N6 -{}-> N3
-line 206:	N3 -{return;}-> N0
-line 869:	N0 -{Return edge from printLine to main: printLine("Calling bad()...");}-> N361
-line 871:	N361 -{CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad()}-> N345
+line 244:	N3 -{return;}-> N0
+line 1003:	N0 -{Return edge from printLine to main: printLine("Calling bad()...");}-> N406
+line 1005:	N406 -{CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad()}-> N345
 none:	N345 -{Function start dummy edge}-> N346
-line 844:	N346 -{char *data = 0;}-> N347
-line 845:	N347 -{char dataBuffer[100U];}-> N348
-line 847:	N348 -{memset((void *)(&dataBuffer), 65, 99UL);}-> N349
-line 849:	N349 -{dataBuffer[99] = 0;}-> N350
-line 851:	N350 -{data = ((char *)(&dataBuffer)) + 18446744073709551608ULL;}-> N351
-line 853:	N351 -{CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink(data)}-> N371
-none:	N371 -{Function start dummy edge}-> N372
-line 894:	N372 -{char source[100U];}-> N373
-line 896:	N373 -{memset((void *)(&source), 67, 99UL);}-> N374
-line 898:	N374 -{source[99] = 0;}-> N375
-line 900:	N375 -{ldv_strncpy_1(data, (const char *)(&source), 99UL)}-> N381
-none:	N381 -{Function start dummy edge}-> N382
-line 912:	N382 -{char *tmp;}-> N383
-line 914:	N383 -{ldv_strncpy(ldv_func_arg1, ldv_func_arg2, ldv_func_arg3)}-> N464
-none:	N464 -{Function start dummy edge}-> N465
-line 1068:	N465 -{size_t i;}-> N466
-line 1070:	N466 -{i = 0UL;}-> N467
-line 1072:	N467 -{Goto: ldv_1433}-> N473
-line 1082:	N473 -{[i < n]}-> N477
-line 1082:	N477 -{[((int)(*(src + i))) != 0]}-> N475
-line 1083:	N475 -{Goto: ldv_1432}-> N469
-line 1073:	N469 -{Label: ldv_1432}-> N470
-line 1076:	N470 -{*(dest + i) = *(src + i);}-> N471
+line 918:	N346 -{size_t data;}-> N347
+line 920:	N347 -{data = 0UL;}-> N348
+line 922:	N348 -{int recvResult;}-> N349
+line 923:	N349 -{struct sockaddr_in service;}-> N350
+line 924:	N350 -{char inputBuffer[26U];}-> N351
+line 925:	N351 -{int tmp;}-> N352
+line 926:	N352 -{ssize_t tmp_0;}-> N353
+line 928:	N353 -{int connectSocket = -1;}-> N354
+line 930:	N354 -{connectSocket = socket(2, 1, 6);}-> N355
+line 932:	N355 -{[!(connectSocket == -1)]}-> N358
+none:	N358 -{}-> N356
+line 935:	N356 -{memset((void *)(&service), 0, 16UL);}-> N360
+line 937:	N360 -{service.sin_family = 2U;}-> N361
+line 939:	N361 -{service.sin_addr.s_addr = inet_addr("127.0.0.1");}-> N362
+line 941:	N362 -{service.sin_port = htons(27015U);}-> N363
+line 943:	N363 -{tmp = connect(connectSocket, (const struct sockaddr *)(&service), 16U);}-> N364
+line 945:	N364 -{[!(tmp == -1)]}-> N367
+none:	N367 -{}-> N365
+line 948:	N365 -{tmp_0 = recv(connectSocket, (void *)(&inputBuffer), 25UL, 0);}-> N369
+line 950:	N369 -{recvResult = (int)tmp_0;}-> N370
+line 952:	N370 -{[!(recvResult == -1)]}-> N374
+line 952:	N374 -{[!(recvResult == 0)]}-> N373
+none:	N373 -{}-> N371
+line 955:	N371 -{inputBuffer[recvResult] = 0;}-> N376

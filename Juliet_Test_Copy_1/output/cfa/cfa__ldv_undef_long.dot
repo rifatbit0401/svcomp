@@ -1,7 +1,7 @@
 digraph ldv_undef_long {
-614 [shape="circle" label="N614\n6"]
-615 [shape="circle" label="N615\n5"]
-615 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">615</td><td align="left">int __retres;</td></tr><tr><td align="right">616</td><td align="left">long tmp;</td></tr><tr><td align="right">617</td><td align="left">tmp = __VERIFIER_nondet_long();</td></tr><tr><td align="right">618</td><td align="left">__retres = (int)tmp;</td></tr><tr><td align="right">619</td><td align="left">return __retres;</td></tr></table>>]
-615 -> 613[label=""]
-614 -> 615 [label="Function start dummy edge" fontname="Courier New"]
+606 [shape="circle" label="N606\n6"]
+607 [shape="circle" label="N607\n5"]
+607 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">607</td><td align="left">int __retres;</td></tr><tr><td align="right">608</td><td align="left">long tmp;</td></tr><tr><td align="right">609</td><td align="left">tmp = __VERIFIER_nondet_long();</td></tr><tr><td align="right">610</td><td align="left">__retres = (int)tmp;</td></tr><tr><td align="right">611</td><td align="left">return __retres;</td></tr></table>>]
+607 -> 605[label=""]
+606 -> 607 [label="Function start dummy edge" fontname="Courier New"]
 }

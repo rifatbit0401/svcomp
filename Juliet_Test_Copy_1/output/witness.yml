@@ -1,0 +1,37 @@
+- entry_type: "violation_sequence"
+  metadata:
+    format_version: "2.0"
+    uuid: "732d4a48-78ea-3c2a-9cec-f5fc8f213e02"
+    creation_time: "2025-03-01T23:14:39-08:00"
+    producer:
+      name: "CPAchecker"
+      version: "4.0"
+    task:
+      input_files:
+      - "CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i"
+      input_file_hashes:
+        CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i: "a034b324554fe326b2f5fb290ab7276b1b4c995d597752dafc77b5b567765999"
+      specification: ""
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: "branching"
+        action: "follow"
+        constraint:
+          value: "true"
+        location:
+          file_name: "CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i"
+          line: 241
+          column: 3
+          function: "printLine"
+  - segment:
+    - waypoint:
+        type: "target"
+        action: "follow"
+        location:
+          file_name: "CWE789-1/CWE789_Uncontrolled_Mem_Alloc---s01---CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad.i"
+          line: 955
+          column: 5
+          function: "CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad"

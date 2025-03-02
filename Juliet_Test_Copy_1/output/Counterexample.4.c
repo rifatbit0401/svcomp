@@ -52,8 +52,32 @@ struct _stdThread {
 struct _stdThreadLock {
   pthread_mutex_t mutex;
 } ;
+typedef unsigned short __uint16_t;
+typedef unsigned int __uint32_t;
 typedef long __time_t;
+typedef long __ssize_t;
+typedef unsigned int __socklen_t;
+typedef __ssize_t ssize_t;
 typedef __time_t time_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __socklen_t socklen_t;
+typedef unsigned short sa_family_t;
+struct sockaddr {
+  sa_family_t sa_family;
+  char sa_data[14U];
+} ;
+typedef uint32_t in_addr_t;
+struct in_addr {
+  in_addr_t s_addr;
+} ;
+typedef uint16_t in_port_t;
+struct sockaddr_in {
+  sa_family_t sin_family;
+  in_port_t sin_port;
+  struct in_addr sin_addr;
+  unsigned char sin_zero[8U];
+} ;
 int printf(const char *, ...);
 int sscanf(const char *, const char *, ...);
 int puts(const char *);
@@ -133,25 +157,33 @@ void stdThreadLockAcquire(stdThreadLock lock);
 void stdThreadLockRelease(stdThreadLock lock);
 void stdThreadLockDestroy(stdThreadLock lock);
 void *internal_start(void *args);
+void ldv_exit();
+char *ldv_strcpy(char *dest, const char *src);
+size_t ldv_strlen(const char *str);
+unsigned long int strtoul(const char *, char **, int);
 void srand(unsigned int);
+void ldv_exit_2(int ldv_func_arg1);
 time_t time(time_t *);
 void *memset(void *, int, size_t );
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink(char *data);
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad();
+char *ldv_strcpy_3(char *ldv_func_arg1, const char *ldv_func_arg2);
+size_t ldv_strlen_1(const char *ldv_func_arg1);
+int socket(int, int, int);
+int connect(int, const struct sockaddr *, socklen_t );
+ssize_t recv(int, void *, size_t , int);
+uint16_t htons(uint16_t );
+in_addr_t inet_addr(const char *);
+int close(int);
+void CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad();
 int main(int argc, char **argv);
-char *ldv_strncpy(char *dest, const char *src, size_t n);
-char *ldv_strncpy_1(char *ldv_func_arg1, const char *ldv_func_arg2, size_t ldv_func_arg3);
 void *ldv_xmalloc(size_t size);
 int ldv_undef_int();
 int ldv_undef_int_positive();
 int ldv_asprintf(char **ptr);
 void abort();
 void assume_abort_if_not(int cond);
-void ldv_exit();
 void *memcpy(void *, const void *, size_t );
 char *ldv_strdup(const char *s);
-char *ldv_strcpy(char *dest, const char *src);
-size_t ldv_strlen(const char *str);
+char *ldv_strncpy(char *dest, const char *src, size_t n);
 void *ldv_malloc(size_t size);
 void *ldv_calloc(size_t nmemb, size_t size);
 void *ldv_zalloc(size_t size);
@@ -183,17 +215,14 @@ void *calloc(size_t , size_t );
 extern void __VERIFIER_error(void);
 int main_0(int argc, char **argv);
 void printLine_1(const char *line);
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad_2();
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink_3(char *data);
-char *ldv_strncpy_1_4(char *ldv_func_arg1, const char *ldv_func_arg2, size_t ldv_func_arg3);
-char *ldv_strncpy_5(char *dest, const char *src, size_t n);
+void CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad_2();
 int main_0(int argc, char **argv) {
   int __retres;
   time_t tmp;
   tmp = time((time_t *)0L);
   srand((unsigned int)tmp);
   printLine_1("Calling bad()...");
-  CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad_2();
+  CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad_2();
 }
 
 void printLine_1(const char *line) {
@@ -202,32 +231,27 @@ void printLine_1(const char *line) {
   return;
 }
 
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51_bad_2() {
-  char *data = 0;
-  char dataBuffer[100U];
-  memset((void *)(&dataBuffer), 65, 99UL);
-  dataBuffer[99] = 0;
-  data = ((char *)(&dataBuffer)) + 18446744073709551608ULL;
-  CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink_3(data);
-}
-
-void CWE124_Buffer_Underwrite__char_declare_ncpy_51b_badSink_3(char *data) {
-  char source[100U];
-  memset((void *)(&source), 67, 99UL);
-  source[99] = 0;
-  ldv_strncpy_1_4(data, (const char *)(&source), 99UL);
-}
-
-char *ldv_strncpy_1_4(char *ldv_func_arg1, const char *ldv_func_arg2, size_t ldv_func_arg3) {
-  char *tmp;
-  tmp = ldv_strncpy_5(ldv_func_arg1, ldv_func_arg2, ldv_func_arg3);
-}
-
-char *ldv_strncpy_5(char *dest, const char *src, size_t n) {
-  size_t i;
-  i = 0UL;
-  __CPROVER_assume(i < n);
-  __CPROVER_assume(((int)(*(src + i))) != 0);
+void CWE789_Uncontrolled_Mem_Alloc__malloc_char_connect_socket_01_bad_2() {
+  size_t data;
+  data = 0UL;
+  int recvResult;
+  struct sockaddr_in service;
+  char inputBuffer[26U];
+  int tmp;
+  ssize_t tmp_0;
+  int connectSocket = -1;
+  connectSocket = socket(2, 1, 6);
+  __CPROVER_assume(!(connectSocket == -1));
+  memset((void *)(&service), 0, 16UL);
+  service.sin_family = 2U;
+  service.sin_addr.s_addr = inet_addr("127.0.0.1");
+  service.sin_port = htons(27015U);
+  tmp = connect(connectSocket, (const struct sockaddr *)(&service), 16U);
+  __CPROVER_assume(!(tmp == -1));
+  tmp_0 = recv(connectSocket, (void *)(&inputBuffer), 25UL, 0);
+  recvResult = (int)tmp_0;
+  __CPROVER_assume(!(recvResult == -1));
+  __CPROVER_assume(!(recvResult == 0));
   __VERIFIER_error(); // target state
-  *(dest + i) = *(src + i);
+  inputBuffer[recvResult] = 0;
 }
