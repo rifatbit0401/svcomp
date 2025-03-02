@@ -1,4 +1,5 @@
 #Step-1:
+sudo apt install cpachecker
 pip install -r requirements.txt
 
 #Step-2:
