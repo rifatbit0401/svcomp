@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65_bad {
+269 [shape="diamond" label="N269\n5"]
+691 [shape="circle" label="N691\n3"]
+692 [shape="circle" label="N692\n4"]
+270 [shape="circle" label="N270\n1"]
+261 [shape="circle" label="N261\n0"]
+693 [shape="circle" label="N693\n2"]
+262 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">262</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">263</td><td align="left">char *data = 0;</td></tr><tr><td align="right">264</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">265</td><td align="left">void (*funcPtr)(char *) = &amp;CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65b_badSink;</td></tr><tr><td align="right">266</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">267</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">268</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+262 -> 269[label=""]
+269 -> 691 [label="[funcPtr == (&CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65b_badSink)]" fontname="Courier New"]
+269 -> 692 [label="[!(funcPtr == (&CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65b_badSink))]" fontname="Courier New"]
+270 -> 261 [label="return;" fontname="Courier New"]
+100029 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65b_badSink"]
+691 -> 100029 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_65b_badSink(data);" fontname="Courier New"]
+100029 -> 693 [label="" fontname="Courier New"]
+692 -> 270 [label="(*funcPtr)(data);" fontname="Courier New"]
+693 -> 270 [label="skip" fontname="Courier New"]
+}

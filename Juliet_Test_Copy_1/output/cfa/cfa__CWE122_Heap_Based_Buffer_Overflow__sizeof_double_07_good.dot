@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__sizeof_double_07_good {
+381 [shape="circle" label="N381\n3"]
+382 [shape="circle" label="N382\n2"]
+383 [shape="circle" label="N383\n1"]
+380 [shape="circle" label="N380\n4"]
+379 [shape="circle" label="N379\n0"]
+100032 [shape="component" label="goodG2B1"]
+381 -> 100032 [label="goodG2B1();" fontname="Courier New"]
+100032 -> 382 [label="" fontname="Courier New"]
+100033 [shape="component" label="goodG2B2"]
+382 -> 100033 [label="goodG2B2();" fontname="Courier New"]
+100033 -> 383 [label="" fontname="Courier New"]
+380 -> 381 [label="Function start dummy edge" fontname="Courier New"]
+383 -> 379 [label="return;" fontname="Courier New"]
+}

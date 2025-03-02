@@ -1,0 +1,11 @@
+digraph ldv_exit {
+468 [shape="circle" label="N468\n3"]
+469 [shape="circle" label="N469\n2"]
+470 [shape="circle" label="N470\n1"]
+467 [shape="circle" label="N467\n0"]
+468 -> 469 [label="Function start dummy edge" fontname="Courier New"]
+100008 [shape="component" label="assume_abort_if_not"]
+469 -> 100008 [label="assume_abort_if_not(0);" fontname="Courier New"]
+100008 -> 470 [label="" fontname="Courier New"]
+470 -> 467 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_snprintf_34_bad {
+356 [shape="circle" label="N356\n4"]
+357 [shape="circle" label="N357\n3"]
+358 [shape="circle" label="N358\n2"]
+359 [shape="circle" label="N359\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_snprintf_34_unionType myUnion;</td></tr><tr><td align="right">348</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">349</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">350</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">351</td><td align="left">*(data + 99U) = 0;</td></tr><tr><td align="right">352</td><td align="left">myUnion.unionFirst = data;</td></tr><tr><td align="right">353</td><td align="left">char *data_0 = myUnion.unionSecond;</td></tr><tr><td align="right">354</td><td align="left">size_t tmp;</td></tr><tr><td align="right">355</td><td align="left">char dest[50U] = &#123; 0 &#125;;</td></tr></table>>]
+345 -> 356[label=""]
+100019 [shape="component" label="ldv_strlen_1"]
+356 -> 100019 [label="tmp = ldv_strlen_1((const char *)data_0);" fontname="Courier New"]
+100019 -> 357 [label="" fontname="Courier New"]
+100020 [shape="component" label="printLine"]
+358 -> 100020 [label="printLine((const char *)data_0);" fontname="Courier New"]
+100020 -> 359 [label="" fontname="Courier New"]
+357 -> 358 [label="snprintf((char *)(&dest), tmp, \"%s\", data_0);" fontname="Courier New"]
+359 -> 344 [label="return;" fontname="Courier New"]
+}

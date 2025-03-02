@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE129_listen_socket_65_good {
+434 [shape="circle" label="N434\n3"]
+435 [shape="circle" label="N435\n2"]
+436 [shape="circle" label="N436\n1"]
+433 [shape="circle" label="N433\n4"]
+432 [shape="circle" label="N432\n0"]
+100018 [shape="component" label="goodG2B"]
+434 -> 100018 [label="goodG2B();" fontname="Courier New"]
+100018 -> 435 [label="" fontname="Courier New"]
+100019 [shape="component" label="goodB2G"]
+435 -> 100019 [label="goodB2G();" fontname="Courier New"]
+100019 -> 436 [label="" fontname="Courier New"]
+433 -> 434 [label="Function start dummy edge" fontname="Courier New"]
+436 -> 432 [label="return;" fontname="Courier New"]
+}

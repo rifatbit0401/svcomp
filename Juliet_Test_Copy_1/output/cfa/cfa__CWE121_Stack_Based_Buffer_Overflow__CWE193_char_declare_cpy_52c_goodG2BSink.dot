@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_cpy_52c_goodG2BSink {
+282 [shape="circle" label="N282\n5"]
+283 [shape="circle" label="N283\n4"]
+284 [shape="circle" label="N284\n3"]
+285 [shape="circle" label="N285\n2"]
+286 [shape="circle" label="N286\n1"]
+281 [shape="circle" label="N281\n0"]
+282 -> 283 [label="Function start dummy edge" fontname="Courier New"]
+100029 [shape="component" label="ldv_strcpy_1"]
+284 -> 100029 [label="ldv_strcpy_1(data, (const char *)(&source));" fontname="Courier New"]
+100029 -> 285 [label="" fontname="Courier New"]
+100030 [shape="component" label="printLine"]
+285 -> 100030 [label="printLine((const char *)data);" fontname="Courier New"]
+100030 -> 286 [label="" fontname="Courier New"]
+283 -> 284 [label="char source[11U] = { 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 0 };" fontname="Courier New"]
+286 -> 281 [label="return;" fontname="Courier New"]
+}

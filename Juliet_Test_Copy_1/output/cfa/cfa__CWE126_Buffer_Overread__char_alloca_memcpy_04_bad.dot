@@ -1,0 +1,18 @@
+digraph CWE126_Buffer_Overread__char_alloca_memcpy_04_bad {
+264 [shape="circle" label="N264\n5"]
+265 [shape="circle" label="N265\n4"]
+267 [shape="circle" label="N267\n2"]
+268 [shape="circle" label="N268\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">249</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">250</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">251</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">252</td><td align="left">memset((void *)dataBadBuffer, 65, 49UL);</td></tr><tr><td align="right">253</td><td align="left">*(dataBadBuffer + 49U) = 0;</td></tr><tr><td align="right">254</td><td align="left">memset((void *)dataGoodBuffer, 65, 99UL);</td></tr><tr><td align="right">255</td><td align="left">*(dataGoodBuffer + 99U) = 0;</td></tr><tr><td align="right">256</td><td align="left"></td></tr><tr><td align="right">258</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">260</td><td align="left"></td></tr><tr><td align="right">257</td><td align="left">char dest[100U];</td></tr><tr><td align="right">261</td><td align="left">size_t tmp_1;</td></tr><tr><td align="right">262</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">263</td><td align="left">dest[99] = 0;</td></tr></table>>]
+246 -> 264[label=""]
+265 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">265</td><td align="left">memcpy((void *)(&amp;dest), (const void *)data, tmp_1);</td></tr><tr><td align="right">266</td><td align="left">dest[99] = 0;</td></tr></table>>]
+265 -> 267[label=""]
+100034 [shape="component" label="ldv_strlen_1"]
+264 -> 100034 [label="tmp_1 = ldv_strlen_1((const char *)(&dest));" fontname="Courier New"]
+100034 -> 265 [label="" fontname="Courier New"]
+100035 [shape="component" label="printLine"]
+267 -> 100035 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100035 -> 268 [label="" fontname="Courier New"]
+268 -> 245 [label="return;" fontname="Courier New"]
+}

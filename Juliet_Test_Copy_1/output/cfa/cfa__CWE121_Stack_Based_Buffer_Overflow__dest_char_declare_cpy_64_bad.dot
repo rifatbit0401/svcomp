@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__dest_char_declare_cpy_64_bad {
+269 [shape="circle" label="N269\n2"]
+270 [shape="circle" label="N270\n1"]
+262 [shape="circle" label="N262\n0"]
+263 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">263</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">264</td><td align="left">char *data = 0;</td></tr><tr><td align="right">265</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">266</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">267</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">268</td><td align="left">*data = 0;</td></tr></table>>]
+263 -> 269[label=""]
+100034 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__dest_char_declare_cpy_64b_badSink"]
+269 -> 100034 [label="CWE121_Stack_Based_Buffer_Overflow__dest_char_declare_cpy_64b_badSink((void *)(&data));" fontname="Courier New"]
+100034 -> 270 [label="" fontname="Courier New"]
+270 -> 262 [label="return;" fontname="Courier New"]
+}

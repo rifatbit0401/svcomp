@@ -1,0 +1,13 @@
+digraph ldv_xmalloc {
+581 [shape="circle" label="N581\n4"]
+582 [shape="circle" label="N582\n3"]
+583 [shape="circle" label="N583\n2"]
+584 [shape="circle" label="N584\n1"]
+580 [shape="circle" label="N580\n0"]
+581 -> 582 [label="Function start dummy edge" fontname="Courier New"]
+100016 [shape="component" label="ldv_reference_xmalloc"]
+583 -> 100016 [label="tmp = ldv_reference_xmalloc(size);" fontname="Courier New"]
+100016 -> 584 [label="" fontname="Courier New"]
+582 -> 583 [label="void *tmp;" fontname="Courier New"]
+584 -> 580 [label="return tmp;" fontname="Courier New"]
+}

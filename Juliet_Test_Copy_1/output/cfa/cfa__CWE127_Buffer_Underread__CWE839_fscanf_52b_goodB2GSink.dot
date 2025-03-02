@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__CWE839_fscanf_52b_goodB2GSink {
+371 [shape="circle" label="N371\n3"]
+372 [shape="circle" label="N372\n2"]
+373 [shape="circle" label="N373\n1"]
+370 [shape="circle" label="N370\n0"]
+371 -> 372 [label="Function start dummy edge" fontname="Courier New"]
+100013 [shape="component" label="CWE127_Buffer_Underread__CWE839_fscanf_52c_goodB2GSink"]
+372 -> 100013 [label="CWE127_Buffer_Underread__CWE839_fscanf_52c_goodB2GSink(data);" fontname="Courier New"]
+100013 -> 373 [label="" fontname="Courier New"]
+373 -> 370 [label="return;" fontname="Courier New"]
+}

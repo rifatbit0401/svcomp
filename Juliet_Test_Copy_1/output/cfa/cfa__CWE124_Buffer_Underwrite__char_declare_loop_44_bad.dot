@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__char_declare_loop_44_bad {
+277 [shape="diamond" label="N277\n5"]
+699 [shape="circle" label="N699\n3"]
+700 [shape="circle" label="N700\n4"]
+278 [shape="circle" label="N278\n1"]
+269 [shape="circle" label="N269\n0"]
+701 [shape="circle" label="N701\n2"]
+270 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">270</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">271</td><td align="left">char *data = 0;</td></tr><tr><td align="right">272</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">273</td><td align="left">void (*funcPtr)(char *) = &amp;badSink;</td></tr><tr><td align="right">274</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">275</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">276</td><td align="left">data = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr></table>>]
+270 -> 277[label=""]
+277 -> 699 [label="[funcPtr == (&badSink)]" fontname="Courier New"]
+277 -> 700 [label="[!(funcPtr == (&badSink))]" fontname="Courier New"]
+278 -> 269 [label="return;" fontname="Courier New"]
+100026 [shape="component" label="badSink"]
+699 -> 100026 [label="badSink(data);" fontname="Courier New"]
+100026 -> 701 [label="" fontname="Courier New"]
+700 -> 278 [label="(*funcPtr)(data);" fontname="Courier New"]
+701 -> 278 [label="skip" fontname="Courier New"]
+}

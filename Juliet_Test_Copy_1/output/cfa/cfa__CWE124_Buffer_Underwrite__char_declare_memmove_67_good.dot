@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_declare_memmove_67_good {
+259 [shape="circle" label="N259\n2"]
+260 [shape="circle" label="N260\n1"]
+258 [shape="circle" label="N258\n3"]
+257 [shape="circle" label="N257\n0"]
+100024 [shape="component" label="goodG2B"]
+259 -> 100024 [label="goodG2B();" fontname="Courier New"]
+100024 -> 260 [label="" fontname="Courier New"]
+258 -> 259 [label="Function start dummy edge" fontname="Courier New"]
+260 -> 257 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__CWE839_negative_51_bad {
+275 [shape="circle" label="N275\n2"]
+276 [shape="circle" label="N276\n1"]
+270 [shape="circle" label="N270\n0"]
+271 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">271</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">272</td><td align="left">int data;</td></tr><tr><td align="right">273</td><td align="left">data = -1;</td></tr><tr><td align="right">274</td><td align="left">data = -5;</td></tr></table>>]
+271 -> 275[label=""]
+100015 [shape="component" label="CWE124_Buffer_Underwrite__CWE839_negative_51b_badSink"]
+275 -> 100015 [label="CWE124_Buffer_Underwrite__CWE839_negative_51b_badSink(data);" fontname="Courier New"]
+100015 -> 276 [label="" fontname="Courier New"]
+276 -> 270 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph bad7 {
+234 [shape="circle" label="N234\n2"]
+235 [shape="circle" label="N235\n1"]
+233 [shape="circle" label="N233\n0"]
+234 -> 235 [label="Function start dummy edge" fontname="Courier New"]
+235 -> 233 [label="return;" fontname="Courier New"]
+}

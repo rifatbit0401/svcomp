@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__char_alloca_loop_04_good {
+425 [shape="circle" label="N425\n3"]
+426 [shape="circle" label="N426\n2"]
+427 [shape="circle" label="N427\n1"]
+424 [shape="circle" label="N424\n4"]
+423 [shape="circle" label="N423\n0"]
+100024 [shape="component" label="goodG2B1"]
+425 -> 100024 [label="goodG2B1();" fontname="Courier New"]
+100024 -> 426 [label="" fontname="Courier New"]
+100025 [shape="component" label="goodG2B2"]
+426 -> 100025 [label="goodG2B2();" fontname="Courier New"]
+100025 -> 427 [label="" fontname="Courier New"]
+424 -> 425 [label="Function start dummy edge" fontname="Courier New"]
+427 -> 423 [label="return;" fontname="Courier New"]
+}

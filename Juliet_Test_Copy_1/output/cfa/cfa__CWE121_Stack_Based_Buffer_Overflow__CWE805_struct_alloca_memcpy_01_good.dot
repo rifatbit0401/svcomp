@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_alloca_memcpy_01_good {
+375 [shape="circle" label="N375\n2"]
+376 [shape="circle" label="N376\n1"]
+374 [shape="circle" label="N374\n3"]
+373 [shape="circle" label="N373\n0"]
+100026 [shape="component" label="goodG2B"]
+375 -> 100026 [label="goodG2B();" fontname="Courier New"]
+100026 -> 376 [label="" fontname="Courier New"]
+374 -> 375 [label="Function start dummy edge" fontname="Courier New"]
+376 -> 373 [label="return;" fontname="Courier New"]
+}

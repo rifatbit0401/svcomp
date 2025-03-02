@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_memcpy_44_bad {
+364 [shape="diamond" label="N364\n5"]
+687 [shape="circle" label="N687\n3"]
+688 [shape="circle" label="N688\n4"]
+365 [shape="circle" label="N365\n1"]
+354 [shape="circle" label="N354\n0"]
+689 [shape="circle" label="N689\n2"]
+355 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">355</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">356</td><td align="left">char *data = 0;</td></tr><tr><td align="right">357</td><td align="left">void (*funcPtr)(char *) = &amp;badSink;</td></tr><tr><td align="right">358</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">359</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">360</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">361</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">362</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">363</td><td align="left">*data = 0;</td></tr></table>>]
+355 -> 364[label=""]
+364 -> 687 [label="[funcPtr == (&badSink)]" fontname="Courier New"]
+364 -> 688 [label="[!(funcPtr == (&badSink))]" fontname="Courier New"]
+365 -> 354 [label="return;" fontname="Courier New"]
+100027 [shape="component" label="badSink"]
+687 -> 100027 [label="badSink(data);" fontname="Courier New"]
+100027 -> 689 [label="" fontname="Courier New"]
+688 -> 365 [label="(*funcPtr)(data);" fontname="Courier New"]
+689 -> 365 [label="skip" fontname="Courier New"]
+}

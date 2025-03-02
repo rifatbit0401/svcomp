@@ -1,0 +1,18 @@
+digraph CWE127_Buffer_Underread__char_declare_loop_65_bad {
+352 [shape="diamond" label="N352\n5"]
+699 [shape="circle" label="N699\n3"]
+700 [shape="circle" label="N700\n4"]
+353 [shape="circle" label="N353\n1"]
+344 [shape="circle" label="N344\n0"]
+701 [shape="circle" label="N701\n2"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">348</td><td align="left">void (*funcPtr)(char *) = &amp;CWE127_Buffer_Underread__char_declare_loop_65b_badSink;</td></tr><tr><td align="right">349</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">350</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">351</td><td align="left">data = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr></table>>]
+345 -> 352[label=""]
+352 -> 699 [label="[funcPtr == (&CWE127_Buffer_Underread__char_declare_loop_65b_badSink)]" fontname="Courier New"]
+352 -> 700 [label="[!(funcPtr == (&CWE127_Buffer_Underread__char_declare_loop_65b_badSink))]" fontname="Courier New"]
+353 -> 344 [label="return;" fontname="Courier New"]
+100027 [shape="component" label="CWE127_Buffer_Underread__char_declare_loop_65b_badSink"]
+699 -> 100027 [label="CWE127_Buffer_Underread__char_declare_loop_65b_badSink(data);" fontname="Courier New"]
+100027 -> 701 [label="" fontname="Courier New"]
+700 -> 353 [label="(*funcPtr)(data);" fontname="Courier New"]
+701 -> 353 [label="skip" fontname="Courier New"]
+}

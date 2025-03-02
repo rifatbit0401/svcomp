@@ -1,0 +1,117 @@
+IntBool
+
+[printIntLine::intNumber, printLongLine::longNumber, stdThreadLockDestroy::lock, ldv_undef_ulonglong::__retval__, printUnsignedLine::unsignedNumber, ldv_undef_uint::__retval__, main::__retres, printSizeTLine::sizeTNumber, globalReturnsFalse::__retres, goodG2B1::tmp, stdThreadJoin::tmp, globalArgc, ldv_undef_uint::tmp, printDoubleLine::doubleNumber, ldv_undef_ulonglong::tmp, decodeHexWChars::tmp_0, printFloatLine::floatNumber, ldv_undef_ulong::tmp, decodeHexWChars::tmp, ldv_undef_long::tmp, stdThreadLockCreate::tmp_0, main::__retval__, printHexCharLine::charHex, stdThreadDestroy::thread, printHexUnsignedCharLine::unsignedCharacter, ldv_undef_ulong::__retval__, globalFalse, ldv_undef_long::__retval__, GLOBAL_CONST_FALSE, stdThreadLockCreate::lock, staticReturnsFalse::__retres, ldv_undef_long::__retres, stdThreadCreate::tmp_0, globalReturnsFalse::__retval__, staticReturnsFalse::__retval__]
+
+IntEq
+
+[globalTrue, stdThreadCreate::__retres, printWLine::line, globalReturnsTrue::__retres, stdThreadDestroy::__retres, stdThreadJoin::__retval__, staticReturnsTrue::__retres, stdThreadDestroy::__retval__, GLOBAL_CONST_FIVE, staticReturnsTrue::__retval__, globalReturnsTrue::__retval__, goodG2B2::tmp, GLOBAL_CONST_TRUE, stdThreadLockCreate::__retval__, globalFive, stdThreadCreate::__retval__, stdThreadLockCreate::__retres, stdThreadJoin::__retres]
+
+IntAdd
+
+[]
+
+IntOverflow
+
+[printBytesLine::bytes, goodG2B2::dataGoodBuffer, ldv_strlen::__retres, ldv_strcpy::tmp, decodeHexChars::hex, decodeHexChars::numBytes, ldv_strncpy::n, decodeHexChars::numWritten, ldv_strlen::__retval__, decodeHexChars::tmp, globalReturnsTrueOrFalse::__retval__, ldv_reference_xmalloc::size, globalReturnsTrueOrFalse::tmp, globalReturnsTrueOrFalse::__retres, ldv_strncpy::src, printBytesLine::i, ldv_xmalloc::size, decodeHexWChars::__retval__, printBytesLine::numBytes, decodeHexChars::__retval__, ldv_strlen::s, ldv_strdup::tmp_1, goodG2B2::data, decodeHexChars::tmp_0, ldv_strdup::s, goodG2B1::dataGoodBuffer, decodeHexWChars::hex, ldv_strcpy::src, decodeHexWChars::numBytes, ldv_strlen::str, ldv_strdup::tmp, ldv_strncpy::*(dest + i), printLine::line, goodG2B1::data, decodeHexWChars::numWritten, ldv_strncpy::i]
+
+ALL
+
+[ldv_reference_calloc::tmp, ldv_strlen::__retres, decodeHexWChars::byte, ldv_xmalloc::__retval__, globalReturnsTrueOrFalse::__retres, printBytesLine::i, goodG2B1::tmp, stdThreadJoin::thread->handle, stdThreadLockCreate::tmp_0, goodG2B1::source[99], ldv_reference_realloc::size, stdThreadDestroy::thread, goodG2B1::source, ldv_undef_long::__retres, globalFive, stdThreadCreate::*thread, ldv_strncpy::__retval__, printStructLine::structTwoIntsStruct->intTwo, stdThreadCreate::__retres, ldv_xzalloc::size, ldv_strlen::__retval__, ldv_undef_ulonglong::__retval__, printUnsignedLine::unsignedNumber, ldv_reference_xzalloc::res, ldv_undef_uint::__retval__, stdThreadLockDestroy::lock->mutex, ldv_asprintf::tmp_1, main::__retres, ldv_asprintf::tmp_0, ldv_reference_xmalloc::__retval__, internal_start::thread->args, GLOBAL_CONST_TRUE, ldv_reference_xzalloc::__retval__, ldv_reference_calloc::size, ldv_reference_free::s, globalReturnsTrue::__retres, printStructLine::structTwoIntsStruct->intOne, printHexUnsignedCharLine::unsignedCharacter, printWcharLine::s, ldv_reference_realloc::__retres, staticReturnsFalse::__retres, ldv_asprintf::new, decodeHexChars::hex, decodeHexChars::tmp, ldv_malloc::tmp, globalReturnsTrueOrFalse::__retval__, ldv_reference_xmalloc::size, stdThreadJoin::__retval__, ldv_reference_realloc::res, decodeHexWChars::__retval__, ldv_undef_uint::tmp, printDoubleLine::doubleNumber, stdThreadCreate::__retval__, decodeHexWChars::tmp_0, ldv_strdup::__retval__, ldv_strcpy::__retval__, ldv_strdup::s, internal_start::thread, ldv_strdup::new, ldv_undef_ulong::__retval__, decodeHexWChars::numBytes, goodG2B1::data, printBytesLine::bytes, printWLine::line, printSizeTLine::sizeTNumber, stdThreadCreate::my_thread->handle, ldv_reference_malloc::__retres, goodG2B2::source[99], printBytesLine::numBytes, ldv_reference_malloc::__retval__, decodeHexChars::byte, ldv_reference_xzalloc::size, ldv_undef_int_positive::ret, ldv_undef_ulonglong::tmp, goodG2B2::data, ldv_reference_realloc::ptr, ldv_reference_malloc::size, ldv_realloc::__retval__, ldv_undef_int_nonpositive::ret, stdThreadLockCreate::my_lock, ldv_reference_zalloc::size, goodG2B2::source, ldv_xzalloc::tmp, stdThreadCreate::tmp_0, printLine::line, internal_start::__retres, decodeHexWChars::numWritten, globalTrue, ldv_reference_zalloc::__retval__, printLongLine::longNumber, ldv_reference_realloc::tmp, stdThreadLockRelease::lock->mutex, ldv_undef_int_nonpositive::__retval__, printWcharLine::wideChar, globalReturnsTrueOrFalse::tmp, ldv_asprintf::__retval__, ldv_calloc::tmp, ldv_undef_int_negative::__retval__, stdThreadLockCreate::__retres, ldv_strdup::tmp_1, ldv_strdup::tmp_2, stdThreadCreate::start, ldv_strdup::tmp_0, ldv_undef_int_negative::ret, globalFalse, ldv_realloc::size, GLOBAL_CONST_FIVE, ldv_strdup::tmp, decodeHexWChars::*(bytes + numWritten), ldv_reference_zalloc::tmp, printIntLine::intNumber, ldv_calloc::nmemb, decodeHexChars::numBytes, stdThreadLockDestroy::lock, decodeHexChars::numWritten, ldv_reference_realloc::__retval__, ldv_undef_int_positive::__retval__, ldv_calloc::size, ldv_free::s, ldv_strncpy::src, printWcharLine::s[0], stdThreadCreate::handle, ldv_calloc::__retval__, stdThreadJoin::tmp, main::tmp, stdThreadCreate::my_thread->args, printFloatLine::floatNumber, ldv_undef_ulong::tmp, goodG2B1::dataGoodBuffer, internal_start::args, stdThreadCreate::args, staticReturnsTrue::__retres, ldv_strcpy::src, ldv_malloc::__retval__, stdThreadJoin::dummy, stdThreadLockCreate::lock, goodG2B1::dataBadBuffer, ldv_strcpy::dest, ldv_zalloc::__retval__, ldv_asprintf::*ptr, ldv_strncpy::i, ldv_malloc::size, goodG2B2::dataGoodBuffer, ldv_strcpy::tmp, ldv_reference_xmalloc::res, ldv_strncpy::n, stdThreadDestroy::__retres, stdThreadCreate::my_thread->start, ldv_xmalloc::size, globalReturnsFalse::__retres, stdThreadLockCreate::my_lock->mutex, staticReturnsTrue::__retval__, stdThreadLockAcquire::lock->mutex, ldv_xmalloc::tmp, stdThreadLockCreate::__retval__, assume_abort_if_not::cond, ldv_realloc::ptr, internal_start::__retval__, ldv_reference_malloc::tmp, ldv_undef_int::__retval__, ldv_strncpy::dest, printHexCharLine::charHex, printWcharLine::s[1], ldv_strlen::str, ldv_undef_int::tmp, globalReturnsFalse::__retval__, ldv_zalloc::tmp, stdThreadCreate::my_thread, ldv_asprintf::__retres, ldv_xzalloc::__retval__, stdThreadLockCreate::*lock, ldv_zalloc::size, globalReturnsTrue::__retval__, goodG2B2::tmp, globalArgc, ldv_reference_malloc::res, decodeHexChars::__retval__, ldv_strlen::s, decodeHexChars::tmp_0, decodeHexWChars::tmp, ldv_realloc::tmp, ldv_undef_long::tmp, globalArgv, ldv_reference_calloc::nmemb, main::__retval__, decodeHexChars::*(bytes + numWritten), decodeHexWChars::hex, ldv_undef_long::__retval__, GLOBAL_CONST_FALSE, stdThreadDestroy::__retval__, goodG2B2::dataBadBuffer, ldv_strncpy::*(dest + i), staticReturnsFalse::__retval__, ldv_strdup::__retres, stdThreadJoin::__retres, ldv_reference_calloc::__retval__]
+
+DEPENDENCIES
+
+[[assume_abort_if_not::cond, ldv_asprintf::*ptr, ldv_asprintf::__retres, ldv_asprintf::__retval__, ldv_asprintf::new, ldv_asprintf::tmp_0, ldv_asprintf::tmp_1, ldv_malloc::__retval__, ldv_malloc::tmp, ldv_realloc::__retval__, ldv_realloc::tmp, ldv_reference_malloc::__retres, ldv_reference_malloc::__retval__, ldv_reference_malloc::res, ldv_reference_malloc::tmp, ldv_reference_realloc::__retres, ldv_reference_realloc::__retval__, ldv_reference_realloc::res, ldv_reference_realloc::tmp, ldv_reference_xmalloc::__retval__, ldv_reference_xmalloc::res, ldv_reference_xzalloc::__retval__, ldv_reference_xzalloc::res, ldv_strdup::__retres, ldv_strdup::__retval__, ldv_strdup::new, ldv_strdup::tmp_0, ldv_strdup::tmp_2, ldv_undef_int::__retval__, ldv_undef_int::tmp, ldv_undef_int_negative::__retval__, ldv_undef_int_negative::ret, ldv_undef_int_nonpositive::__retval__, ldv_undef_int_nonpositive::ret, ldv_undef_int_positive::__retval__, ldv_undef_int_positive::ret, ldv_xmalloc::__retval__, ldv_xmalloc::tmp, ldv_xzalloc::__retval__, ldv_xzalloc::tmp] --> [-1, 0],
+[decodeHexChars::__retval__, decodeHexChars::hex, decodeHexChars::numBytes, decodeHexChars::numWritten, decodeHexChars::tmp, decodeHexChars::tmp_0] --> [0, 1, 2, 4096],
+[decodeHexChars::*(bytes + numWritten), decodeHexChars::byte] --> [],
+[decodeHexWChars::__retval__, decodeHexWChars::hex, decodeHexWChars::numBytes, decodeHexWChars::numWritten] --> [0, 1, 2],
+[decodeHexWChars::*(bytes + numWritten), decodeHexWChars::byte] --> [],
+[decodeHexWChars::tmp] --> [0],
+[decodeHexWChars::tmp_0] --> [0],
+[globalReturnsFalse::__retres, globalReturnsFalse::__retval__] --> [0],
+[globalReturnsTrue::__retres, globalReturnsTrue::__retval__] --> [1],
+[globalReturnsTrueOrFalse::__retres, globalReturnsTrueOrFalse::__retval__, globalReturnsTrueOrFalse::tmp] --> [2],
+[goodG2B1::data, goodG2B1::dataGoodBuffer, goodG2B2::data, goodG2B2::dataGoodBuffer, printLine::line] --> [0, 100],
+[goodG2B1::dataBadBuffer] --> [50],
+[goodG2B1::tmp, staticReturnsFalse::__retres, staticReturnsFalse::__retval__] --> [0],
+[goodG2B1::source] --> [100],
+[goodG2B1::source[99]] --> [0],
+[goodG2B2::dataBadBuffer] --> [50],
+[goodG2B2::tmp, staticReturnsTrue::__retres, staticReturnsTrue::__retval__] --> [0, 1],
+[goodG2B2::source] --> [100],
+[goodG2B2::source[99]] --> [0],
+[internal_start::__retres, internal_start::__retval__] --> [0],
+[internal_start::args, internal_start::thread] --> [],
+[internal_start::thread->args] --> [],
+[ldv_reference_xmalloc::size, ldv_strcpy::src, ldv_strcpy::tmp, ldv_strdup::s, ldv_strdup::tmp, ldv_strdup::tmp_1, ldv_strlen::__retres, ldv_strlen::__retval__, ldv_strlen::s, ldv_strlen::str, ldv_xmalloc::size] --> [0, 1],
+[ldv_calloc::__retval__, ldv_calloc::tmp, ldv_reference_calloc::__retval__, ldv_reference_calloc::tmp] --> [],
+[ldv_calloc::nmemb, ldv_reference_calloc::nmemb] --> [],
+[ldv_calloc::size, ldv_reference_calloc::size] --> [],
+[ldv_free::s, ldv_reference_free::s] --> [],
+[ldv_malloc::size, ldv_reference_malloc::size] --> [],
+[ldv_realloc::ptr, ldv_reference_realloc::ptr] --> [0],
+[ldv_realloc::size, ldv_reference_realloc::size] --> [0],
+[ldv_reference_xzalloc::size, ldv_xzalloc::size] --> [],
+[ldv_reference_zalloc::__retval__, ldv_reference_zalloc::tmp, ldv_zalloc::__retval__, ldv_zalloc::tmp] --> [],
+[ldv_reference_zalloc::size, ldv_zalloc::size] --> [],
+[ldv_strcpy::__retval__, ldv_strcpy::dest] --> [],
+[ldv_strncpy::*(dest + i), ldv_strncpy::i, ldv_strncpy::n, ldv_strncpy::src] --> [0, 1],
+[ldv_strncpy::__retval__, ldv_strncpy::dest] --> [],
+[ldv_undef_long::__retres, ldv_undef_long::__retval__, ldv_undef_long::tmp] --> [],
+[ldv_undef_uint::__retval__, ldv_undef_uint::tmp] --> [],
+[ldv_undef_ulong::__retval__, ldv_undef_ulong::tmp] --> [],
+[ldv_undef_ulonglong::__retval__, ldv_undef_ulonglong::tmp] --> [],
+[main::__retres, main::__retval__] --> [0],
+[main::tmp] --> [],
+[GLOBAL_CONST_TRUE] --> [1],
+[GLOBAL_CONST_FALSE] --> [0],
+[GLOBAL_CONST_FIVE] --> [5],
+[globalTrue] --> [1],
+[globalFalse] --> [0],
+[globalFive] --> [5],
+[globalArgc] --> [0],
+[globalArgv] --> [0],
+[printBytesLine::bytes, printBytesLine::i, printBytesLine::numBytes] --> [0, 1],
+[printDoubleLine::doubleNumber] --> [],
+[printFloatLine::floatNumber] --> [],
+[printHexCharLine::charHex] --> [],
+[printHexUnsignedCharLine::unsignedCharacter] --> [],
+[printIntLine::intNumber] --> [],
+[printLongLine::longNumber] --> [],
+[printSizeTLine::sizeTNumber] --> [],
+[printStructLine::structTwoIntsStruct->intOne] --> [],
+[printStructLine::structTwoIntsStruct->intTwo] --> [],
+[printUnsignedLine::unsignedNumber] --> [],
+[printWLine::line] --> [0],
+[printWcharLine::s] --> [2],
+[printWcharLine::s[0], printWcharLine::wideChar] --> [],
+[printWcharLine::s[1]] --> [0],
+[stdThreadCreate::__retres, stdThreadCreate::__retval__] --> [0, 1],
+[stdThreadCreate::handle, stdThreadCreate::my_thread->handle] --> [],
+[stdThreadCreate::*thread, stdThreadCreate::my_thread] --> [0],
+[stdThreadCreate::tmp_0] --> [0],
+[stdThreadCreate::my_thread->start, stdThreadCreate::start] --> [],
+[stdThreadCreate::args, stdThreadCreate::my_thread->args] --> [],
+[internal_start] --> [],
+[stdThreadDestroy::__retres, stdThreadDestroy::__retval__] --> [1],
+[stdThreadDestroy::thread] --> [],
+[stdThreadJoin::__retres, stdThreadJoin::__retval__] --> [0, 1],
+[stdThreadJoin::dummy] --> [],
+[stdThreadJoin::tmp] --> [0],
+[stdThreadJoin::thread->handle] --> [],
+[stdThreadLockAcquire::lock->mutex] --> [],
+[stdThreadLockCreate::__retres, stdThreadLockCreate::__retval__] --> [0, 1],
+[stdThreadLockCreate::tmp_0] --> [0],
+[stdThreadLockCreate::*lock, stdThreadLockCreate::my_lock] --> [0, 40],
+[stdThreadLockCreate::my_lock->mutex] --> [],
+[stdThreadLockCreate::lock] --> [],
+[stdThreadLockDestroy::lock->mutex] --> [],
+[stdThreadLockDestroy::lock] --> [],
+[stdThreadLockRelease::lock->mutex] --> []]
+
+RELEVANT VARS
+
+[ldv_strlen::__retres, printLongLine::longNumber, ldv_reference_realloc::tmp, decodeHexWChars::byte, ldv_xmalloc::__retval__, printWcharLine::wideChar, printBytesLine::i, goodG2B1::tmp, ldv_strdup::tmp_1, ldv_strdup::tmp_2, stdThreadCreate::start, ldv_strdup::tmp_0, stdThreadLockCreate::tmp_0, ldv_undef_int_negative::ret, ldv_reference_realloc::size, stdThreadDestroy::thread, goodG2B1::source, ldv_realloc::size, ldv_strdup::tmp, printIntLine::intNumber, decodeHexChars::numBytes, stdThreadLockDestroy::lock, ldv_xzalloc::size, decodeHexChars::numWritten, ldv_strlen::__retval__, printUnsignedLine::unsignedNumber, ldv_reference_xzalloc::res, ldv_free::s, ldv_strncpy::src, ldv_asprintf::tmp_1, stdThreadCreate::handle, ldv_reference_xmalloc::__retval__, internal_start, stdThreadJoin::tmp, main::tmp, printFloatLine::floatNumber, ldv_reference_free::s, goodG2B1::dataGoodBuffer, internal_start::args, stdThreadCreate::args, printHexUnsignedCharLine::unsignedCharacter, staticReturnsTrue::__retres, ldv_strcpy::src, stdThreadJoin::thread, printWcharLine::s, stdThreadJoin::dummy, stdThreadLockCreate::lock, staticReturnsFalse::__retres, decodeHexChars::bytes, stdThreadLockRelease::lock, ldv_strcpy::dest, ldv_strncpy::i, ldv_asprintf::new, ldv_malloc::size, goodG2B2::dataGoodBuffer, ldv_strcpy::tmp, decodeHexChars::hex, ldv_reference_xmalloc::res, ldv_strncpy::n, decodeHexChars::tmp, ldv_reference_xmalloc::size, ldv_reference_realloc::res, ldv_xmalloc::size, staticReturnsTrue::__retval__, ldv_xmalloc::tmp, assume_abort_if_not::cond, printDoubleLine::doubleNumber, ldv_realloc::ptr, decodeHexWChars::tmp_0, printStructLine::structTwoIntsStruct, ldv_reference_malloc::tmp, ldv_strdup::s, ldv_undef_int::__retval__, internal_start::thread, ldv_strncpy::dest, printHexCharLine::charHex, ldv_strdup::new, decodeHexWChars::numBytes, stdThreadLockAcquire::lock, ldv_strlen::str, ldv_undef_int::tmp, goodG2B1::data, stdThreadCreate::my_thread, printBytesLine::bytes, decodeHexWChars::bytes, printWLine::line, ldv_asprintf::ptr, printSizeTLine::sizeTNumber, stdThreadCreate::thread, printBytesLine::numBytes, goodG2B2::tmp, decodeHexChars::byte, ldv_undef_int_positive::ret, ldv_reference_xzalloc::size, ldv_reference_malloc::res, ldv_strlen::s, goodG2B2::data, decodeHexWChars::tmp, decodeHexChars::tmp_0, ldv_reference_realloc::ptr, ldv_reference_malloc::size, ldv_undef_int_nonpositive::ret, stdThreadLockCreate::my_lock, decodeHexWChars::hex, goodG2B2::source, stdThreadCreate::tmp_0, staticReturnsFalse::__retval__, printLine::line, decodeHexWChars::numWritten]
+
+RELEVANT FIELDS
+
+{struct _twoIntsStruct=[intTwo, intOne], struct _stdThreadLock=[mutex], struct _stdThread=[start, args, handle]}

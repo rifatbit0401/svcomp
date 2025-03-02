@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__CWE129_large_41_bad {
+359 [shape="circle" label="N359\n2"]
+360 [shape="circle" label="N360\n1"]
+354 [shape="circle" label="N354\n0"]
+355 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">355</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">356</td><td align="left">int data;</td></tr><tr><td align="right">357</td><td align="left">data = -1;</td></tr><tr><td align="right">358</td><td align="left">data = 10;</td></tr></table>>]
+355 -> 359[label=""]
+100023 [shape="component" label="badSink"]
+359 -> 100023 [label="badSink(data);" fontname="Courier New"]
+100023 -> 360 [label="" fontname="Courier New"]
+360 -> 354 [label="return;" fontname="Courier New"]
+}

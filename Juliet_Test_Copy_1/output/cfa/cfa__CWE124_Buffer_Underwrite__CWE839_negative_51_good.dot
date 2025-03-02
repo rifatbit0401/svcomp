@@ -1,0 +1,15 @@
+digraph CWE124_Buffer_Underwrite__CWE839_negative_51_good {
+314 [shape="circle" label="N314\n3"]
+315 [shape="circle" label="N315\n2"]
+316 [shape="circle" label="N316\n1"]
+313 [shape="circle" label="N313\n4"]
+312 [shape="circle" label="N312\n0"]
+100014 [shape="component" label="goodG2B"]
+314 -> 100014 [label="goodG2B();" fontname="Courier New"]
+100014 -> 315 [label="" fontname="Courier New"]
+100015 [shape="component" label="goodB2G"]
+315 -> 100015 [label="goodB2G();" fontname="Courier New"]
+100015 -> 316 [label="" fontname="Courier New"]
+313 -> 314 [label="Function start dummy edge" fontname="Courier New"]
+316 -> 312 [label="return;" fontname="Courier New"]
+}

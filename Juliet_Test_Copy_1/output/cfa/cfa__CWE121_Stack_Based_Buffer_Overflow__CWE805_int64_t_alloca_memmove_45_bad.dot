@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_45_bad {
+262 [shape="circle" label="N262\n2"]
+263 [shape="circle" label="N263\n1"]
+253 [shape="circle" label="N253\n0"]
+254 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">254</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">255</td><td align="left">int64_t *data = 0;</td></tr><tr><td align="right">256</td><td align="left">int64_t *dataBadBuffer;</td></tr><tr><td align="right">257</td><td align="left">dataBadBuffer = __builtin_alloca(400UL);</td></tr><tr><td align="right">258</td><td align="left">int64_t *dataGoodBuffer;</td></tr><tr><td align="right">259</td><td align="left">dataGoodBuffer = __builtin_alloca(800UL);</td></tr><tr><td align="right">260</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">261</td><td align="left">CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_memmove_45_badData = data;</td></tr></table>>]
+254 -> 262[label=""]
+100006 [shape="component" label="badSink"]
+262 -> 100006 [label="badSink();" fontname="Courier New"]
+100006 -> 263 [label="" fontname="Courier New"]
+263 -> 253 [label="return;" fontname="Courier New"]
+}

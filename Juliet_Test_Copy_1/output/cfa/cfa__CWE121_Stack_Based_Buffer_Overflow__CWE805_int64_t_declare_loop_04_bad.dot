@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_loop_04_bad {
+263 [shape="doublecircle" label="N263\n10"]
+265 [shape="circle" label="N265\n4"]
+266 [shape="circle" label="N266\n9"]
+259 [shape="doubleoctagon" label="N259\n3"]
+260 [shape="circle" label="N260\n2"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">int64_t *data = 0;</td></tr><tr><td align="right">248</td><td align="left">int64_t dataBadBuffer[50U];</td></tr><tr><td align="right">249</td><td align="left">int64_t dataGoodBuffer[100U];</td></tr><tr><td align="right">250</td><td align="left"></td></tr><tr><td align="right">252</td><td align="left">data = (int64_t *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">254</td><td align="left"></td></tr><tr><td align="right">251</td><td align="left">int64_t source[100U] = &#123; 0L &#125;;</td></tr><tr><td align="right">255</td><td align="left">size_t i;</td></tr><tr><td align="right">256</td><td align="left">i = 0UL;</td></tr><tr><td align="right">257</td><td align="left">Goto: ldv_2931</td></tr></table>>]
+246 -> 263[label=""]
+266 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">266</td><td align="left">Goto: ldv_2932</td></tr><tr><td align="right">269</td><td align="left">Label: ldv_2932</td></tr><tr><td align="right">270</td><td align="left">printLongLongLine(*data);</td></tr><tr><td align="right">271</td><td align="left">return;</td></tr></table>>]
+266 -> 245[label=""]
+260 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">260</td><td align="left">*(data + i) = source[i];</td></tr><tr><td align="right">261</td><td align="left">i = i + 1UL;</td></tr><tr><td align="right">262</td><td align="left">Label: ldv_2931</td></tr></table>>]
+260 -> 263[label=""]
+263 -> 265 [label="[i <= 99UL]" fontname="Courier New"]
+263 -> 266 [label="[!(i <= 99UL)]" fontname="Courier New"]
+265 -> 259 [label="Goto: ldv_2930" fontname="Courier New"]
+259 -> 260 [label="Label: ldv_2930" fontname="Courier New"]
+}

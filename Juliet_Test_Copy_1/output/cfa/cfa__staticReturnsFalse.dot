@@ -1,0 +1,7 @@
+digraph staticReturnsFalse {
+351 [shape="circle" label="N351\n4"]
+352 [shape="circle" label="N352\n3"]
+352 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">352</td><td align="left">int __retres;</td></tr><tr><td align="right">353</td><td align="left">__retres = 0;</td></tr><tr><td align="right">354</td><td align="left">return __retres;</td></tr></table>>]
+352 -> 350[label=""]
+351 -> 352 [label="Function start dummy edge" fontname="Courier New"]
+}

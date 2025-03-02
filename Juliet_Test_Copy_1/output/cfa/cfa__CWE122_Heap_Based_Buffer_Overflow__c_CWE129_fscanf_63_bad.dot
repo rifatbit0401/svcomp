@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_63_bad {
+5 [shape="circle" label="N5\n2"]
+6 [shape="circle" label="N6\n1"]
+0 [shape="circle" label="N0\n0"]
+1 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2</td><td align="left">int data;</td></tr><tr><td align="right">3</td><td align="left">data = -1;</td></tr><tr><td align="right">4</td><td align="left">fscanf(stdin, \&quot;%d\&quot;, &amp;data);</td></tr></table>>]
+1 -> 5[label=""]
+100020 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_63b_badSink"]
+5 -> 100020 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fscanf_63b_badSink(&data);" fontname="Courier New"]
+100020 -> 6 [label="" fontname="Courier New"]
+6 -> 0 [label="return;" fontname="Courier New"]
+}

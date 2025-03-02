@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__sizeof_int64_t_22_good {
+267 [shape="circle" label="N267\n3"]
+268 [shape="circle" label="N268\n2"]
+269 [shape="circle" label="N269\n1"]
+266 [shape="circle" label="N266\n4"]
+265 [shape="circle" label="N265\n0"]
+100002 [shape="component" label="goodG2B1"]
+267 -> 100002 [label="goodG2B1();" fontname="Courier New"]
+100002 -> 268 [label="" fontname="Courier New"]
+100003 [shape="component" label="goodG2B2"]
+268 -> 100003 [label="goodG2B2();" fontname="Courier New"]
+100003 -> 269 [label="" fontname="Courier New"]
+266 -> 267 [label="Function start dummy edge" fontname="Courier New"]
+269 -> 265 [label="return;" fontname="Courier New"]
+}

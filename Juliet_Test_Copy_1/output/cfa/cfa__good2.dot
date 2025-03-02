@@ -1,0 +1,7 @@
+digraph good2 {
+178 [shape="circle" label="N178\n2"]
+179 [shape="circle" label="N179\n1"]
+177 [shape="circle" label="N177\n0"]
+178 -> 179 [label="Function start dummy edge" fontname="Courier New"]
+179 -> 177 [label="return;" fontname="Courier New"]
+}

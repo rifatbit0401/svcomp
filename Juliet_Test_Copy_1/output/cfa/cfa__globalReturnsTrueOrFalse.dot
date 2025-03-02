@@ -1,0 +1,7 @@
+digraph globalReturnsTrueOrFalse {
+166 [shape="circle" label="N166\n6"]
+167 [shape="circle" label="N167\n5"]
+167 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">167</td><td align="left">int __retres;</td></tr><tr><td align="right">168</td><td align="left">int tmp;</td></tr><tr><td align="right">169</td><td align="left">tmp = rand();</td></tr><tr><td align="right">170</td><td align="left">__retres = tmp % 2;</td></tr><tr><td align="right">171</td><td align="left">return __retres;</td></tr></table>>]
+167 -> 165[label=""]
+166 -> 167 [label="Function start dummy edge" fontname="Courier New"]
+}

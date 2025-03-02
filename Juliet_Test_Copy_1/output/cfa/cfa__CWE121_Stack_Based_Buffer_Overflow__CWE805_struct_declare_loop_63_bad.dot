@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_loop_63_bad {
+388 [shape="circle" label="N388\n2"]
+389 [shape="circle" label="N389\n1"]
+382 [shape="circle" label="N382\n0"]
+383 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">383</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">384</td><td align="left">twoIntsStruct *data;</td></tr><tr><td align="right">385</td><td align="left">twoIntsStruct dataBadBuffer[50U];</td></tr><tr><td align="right">386</td><td align="left">twoIntsStruct dataGoodBuffer[100U];</td></tr><tr><td align="right">387</td><td align="left">data = (twoIntsStruct *)(&amp;dataBadBuffer);</td></tr></table>>]
+383 -> 388[label=""]
+100019 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_loop_63b_badSink"]
+388 -> 100019 [label="CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_loop_63b_badSink(&data);" fontname="Courier New"]
+100019 -> 389 [label="" fontname="Courier New"]
+389 -> 382 [label="return;" fontname="Courier New"]
+}

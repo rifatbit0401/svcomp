@@ -1,0 +1,15 @@
+digraph CWE124_Buffer_Underwrite__malloc_char_loop_07_good {
+423 [shape="circle" label="N423\n3"]
+424 [shape="circle" label="N424\n2"]
+425 [shape="circle" label="N425\n1"]
+422 [shape="circle" label="N422\n4"]
+421 [shape="circle" label="N421\n0"]
+100015 [shape="component" label="goodG2B1"]
+423 -> 100015 [label="goodG2B1();" fontname="Courier New"]
+100015 -> 424 [label="" fontname="Courier New"]
+100016 [shape="component" label="goodG2B2"]
+424 -> 100016 [label="goodG2B2();" fontname="Courier New"]
+100016 -> 425 [label="" fontname="Courier New"]
+422 -> 423 [label="Function start dummy edge" fontname="Courier New"]
+425 -> 421 [label="return;" fontname="Courier New"]
+}

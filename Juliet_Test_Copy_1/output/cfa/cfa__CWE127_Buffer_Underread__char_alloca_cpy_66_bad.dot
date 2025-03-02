@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_alloca_cpy_66_bad {
+271 [shape="circle" label="N271\n2"]
+272 [shape="circle" label="N272\n1"]
+261 [shape="circle" label="N261\n0"]
+262 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">262</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">263</td><td align="left">char *data = 0;</td></tr><tr><td align="right">264</td><td align="left">char *dataArray[5U];</td></tr><tr><td align="right">265</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">266</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">267</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">268</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">269</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr><tr><td align="right">270</td><td align="left">dataArray[2] = data;</td></tr></table>>]
+262 -> 271[label=""]
+100016 [shape="component" label="CWE127_Buffer_Underread__char_alloca_cpy_66b_badSink"]
+271 -> 100016 [label="CWE127_Buffer_Underread__char_alloca_cpy_66b_badSink((char **)(&dataArray));" fontname="Courier New"]
+100016 -> 272 [label="" fontname="Courier New"]
+272 -> 261 [label="return;" fontname="Courier New"]
+}

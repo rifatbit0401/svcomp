@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__malloc_char_loop_52b_badSink {
+413 [shape="circle" label="N413\n3"]
+414 [shape="circle" label="N414\n2"]
+415 [shape="circle" label="N415\n1"]
+412 [shape="circle" label="N412\n0"]
+413 -> 414 [label="Function start dummy edge" fontname="Courier New"]
+100036 [shape="component" label="CWE126_Buffer_Overread__malloc_char_loop_52c_badSink"]
+414 -> 100036 [label="CWE126_Buffer_Overread__malloc_char_loop_52c_badSink(data);" fontname="Courier New"]
+100036 -> 415 [label="" fontname="Courier New"]
+415 -> 412 [label="return;" fontname="Courier New"]
+}

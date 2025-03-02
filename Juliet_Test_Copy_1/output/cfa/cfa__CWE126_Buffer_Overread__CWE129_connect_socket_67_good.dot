@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE129_connect_socket_67_good {
+78 [shape="circle" label="N78\n3"]
+79 [shape="circle" label="N79\n2"]
+80 [shape="circle" label="N80\n1"]
+77 [shape="circle" label="N77\n4"]
+76 [shape="circle" label="N76\n0"]
+100001 [shape="component" label="goodG2B"]
+78 -> 100001 [label="goodG2B();" fontname="Courier New"]
+100001 -> 79 [label="" fontname="Courier New"]
+100002 [shape="component" label="goodB2G"]
+79 -> 100002 [label="goodB2G();" fontname="Courier New"]
+100002 -> 80 [label="" fontname="Courier New"]
+77 -> 78 [label="Function start dummy edge" fontname="Courier New"]
+80 -> 76 [label="return;" fontname="Courier New"]
+}

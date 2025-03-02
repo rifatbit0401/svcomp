@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_52b_badSink {
+400 [shape="circle" label="N400\n3"]
+401 [shape="circle" label="N401\n2"]
+402 [shape="circle" label="N402\n1"]
+399 [shape="circle" label="N399\n0"]
+400 -> 401 [label="Function start dummy edge" fontname="Courier New"]
+100015 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_52c_badSink"]
+401 -> 100015 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int64_t_loop_52c_badSink(data);" fontname="Courier New"]
+100015 -> 402 [label="" fontname="Courier New"]
+402 -> 399 [label="return;" fontname="Courier New"]
+}

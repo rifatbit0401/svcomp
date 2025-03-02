@@ -1,0 +1,26 @@
+line 483:	N747 -{int globalTrue = 1;}-> N748
+	globalArgv == 0LL;
+	globalArgc == 0;
+	globalFive == 5;
+	globalFalse == 0;
+	globalTrue == 1;
+line 867:	N368 -{srand((unsigned int)tmp);}-> N369
+	GLOBAL_CONST_TRUE == 1;
+	GLOBAL_CONST_FALSE == 0;
+	GLOBAL_CONST_FIVE == 5;
+	globalTrue == 1;
+	globalFalse == 0;
+	globalFive == 5;
+	globalArgc == 0;
+	globalArgv == 0LL;
+line 869:	N369 -{printLine("Calling bad()...")}-> N1
+line 203:	N2 -{[line != ((const char *)0)]}-> N4
+line 204:	N4 -{printf("%s\n", line);}-> N6
+line 871:	N370 -{CWE127_Buffer_Underread__CWE839_negative_10_bad()}-> N345
+line 842:	N348 -{[globalTrue != 0]}-> N350
+	globalTrue == 1;
+line 843:	N350 -{data = -5;}-> N352
+line 845:	N349 -{[globalTrue != 0]}-> N354
+	globalTrue == 1;
+line 849:	N356 -{[data <= 9]}-> N358
+line 850:	N358 -{printIntLine(buffer[data])}-> N17

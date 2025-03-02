@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_alloca_loop_44_good {
+289 [shape="circle" label="N289\n2"]
+290 [shape="circle" label="N290\n1"]
+288 [shape="circle" label="N288\n3"]
+287 [shape="circle" label="N287\n0"]
+100036 [shape="component" label="goodG2B"]
+289 -> 100036 [label="goodG2B();" fontname="Courier New"]
+100036 -> 290 [label="" fontname="Courier New"]
+288 -> 289 [label="Function start dummy edge" fontname="Courier New"]
+290 -> 287 [label="return;" fontname="Courier New"]
+}

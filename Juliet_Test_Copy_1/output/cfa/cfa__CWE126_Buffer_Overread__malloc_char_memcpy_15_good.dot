@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__malloc_char_memcpy_15_good {
+412 [shape="circle" label="N412\n3"]
+413 [shape="circle" label="N413\n2"]
+414 [shape="circle" label="N414\n1"]
+411 [shape="circle" label="N411\n4"]
+410 [shape="circle" label="N410\n0"]
+100034 [shape="component" label="goodG2B1"]
+412 -> 100034 [label="goodG2B1();" fontname="Courier New"]
+100034 -> 413 [label="" fontname="Courier New"]
+100035 [shape="component" label="goodG2B2"]
+413 -> 100035 [label="goodG2B2();" fontname="Courier New"]
+100035 -> 414 [label="" fontname="Courier New"]
+411 -> 412 [label="Function start dummy edge" fontname="Courier New"]
+414 -> 410 [label="return;" fontname="Courier New"]
+}

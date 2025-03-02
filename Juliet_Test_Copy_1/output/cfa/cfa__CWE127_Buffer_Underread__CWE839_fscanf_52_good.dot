@@ -1,0 +1,15 @@
+digraph CWE127_Buffer_Underread__CWE839_fscanf_52_good {
+393 [shape="circle" label="N393\n3"]
+394 [shape="circle" label="N394\n2"]
+395 [shape="circle" label="N395\n1"]
+392 [shape="circle" label="N392\n4"]
+391 [shape="circle" label="N391\n0"]
+100022 [shape="component" label="goodG2B"]
+393 -> 100022 [label="goodG2B();" fontname="Courier New"]
+100022 -> 394 [label="" fontname="Courier New"]
+100023 [shape="component" label="goodB2G"]
+394 -> 100023 [label="goodB2G();" fontname="Courier New"]
+100023 -> 395 [label="" fontname="Courier New"]
+392 -> 393 [label="Function start dummy edge" fontname="Courier New"]
+395 -> 391 [label="return;" fontname="Courier New"]
+}

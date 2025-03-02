@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_declare_memcpy_64_bad {
+275 [shape="circle" label="N275\n2"]
+276 [shape="circle" label="N276\n1"]
+265 [shape="circle" label="N265\n0"]
+266 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">266</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">267</td><td align="left">char *data = 0;</td></tr><tr><td align="right">268</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">269</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">270</td><td align="left">memset((void *)(&amp;dataBadBuffer), 65, 49UL);</td></tr><tr><td align="right">271</td><td align="left">dataBadBuffer[49] = 0;</td></tr><tr><td align="right">272</td><td align="left">memset((void *)(&amp;dataGoodBuffer), 65, 99UL);</td></tr><tr><td align="right">273</td><td align="left">dataGoodBuffer[99] = 0;</td></tr><tr><td align="right">274</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr></table>>]
+266 -> 275[label=""]
+100026 [shape="component" label="CWE126_Buffer_Overread__char_declare_memcpy_64b_badSink"]
+275 -> 100026 [label="CWE126_Buffer_Overread__char_declare_memcpy_64b_badSink((void *)(&data));" fontname="Courier New"]
+100026 -> 276 [label="" fontname="Courier New"]
+276 -> 265 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,14 @@
+digraph CWE124_Buffer_Underwrite__malloc_char_memmove_54e_badSink {
+397 [shape="circle" label="N397\n8"]
+398 [shape="circle" label="N398\n7"]
+403 [shape="circle" label="N403\n2"]
+404 [shape="circle" label="N404\n1"]
+396 [shape="circle" label="N396\n0"]
+398 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">398</td><td align="left">char source[100U];</td></tr><tr><td align="right">399</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">400</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">401</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 100UL);</td></tr><tr><td align="right">402</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+398 -> 403[label=""]
+397 -> 398 [label="Function start dummy edge" fontname="Courier New"]
+100028 [shape="component" label="printLine"]
+403 -> 100028 [label="printLine((const char *)data);" fontname="Courier New"]
+100028 -> 404 [label="" fontname="Courier New"]
+404 -> 396 [label="return;" fontname="Courier New"]
+}

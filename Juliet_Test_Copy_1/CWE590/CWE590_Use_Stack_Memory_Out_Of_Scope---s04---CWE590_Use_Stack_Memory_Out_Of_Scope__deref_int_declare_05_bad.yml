@@ -1,0 +1,13 @@
+format_version: '2.0'
+
+input_files: 'CWE590_Use_Stack_Memory_Out_Of_Scope---s04---CWE590_Use_Stack_Memory_Out_Of_Scope__deref_int_declare_05_bad.i'
+
+properties:
+  - property_file: ../properties/valid-memsafety.prp
+    expected_verdict: false
+    subproperty: valid-deref
+  - property_file: ../properties/coverage-branches.prp
+
+options:
+  language: C
+  data_model: LP64

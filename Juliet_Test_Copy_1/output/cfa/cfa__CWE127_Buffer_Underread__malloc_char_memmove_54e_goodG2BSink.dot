@@ -1,0 +1,14 @@
+digraph CWE127_Buffer_Underread__malloc_char_memmove_54e_goodG2BSink {
+402 [shape="circle" label="N402\n8"]
+403 [shape="circle" label="N403\n7"]
+408 [shape="circle" label="N408\n2"]
+409 [shape="circle" label="N409\n1"]
+401 [shape="circle" label="N401\n0"]
+403 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">403</td><td align="left">char dest[100U];</td></tr><tr><td align="right">404</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">405</td><td align="left">dest[99] = 0;</td></tr><tr><td align="right">406</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, 100UL);</td></tr><tr><td align="right">407</td><td align="left">dest[99] = 0;</td></tr></table>>]
+403 -> 408[label=""]
+402 -> 403 [label="Function start dummy edge" fontname="Courier New"]
+100008 [shape="component" label="printLine"]
+408 -> 100008 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100008 -> 409 [label="" fontname="Courier New"]
+409 -> 401 [label="return;" fontname="Courier New"]
+}

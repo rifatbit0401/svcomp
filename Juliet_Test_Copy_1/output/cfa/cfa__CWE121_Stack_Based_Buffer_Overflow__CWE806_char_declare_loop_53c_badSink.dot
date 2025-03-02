@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53c_badSink {
+375 [shape="circle" label="N375\n3"]
+376 [shape="circle" label="N376\n2"]
+377 [shape="circle" label="N377\n1"]
+374 [shape="circle" label="N374\n0"]
+375 -> 376 [label="Function start dummy edge" fontname="Courier New"]
+100029 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53d_badSink"]
+376 -> 100029 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53d_badSink(data);" fontname="Courier New"]
+100029 -> 377 [label="" fontname="Courier New"]
+377 -> 374 [label="return;" fontname="Courier New"]
+}

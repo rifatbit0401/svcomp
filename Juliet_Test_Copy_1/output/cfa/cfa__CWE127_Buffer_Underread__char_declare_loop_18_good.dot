@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_declare_loop_18_good {
+378 [shape="circle" label="N378\n2"]
+379 [shape="circle" label="N379\n1"]
+377 [shape="circle" label="N377\n3"]
+376 [shape="circle" label="N376\n0"]
+100033 [shape="component" label="goodG2B"]
+378 -> 100033 [label="goodG2B();" fontname="Courier New"]
+100033 -> 379 [label="" fontname="Courier New"]
+377 -> 378 [label="Function start dummy edge" fontname="Courier New"]
+379 -> 376 [label="return;" fontname="Courier New"]
+}

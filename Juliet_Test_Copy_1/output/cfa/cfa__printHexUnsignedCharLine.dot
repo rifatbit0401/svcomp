@@ -1,0 +1,7 @@
+digraph printHexUnsignedCharLine {
+55 [shape="circle" label="N55\n3"]
+56 [shape="circle" label="N56\n2"]
+56 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">56</td><td align="left">printf(\&quot;%02x\n\&quot;, (int)unsignedCharacter);</td></tr><tr><td align="right">57</td><td align="left">return;</td></tr></table>>]
+56 -> 54[label=""]
+55 -> 56 [label="Function start dummy edge" fontname="Courier New"]
+}

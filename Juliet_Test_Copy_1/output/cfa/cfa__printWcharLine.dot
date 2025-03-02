@@ -1,0 +1,7 @@
+digraph printWcharLine {
+42 [shape="circle" label="N42\n6"]
+43 [shape="circle" label="N43\n5"]
+43 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">43</td><td align="left">wchar_t s[2U];</td></tr><tr><td align="right">44</td><td align="left">s[0] = wideChar;</td></tr><tr><td align="right">45</td><td align="left">s[1] = 0;</td></tr><tr><td align="right">46</td><td align="left">printf(\&quot;%ls\n\&quot;, (wchar_t *)(&amp;s));</td></tr><tr><td align="right">47</td><td align="left">return;</td></tr></table>>]
+43 -> 41[label=""]
+42 -> 43 [label="Function start dummy edge" fontname="Courier New"]
+}

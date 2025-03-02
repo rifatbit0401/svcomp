@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__CWE839_fscanf_44_bad {
+375 [shape="diamond" label="N375\n5"]
+698 [shape="circle" label="N698\n3"]
+699 [shape="circle" label="N699\n4"]
+376 [shape="circle" label="N376\n1"]
+369 [shape="circle" label="N369\n0"]
+700 [shape="circle" label="N700\n2"]
+370 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">370</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">371</td><td align="left">int data;</td></tr><tr><td align="right">372</td><td align="left">void (*funcPtr)(int) = &amp;badSink;</td></tr><tr><td align="right">373</td><td align="left">data = -1;</td></tr><tr><td align="right">374</td><td align="left">fscanf(stdin, \&quot;%d\&quot;, &amp;data);</td></tr></table>>]
+370 -> 375[label=""]
+375 -> 698 [label="[funcPtr == (&badSink)]" fontname="Courier New"]
+375 -> 699 [label="[!(funcPtr == (&badSink))]" fontname="Courier New"]
+376 -> 369 [label="return;" fontname="Courier New"]
+100016 [shape="component" label="badSink"]
+698 -> 100016 [label="badSink(data);" fontname="Courier New"]
+100016 -> 700 [label="" fontname="Courier New"]
+699 -> 376 [label="(*funcPtr)(data);" fontname="Courier New"]
+700 -> 376 [label="skip" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE170_char_strncpy_14_good {
+276 [shape="circle" label="N276\n3"]
+277 [shape="circle" label="N277\n2"]
+278 [shape="circle" label="N278\n1"]
+275 [shape="circle" label="N275\n4"]
+274 [shape="circle" label="N274\n0"]
+100011 [shape="component" label="good1_0"]
+276 -> 100011 [label="good1_0();" fontname="Courier New"]
+100011 -> 277 [label="" fontname="Courier New"]
+100012 [shape="component" label="good2_0"]
+277 -> 100012 [label="good2_0();" fontname="Courier New"]
+100012 -> 278 [label="" fontname="Courier New"]
+275 -> 276 [label="Function start dummy edge" fontname="Courier New"]
+278 -> 274 [label="return;" fontname="Courier New"]
+}

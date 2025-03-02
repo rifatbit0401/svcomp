@@ -1,0 +1,29 @@
+digraph WITNESS {
+0 -> 1 [label="startline=859\nendline=859\nstartoffset=11527\nendoffset=11556\nenterFunction=main" ];
+1 -> 2 [label="startline=867\nendline=867\nstartoffset=11641\nendoffset=11664\nassumption=\"GLOBAL_CONST_TRUE == (1); GLOBAL_CONST_FALSE == (0); GLOBAL_CONST_FIVE == (5); globalTrue == (1); globalFalse == (0); globalFive == (5); globalArgc == (0);\"\nassumption.scope=main" ];
+2 -> 3 [label="startline=869\nendline=869\nstartoffset=11676\nendoffset=11703\nenterFunction=printLine" ];
+3 -> 4 [label="startline=203\nendline=203\nstartoffset=3231\nendoffset=3253\ncontrol=condition-true" ];
+3 -> 5 [label="startline=203\nendline=203\nstartoffset=3231\nendoffset=3253\ncontrol=condition-false" ];
+4 -> 6 [label="startline=206\nendline=206\nstartoffset=3321\nendoffset=3327\nreturnFrom=printLine" ];
+6 -> 7 [label="startline=871\nendline=871\nstartoffset=11716\nendoffset=11764\nenterFunction=CWE127_Buffer_Underread__CWE839_negative_10_bad" ];
+7 -> 8 [label="startline=842\nendline=842\nstartoffset=11203\nendoffset=11217\ncontrol=condition-true\nassumption=\"globalTrue == (1);\"\nassumption.scope=CWE127_Buffer_Underread__CWE839_negative_10_bad" ];
+7 -> 5 [label="startline=842\nendline=842\nstartoffset=11203\nendoffset=11217\ncontrol=condition-false" ];
+8 -> 9 [label="startline=845\nendline=845\nstartoffset=11271\nendoffset=11285\ncontrol=condition-true\nassumption=\"globalTrue == (1);\"\nassumption.scope=CWE127_Buffer_Underread__CWE839_negative_10_bad" ];
+8 -> 5 [label="startline=845\nendline=845\nstartoffset=11271\nendoffset=11285\ncontrol=condition-false" ];
+9 -> 10 [label="startline=849\nendline=849\nstartoffset=11335\nendoffset=11343\ncontrol=condition-true" ];
+9 -> 5 [label="startline=849\nendline=849\nstartoffset=11335\nendoffset=11343\ncontrol=condition-false" ];
+10 -> 11 [label="startline=850\nendline=850\nstartoffset=11366\nendoffset=11389\nenterFunction=printIntLine" ];
+0 [label="A4\nentry=true" color=green];
+1 [label="A10_149_1"];
+2 [label="A10"];
+3 [label="A11"];
+4 [label="A13"];
+5 [label="sink\nsink=true" color=blue];
+6 [label="A16"];
+7 [label="A18"];
+8 [label="A20"];
+9 [label="A27"];
+10 [label="A34"];
+11 [label="A105\nviolation=true\nviolatedProperty=\"valid-deref: invalid pointer dereference in line 850\"" color=red];
+
+}

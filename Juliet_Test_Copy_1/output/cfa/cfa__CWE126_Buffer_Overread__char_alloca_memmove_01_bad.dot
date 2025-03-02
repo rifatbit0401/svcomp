@@ -1,0 +1,18 @@
+digraph CWE126_Buffer_Overread__char_alloca_memmove_01_bad {
+360 [shape="circle" label="N360\n5"]
+361 [shape="circle" label="N361\n4"]
+363 [shape="circle" label="N363\n2"]
+364 [shape="circle" label="N364\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">348</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">349</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">350</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">351</td><td align="left">memset((void *)dataBadBuffer, 65, 49UL);</td></tr><tr><td align="right">352</td><td align="left">*(dataBadBuffer + 49U) = 0;</td></tr><tr><td align="right">353</td><td align="left">memset((void *)dataGoodBuffer, 65, 99UL);</td></tr><tr><td align="right">354</td><td align="left">*(dataGoodBuffer + 99U) = 0;</td></tr><tr><td align="right">355</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">356</td><td align="left">char dest[100U];</td></tr><tr><td align="right">357</td><td align="left">size_t tmp_1;</td></tr><tr><td align="right">358</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">359</td><td align="left">dest[99] = 0;</td></tr></table>>]
+345 -> 360[label=""]
+361 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">361</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, tmp_1);</td></tr><tr><td align="right">362</td><td align="left">dest[99] = 0;</td></tr></table>>]
+361 -> 363[label=""]
+100034 [shape="component" label="ldv_strlen_1"]
+360 -> 100034 [label="tmp_1 = ldv_strlen_1((const char *)(&dest));" fontname="Courier New"]
+100034 -> 361 [label="" fontname="Courier New"]
+100035 [shape="component" label="printLine"]
+363 -> 100035 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100035 -> 364 [label="" fontname="Courier New"]
+364 -> 344 [label="return;" fontname="Courier New"]
+}

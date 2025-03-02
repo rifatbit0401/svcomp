@@ -1,0 +1,7 @@
+digraph stdThreadDestroy {
+298 [shape="circle" label="N298\n5"]
+299 [shape="circle" label="N299\n4"]
+299 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">299</td><td align="left">int __retres;</td></tr><tr><td align="right">300</td><td align="left">free((void *)thread);</td></tr><tr><td align="right">301</td><td align="left">__retres = 1;</td></tr><tr><td align="right">302</td><td align="left">return __retres;</td></tr></table>>]
+299 -> 297[label=""]
+298 -> 299 [label="Function start dummy edge" fontname="Courier New"]
+}

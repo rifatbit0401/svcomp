@@ -1,0 +1,24 @@
+digraph WITNESS {
+0 -> 1 [label="startline=684\nendline=684\nstartoffset=9019\nendoffset=9048\nenterFunction=main" ];
+1 -> 2 [label="startline=692\nendline=692\nstartoffset=9133\nendoffset=9156\nassumption=\"GLOBAL_CONST_TRUE == (1); GLOBAL_CONST_FALSE == (0); GLOBAL_CONST_FIVE == (5); globalTrue == (1); globalFalse == (0); globalFive == (5); globalArgc == (0);\"\nassumption.scope=main" ];
+2 -> 3 [label="startline=694\nendline=694\nstartoffset=9168\nendoffset=9195\nenterFunction=printLine" ];
+3 -> 4 [label="startline=203\nendline=203\nstartoffset=3235\nendoffset=3257\ncontrol=condition-true" ];
+3 -> 5 [label="startline=203\nendline=203\nstartoffset=3235\nendoffset=3257\ncontrol=condition-false" ];
+4 -> 6 [label="startline=206\nendline=206\nstartoffset=3325\nendoffset=3331\nreturnFrom=printLine" ];
+6 -> 7 [label="startline=696\nendline=696\nstartoffset=9208\nendoffset=9261\nenterFunction=CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad" ];
+7 -> 8 [label="startline=678\nendline=678\nstartoffset=8937\nendoffset=8998\nenterFunction=CWE124_Buffer_Underwrite__char_declare_memcpy_53b_badSink" ];
+8 -> 9 [label="startline=655\nendline=655\nstartoffset=8552\nendoffset=8613\nenterFunction=CWE124_Buffer_Underwrite__char_declare_memcpy_53c_badSink" ];
+9 -> 10 [label="startline=646\nendline=646\nstartoffset=8388\nendoffset=8449\nenterFunction=CWE124_Buffer_Underwrite__char_declare_memcpy_53d_badSink" ];
+0 [label="A3\nentry=true" color=green];
+1 [label="A19_152_1"];
+2 [label="A19"];
+3 [label="A37"];
+4 [label="A47"];
+5 [label="sink\nsink=true" color=blue];
+6 [label="A56"];
+7 [label="A65"];
+8 [label="A95"];
+9 [label="A97"];
+10 [label="A99\nviolation=true\nviolatedProperty=\"valid-deref: invalid pointer dereference in line 633\"" color=red];
+
+}

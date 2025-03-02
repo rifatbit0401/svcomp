@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__dest_char_declare_cpy_64b_badSink {
+246 [shape="circle" label="N246\n9"]
+247 [shape="circle" label="N247\n8"]
+252 [shape="circle" label="N252\n3"]
+253 [shape="circle" label="N253\n2"]
+254 [shape="circle" label="N254\n1"]
+245 [shape="circle" label="N245\n0"]
+247 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">247</td><td align="left">char **dataPtr = (char **)dataVoidPtr;</td></tr><tr><td align="right">248</td><td align="left">char *data = *dataPtr;</td></tr><tr><td align="right">249</td><td align="left">char source[100U];</td></tr><tr><td align="right">250</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">251</td><td align="left">source[99] = 0;</td></tr></table>>]
+247 -> 252[label=""]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+100026 [shape="component" label="ldv_strcpy_1"]
+252 -> 100026 [label="ldv_strcpy_1(data, (const char *)(&source));" fontname="Courier New"]
+100026 -> 253 [label="" fontname="Courier New"]
+100027 [shape="component" label="printLine"]
+253 -> 100027 [label="printLine((const char *)data);" fontname="Courier New"]
+100027 -> 254 [label="" fontname="Courier New"]
+254 -> 245 [label="return;" fontname="Courier New"]
+}

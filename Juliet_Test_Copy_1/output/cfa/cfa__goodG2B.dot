@@ -1,0 +1,14 @@
+digraph goodG2B {
+364 [shape="circle" label="N364\n14"]
+365 [shape="circle" label="N365\n13"]
+376 [shape="circle" label="N376\n2"]
+377 [shape="circle" label="N377\n1"]
+363 [shape="circle" label="N363\n0"]
+365 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">365</td><td align="left">char *data = 0;</td></tr><tr><td align="right">366</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">367</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">368</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">369</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">370</td><td align="left">memset((void *)dataBadBuffer, 65, 49UL);</td></tr><tr><td align="right">371</td><td align="left">*(dataBadBuffer + 49U) = 0;</td></tr><tr><td align="right">372</td><td align="left">memset((void *)dataGoodBuffer, 65, 99UL);</td></tr><tr><td align="right">373</td><td align="left">*(dataGoodBuffer + 99U) = 0;</td></tr><tr><td align="right">374</td><td align="left">data = dataGoodBuffer;</td></tr><tr><td align="right">375</td><td align="left">CWE126_Buffer_Overread__char_alloca_memmove_68_goodG2BData = data;</td></tr></table>>]
+365 -> 376[label=""]
+364 -> 365 [label="Function start dummy edge" fontname="Courier New"]
+100015 [shape="component" label="CWE126_Buffer_Overread__char_alloca_memmove_68b_goodG2BSink"]
+376 -> 100015 [label="CWE126_Buffer_Overread__char_alloca_memmove_68b_goodG2BSink();" fontname="Courier New"]
+100015 -> 377 [label="" fontname="Courier New"]
+377 -> 363 [label="return;" fontname="Courier New"]
+}

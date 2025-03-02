@@ -1,0 +1,15 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_loop_05_good {
+413 [shape="circle" label="N413\n3"]
+414 [shape="circle" label="N414\n2"]
+415 [shape="circle" label="N415\n1"]
+412 [shape="circle" label="N412\n4"]
+411 [shape="circle" label="N411\n0"]
+100013 [shape="component" label="goodG2B1"]
+413 -> 100013 [label="goodG2B1();" fontname="Courier New"]
+100013 -> 414 [label="" fontname="Courier New"]
+100014 [shape="component" label="goodG2B2"]
+414 -> 100014 [label="goodG2B2();" fontname="Courier New"]
+100014 -> 415 [label="" fontname="Courier New"]
+412 -> 413 [label="Function start dummy edge" fontname="Courier New"]
+415 -> 411 [label="return;" fontname="Courier New"]
+}

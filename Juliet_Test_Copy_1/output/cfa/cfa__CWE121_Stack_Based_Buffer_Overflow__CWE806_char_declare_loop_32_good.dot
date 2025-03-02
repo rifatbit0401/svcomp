@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_32_good {
+380 [shape="circle" label="N380\n2"]
+381 [shape="circle" label="N381\n1"]
+379 [shape="circle" label="N379\n3"]
+378 [shape="circle" label="N378\n0"]
+100026 [shape="component" label="goodG2B"]
+380 -> 100026 [label="goodG2B();" fontname="Courier New"]
+100026 -> 381 [label="" fontname="Courier New"]
+379 -> 380 [label="Function start dummy edge" fontname="Courier New"]
+381 -> 378 [label="return;" fontname="Courier New"]
+}

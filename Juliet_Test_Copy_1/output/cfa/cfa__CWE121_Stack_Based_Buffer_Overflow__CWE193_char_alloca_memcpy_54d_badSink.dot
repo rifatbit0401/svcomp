@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memcpy_54d_badSink {
+398 [shape="circle" label="N398\n3"]
+399 [shape="circle" label="N399\n2"]
+400 [shape="circle" label="N400\n1"]
+397 [shape="circle" label="N397\n0"]
+398 -> 399 [label="Function start dummy edge" fontname="Courier New"]
+100020 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memcpy_54e_badSink"]
+399 -> 100020 [label="CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_memcpy_54e_badSink(data);" fontname="Courier New"]
+100020 -> 400 [label="" fontname="Courier New"]
+400 -> 397 [label="return;" fontname="Courier New"]
+}

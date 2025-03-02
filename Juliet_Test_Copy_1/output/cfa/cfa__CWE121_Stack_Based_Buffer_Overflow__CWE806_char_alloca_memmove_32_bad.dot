@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_32_bad {
+359 [shape="circle" label="N359\n5"]
+360 [shape="circle" label="N360\n4"]
+362 [shape="circle" label="N362\n2"]
+363 [shape="circle" label="N363\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char **dataPtr1 = &amp;data;</td></tr><tr><td align="right">348</td><td align="left">char **dataPtr2 = &amp;data;</td></tr><tr><td align="right">349</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">350</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">351</td><td align="left">data = dataBuffer;</td></tr><tr><td align="right">352</td><td align="left">char *data_0 = *dataPtr1;</td></tr><tr><td align="right">353</td><td align="left">memset((void *)data_0, 65, 99UL);</td></tr><tr><td align="right">354</td><td align="left">*(data_0 + 99U) = 0;</td></tr><tr><td align="right">355</td><td align="left">*dataPtr1 = data_0;</td></tr><tr><td align="right">356</td><td align="left">char *data_1 = *dataPtr2;</td></tr><tr><td align="right">357</td><td align="left">size_t tmp_0;</td></tr><tr><td align="right">358</td><td align="left">char dest[50U] = &#123; 0 &#125;;</td></tr></table>>]
+345 -> 359[label=""]
+360 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">360</td><td align="left">memmove((void *)(&amp;dest), (const void *)data_1, tmp_0);</td></tr><tr><td align="right">361</td><td align="left">dest[49] = 0;</td></tr></table>>]
+360 -> 362[label=""]
+100001 [shape="component" label="ldv_strlen_1"]
+359 -> 100001 [label="tmp_0 = ldv_strlen_1((const char *)data_1);" fontname="Courier New"]
+100001 -> 360 [label="" fontname="Courier New"]
+100002 [shape="component" label="printLine"]
+362 -> 100002 [label="printLine((const char *)data_1);" fontname="Courier New"]
+100002 -> 363 [label="" fontname="Courier New"]
+363 -> 344 [label="return;" fontname="Courier New"]
+}

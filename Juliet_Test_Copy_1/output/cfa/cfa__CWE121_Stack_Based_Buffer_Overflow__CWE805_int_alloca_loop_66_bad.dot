@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_loop_66_bad {
+376 [shape="circle" label="N376\n2"]
+377 [shape="circle" label="N377\n1"]
+366 [shape="circle" label="N366\n0"]
+367 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">367</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">368</td><td align="left">int *data = 0;</td></tr><tr><td align="right">369</td><td align="left">int *dataArray[5U];</td></tr><tr><td align="right">370</td><td align="left">int *dataBadBuffer;</td></tr><tr><td align="right">371</td><td align="left">dataBadBuffer = __builtin_alloca(200UL);</td></tr><tr><td align="right">372</td><td align="left">int *dataGoodBuffer;</td></tr><tr><td align="right">373</td><td align="left">dataGoodBuffer = __builtin_alloca(400UL);</td></tr><tr><td align="right">374</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">375</td><td align="left">dataArray[2] = data;</td></tr></table>>]
+367 -> 376[label=""]
+100008 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_loop_66b_badSink"]
+376 -> 100008 [label="CWE121_Stack_Based_Buffer_Overflow__CWE805_int_alloca_loop_66b_badSink((int **)(&dataArray));" fontname="Courier New"]
+100008 -> 377 [label="" fontname="Courier New"]
+377 -> 366 [label="return;" fontname="Courier New"]
+}

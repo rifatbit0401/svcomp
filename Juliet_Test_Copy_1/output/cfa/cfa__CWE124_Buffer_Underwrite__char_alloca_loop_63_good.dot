@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_loop_63_good {
+283 [shape="circle" label="N283\n2"]
+284 [shape="circle" label="N284\n1"]
+282 [shape="circle" label="N282\n3"]
+281 [shape="circle" label="N281\n0"]
+100020 [shape="component" label="goodG2B"]
+283 -> 100020 [label="goodG2B();" fontname="Courier New"]
+100020 -> 284 [label="" fontname="Courier New"]
+282 -> 283 [label="Function start dummy edge" fontname="Courier New"]
+284 -> 281 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int_declare_memmove_06_bad {
+11 [shape="circle" label="N11\n2"]
+12 [shape="circle" label="N12\n1"]
+0 [shape="circle" label="N0\n0"]
+1 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2</td><td align="left">int *data = 0;</td></tr><tr><td align="right">3</td><td align="left">int dataBadBuffer[50U];</td></tr><tr><td align="right">4</td><td align="left">int dataGoodBuffer[100U];</td></tr><tr><td align="right">5</td><td align="left"></td></tr><tr><td align="right">7</td><td align="left">data = (int *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">9</td><td align="left"></td></tr><tr><td align="right">6</td><td align="left">int source[100U] = &#123; 0 &#125;;</td></tr><tr><td align="right">10</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 400UL);</td></tr></table>>]
+1 -> 11[label=""]
+100013 [shape="component" label="printIntLine"]
+11 -> 100013 [label="printIntLine(*data);" fontname="Courier New"]
+100013 -> 12 [label="" fontname="Courier New"]
+12 -> 0 [label="return;" fontname="Courier New"]
+}

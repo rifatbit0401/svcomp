@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE131_memmove_53_bad {
+267 [shape="circle" label="N267\n2"]
+268 [shape="circle" label="N268\n1"]
+262 [shape="circle" label="N262\n0"]
+263 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">263</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">264</td><td align="left">int *data = 0;</td></tr><tr><td align="right">265</td><td align="left">data = (int *)0;</td></tr><tr><td align="right">266</td><td align="left">data = __builtin_alloca(10UL);</td></tr></table>>]
+263 -> 267[label=""]
+100028 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE131_memmove_53b_badSink"]
+267 -> 100028 [label="CWE121_Stack_Based_Buffer_Overflow__CWE131_memmove_53b_badSink(data);" fontname="Courier New"]
+100028 -> 268 [label="" fontname="Courier New"]
+268 -> 262 [label="return;" fontname="Courier New"]
+}

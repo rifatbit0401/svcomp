@@ -1,0 +1,13 @@
+digraph ldv_malloc {
+558 [shape="circle" label="N558\n4"]
+559 [shape="circle" label="N559\n3"]
+560 [shape="circle" label="N560\n2"]
+561 [shape="circle" label="N561\n1"]
+557 [shape="circle" label="N557\n0"]
+558 -> 559 [label="Function start dummy edge" fontname="Courier New"]
+100022 [shape="component" label="ldv_reference_malloc"]
+560 -> 100022 [label="tmp = ldv_reference_malloc(size);" fontname="Courier New"]
+100022 -> 561 [label="" fontname="Courier New"]
+559 -> 560 [label="void *tmp;" fontname="Courier New"]
+561 -> 557 [label="return tmp;" fontname="Courier New"]
+}

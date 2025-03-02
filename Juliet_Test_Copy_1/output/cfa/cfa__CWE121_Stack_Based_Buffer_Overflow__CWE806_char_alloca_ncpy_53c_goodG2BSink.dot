@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_53c_goodG2BSink {
+367 [shape="circle" label="N367\n3"]
+368 [shape="circle" label="N368\n2"]
+369 [shape="circle" label="N369\n1"]
+366 [shape="circle" label="N366\n0"]
+367 -> 368 [label="Function start dummy edge" fontname="Courier New"]
+100027 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_53d_goodG2BSink"]
+368 -> 100027 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_53d_goodG2BSink(data);" fontname="Courier New"]
+100027 -> 369 [label="" fontname="Courier New"]
+369 -> 366 [label="return;" fontname="Courier New"]
+}

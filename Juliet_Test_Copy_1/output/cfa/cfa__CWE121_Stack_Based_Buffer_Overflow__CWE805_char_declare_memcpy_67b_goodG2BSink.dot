@@ -1,0 +1,14 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_memcpy_67b_goodG2BSink {
+345 [shape="circle" label="N345\n9"]
+346 [shape="circle" label="N346\n8"]
+352 [shape="circle" label="N352\n2"]
+353 [shape="circle" label="N353\n1"]
+344 [shape="circle" label="N344\n0"]
+346 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">346</td><td align="left">char *data = myStruct.structFirst;</td></tr><tr><td align="right">347</td><td align="left">char source[100U];</td></tr><tr><td align="right">348</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">349</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">350</td><td align="left">memcpy((void *)data, (const void *)(&amp;source), 100UL);</td></tr><tr><td align="right">351</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+346 -> 352[label=""]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+100026 [shape="component" label="printLine"]
+352 -> 100026 [label="printLine((const char *)data);" fontname="Courier New"]
+100026 -> 353 [label="" fontname="Courier New"]
+353 -> 344 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_snprintf_45_bad {
+18 [shape="circle" label="N18\n2"]
+19 [shape="circle" label="N19\n1"]
+10 [shape="circle" label="N10\n0"]
+11 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">11</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">12</td><td align="left">char *data = 0;</td></tr><tr><td align="right">13</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">14</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">15</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">16</td><td align="left">*data = 0;</td></tr><tr><td align="right">17</td><td align="left">CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_snprintf_45_badData = data;</td></tr></table>>]
+11 -> 18[label=""]
+100025 [shape="component" label="badSink"]
+18 -> 100025 [label="badSink();" fontname="Courier New"]
+100025 -> 19 [label="" fontname="Courier New"]
+19 -> 10 [label="return;" fontname="Courier New"]
+}

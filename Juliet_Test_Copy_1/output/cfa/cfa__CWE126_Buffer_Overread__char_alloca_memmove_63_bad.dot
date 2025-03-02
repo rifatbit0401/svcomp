@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_alloca_memmove_63_bad {
+356 [shape="circle" label="N356\n2"]
+357 [shape="circle" label="N357\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">348</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">349</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">350</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">351</td><td align="left">memset((void *)dataBadBuffer, 65, 49UL);</td></tr><tr><td align="right">352</td><td align="left">*(dataBadBuffer + 49U) = 0;</td></tr><tr><td align="right">353</td><td align="left">memset((void *)dataGoodBuffer, 65, 99UL);</td></tr><tr><td align="right">354</td><td align="left">*(dataGoodBuffer + 99U) = 0;</td></tr><tr><td align="right">355</td><td align="left">data = dataBadBuffer;</td></tr></table>>]
+345 -> 356[label=""]
+100008 [shape="component" label="CWE126_Buffer_Overread__char_alloca_memmove_63b_badSink"]
+356 -> 100008 [label="CWE126_Buffer_Overread__char_alloca_memmove_63b_badSink(&data);" fontname="Courier New"]
+100008 -> 357 [label="" fontname="Courier New"]
+357 -> 344 [label="return;" fontname="Courier New"]
+}

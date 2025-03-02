@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__malloc_char_ncpy_54_good {
+386 [shape="circle" label="N386\n2"]
+387 [shape="circle" label="N387\n1"]
+385 [shape="circle" label="N385\n3"]
+384 [shape="circle" label="N384\n0"]
+100032 [shape="component" label="goodG2B"]
+386 -> 100032 [label="goodG2B();" fontname="Courier New"]
+100032 -> 387 [label="" fontname="Courier New"]
+385 -> 386 [label="Function start dummy edge" fontname="Courier New"]
+387 -> 384 [label="return;" fontname="Courier New"]
+}

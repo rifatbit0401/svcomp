@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_declare_loop_51_good {
+292 [shape="circle" label="N292\n2"]
+293 [shape="circle" label="N293\n1"]
+291 [shape="circle" label="N291\n3"]
+290 [shape="circle" label="N290\n0"]
+100028 [shape="component" label="goodG2B"]
+292 -> 100028 [label="goodG2B();" fontname="Courier New"]
+100028 -> 293 [label="" fontname="Courier New"]
+291 -> 292 [label="Function start dummy edge" fontname="Courier New"]
+293 -> 290 [label="return;" fontname="Courier New"]
+}

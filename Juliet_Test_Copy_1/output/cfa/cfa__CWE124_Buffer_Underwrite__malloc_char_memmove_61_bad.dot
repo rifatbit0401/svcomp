@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__malloc_char_memmove_61_bad {
+366 [shape="circle" label="N366\n8"]
+367 [shape="circle" label="N367\n7"]
+372 [shape="circle" label="N372\n2"]
+373 [shape="circle" label="N373\n1"]
+362 [shape="circle" label="N362\n0"]
+363 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">363</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">364</td><td align="left">char *data = 0;</td></tr><tr><td align="right">365</td><td align="left">data = (char *)0;</td></tr></table>>]
+363 -> 366[label=""]
+367 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">367</td><td align="left">char source[100U];</td></tr><tr><td align="right">368</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">369</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">370</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 100UL);</td></tr><tr><td align="right">371</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+367 -> 372[label=""]
+100001 [shape="component" label="CWE124_Buffer_Underwrite__malloc_char_memmove_61b_badSource"]
+366 -> 100001 [label="data = CWE124_Buffer_Underwrite__malloc_char_memmove_61b_badSource(data);" fontname="Courier New"]
+100001 -> 367 [label="" fontname="Courier New"]
+100002 [shape="component" label="printLine"]
+372 -> 100002 [label="printLine((const char *)data);" fontname="Courier New"]
+100002 -> 373 [label="" fontname="Courier New"]
+373 -> 362 [label="return;" fontname="Courier New"]
+}

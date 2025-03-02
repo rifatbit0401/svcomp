@@ -1,0 +1,17 @@
+digraph CWE124_Buffer_Underwrite__char_declare_ncpy_32_bad {
+260 [shape="circle" label="N260\n4"]
+261 [shape="circle" label="N261\n3"]
+262 [shape="circle" label="N262\n2"]
+263 [shape="circle" label="N263\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">249</td><td align="left">char **dataPtr1 = &amp;data;</td></tr><tr><td align="right">250</td><td align="left">char **dataPtr2 = &amp;data;</td></tr><tr><td align="right">251</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">252</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">253</td><td align="left">char *data_0 = *dataPtr1;</td></tr><tr><td align="right">254</td><td align="left">data_0 = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr><tr><td align="right">255</td><td align="left">*dataPtr1 = data_0;</td></tr><tr><td align="right">256</td><td align="left">char *data_1 = *dataPtr2;</td></tr><tr><td align="right">257</td><td align="left">char source[100U];</td></tr><tr><td align="right">258</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">259</td><td align="left">source[99] = 0;</td></tr></table>>]
+246 -> 260[label=""]
+100024 [shape="component" label="ldv_strncpy_1"]
+260 -> 100024 [label="ldv_strncpy_1(data_1, (const char *)(&source), 99UL);" fontname="Courier New"]
+100024 -> 261 [label="" fontname="Courier New"]
+100025 [shape="component" label="printLine"]
+262 -> 100025 [label="printLine((const char *)data_1);" fontname="Courier New"]
+100025 -> 263 [label="" fontname="Courier New"]
+261 -> 262 [label="*(data_1 + 99U) = 0;" fontname="Courier New"]
+263 -> 245 [label="return;" fontname="Courier New"]
+}

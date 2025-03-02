@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__sizeof_double_51b_badSink {
+379 [shape="circle" label="N379\n4"]
+380 [shape="circle" label="N380\n3"]
+381 [shape="circle" label="N381\n2"]
+381 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">381</td><td align="left">free((void *)data);</td></tr><tr><td align="right">382</td><td align="left">return;</td></tr></table>>]
+381 -> 378[label=""]
+379 -> 380 [label="Function start dummy edge" fontname="Courier New"]
+100008 [shape="component" label="printDoubleLine"]
+380 -> 100008 [label="printDoubleLine(*data);" fontname="Courier New"]
+100008 -> 381 [label="" fontname="Courier New"]
+}

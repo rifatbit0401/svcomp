@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+  <default>false</default>
+ </key>
+ <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+  <default>false</default>
+ </key>
+ <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+  <default>false</default>
+ </key>
+ <key attr.name="violatedProperty" attr.type="string" for="node" id="violatedProperty"/>
+ <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+ <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+ <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+ <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+ <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+ <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+ <key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+ <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+ <key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+ <key attr.name="startoffset" attr.type="int" for="edge" id="startoffset"/>
+ <key attr.name="endoffset" attr.type="int" for="edge" id="endoffset"/>
+ <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+  <default>CWE124/CWE124_Buffer_Underwrite---s01---CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad.i</default>
+ </key>
+ <key attr.name="control" attr.type="string" for="edge" id="control"/>
+ <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+ <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+ <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+ <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+ <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+ <key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+ <graph edgedefault="directed">
+  <data key="witness-type">violation_witness</data>
+  <data key="sourcecodelang">C</data>
+  <data key="producer">CPAchecker 4.0</data>
+  <data key="specification">CHECK( init(main()), LTL(G valid-free) )</data>
+  <data key="specification">CHECK( init(main()), LTL(G valid-deref) )</data>
+  <data key="specification">CHECK( init(main()), LTL(G valid-memtrack) )</data>
+  <data key="programfile">CWE124/CWE124_Buffer_Underwrite---s01---CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad.i</data>
+  <data key="programhash">947b14d3ef8c1c113bd0b0829b519ea5efc55628866920b7e6cf43a168469407</data>
+  <data key="architecture">32bit</data>
+  <data key="creationtime">2025-03-01T22:42:24-08:00</data>
+  <node id="A3">
+   <data key="entry">true</data>
+  </node>
+  <node id="A19_152_1"/>
+  <edge source="A3" target="A19_152_1">
+   <data key="startline">684</data>
+   <data key="endline">684</data>
+   <data key="startoffset">9019</data>
+   <data key="endoffset">9048</data>
+   <data key="enterFunction">main</data>
+  </edge>
+  <node id="A19"/>
+  <edge source="A19_152_1" target="A19">
+   <data key="startline">692</data>
+   <data key="endline">692</data>
+   <data key="startoffset">9133</data>
+   <data key="endoffset">9156</data>
+   <data key="assumption">GLOBAL_CONST_TRUE == (1); GLOBAL_CONST_FALSE == (0); GLOBAL_CONST_FIVE == (5); globalTrue == (1); globalFalse == (0); globalFive == (5); globalArgc == (0);</data>
+   <data key="assumption.scope">main</data>
+  </edge>
+  <node id="A37"/>
+  <edge source="A19" target="A37">
+   <data key="startline">694</data>
+   <data key="endline">694</data>
+   <data key="startoffset">9168</data>
+   <data key="endoffset">9195</data>
+   <data key="enterFunction">printLine</data>
+  </edge>
+  <node id="A47"/>
+  <edge source="A37" target="A47">
+   <data key="startline">203</data>
+   <data key="endline">203</data>
+   <data key="startoffset">3235</data>
+   <data key="endoffset">3257</data>
+   <data key="control">condition-true</data>
+  </edge>
+  <node id="sink">
+   <data key="sink">true</data>
+  </node>
+  <edge source="A37" target="sink">
+   <data key="startline">203</data>
+   <data key="endline">203</data>
+   <data key="startoffset">3235</data>
+   <data key="endoffset">3257</data>
+   <data key="control">condition-false</data>
+  </edge>
+  <node id="A56"/>
+  <edge source="A47" target="A56">
+   <data key="startline">206</data>
+   <data key="endline">206</data>
+   <data key="startoffset">3325</data>
+   <data key="endoffset">3331</data>
+   <data key="returnFrom">printLine</data>
+  </edge>
+  <node id="A65"/>
+  <edge source="A56" target="A65">
+   <data key="startline">696</data>
+   <data key="endline">696</data>
+   <data key="startoffset">9208</data>
+   <data key="endoffset">9261</data>
+   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad</data>
+  </edge>
+  <node id="A95"/>
+  <edge source="A65" target="A95">
+   <data key="startline">678</data>
+   <data key="endline">678</data>
+   <data key="startoffset">8937</data>
+   <data key="endoffset">8998</data>
+   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53b_badSink</data>
+  </edge>
+  <node id="A97"/>
+  <edge source="A95" target="A97">
+   <data key="startline">655</data>
+   <data key="endline">655</data>
+   <data key="startoffset">8552</data>
+   <data key="endoffset">8613</data>
+   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53c_badSink</data>
+  </edge>
+  <node id="A99">
+   <data key="violation">true</data>
+   <data key="violatedProperty">valid-deref: invalid pointer dereference in line 633</data>
+  </node>
+  <edge source="A97" target="A99">
+   <data key="startline">646</data>
+   <data key="endline">646</data>
+   <data key="startoffset">8388</data>
+   <data key="endoffset">8449</data>
+   <data key="enterFunction">CWE124_Buffer_Underwrite__char_declare_memcpy_53d_badSink</data>
+  </edge>
+ </graph>
+</graphml>

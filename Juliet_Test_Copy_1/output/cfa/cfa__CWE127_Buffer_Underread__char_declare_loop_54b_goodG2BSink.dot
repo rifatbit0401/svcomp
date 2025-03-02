@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_declare_loop_54b_goodG2BSink {
+251 [shape="circle" label="N251\n3"]
+252 [shape="circle" label="N252\n2"]
+253 [shape="circle" label="N253\n1"]
+250 [shape="circle" label="N250\n0"]
+251 -> 252 [label="Function start dummy edge" fontname="Courier New"]
+100021 [shape="component" label="CWE127_Buffer_Underread__char_declare_loop_54c_goodG2BSink"]
+252 -> 100021 [label="CWE127_Buffer_Underread__char_declare_loop_54c_goodG2BSink(data);" fontname="Courier New"]
+100021 -> 253 [label="" fontname="Courier New"]
+253 -> 250 [label="return;" fontname="Courier New"]
+}

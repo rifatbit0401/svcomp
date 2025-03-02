@@ -1,0 +1,7 @@
+digraph internal_start {
+246 [shape="circle" label="N246\n7"]
+247 [shape="circle" label="N247\n6"]
+247 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">247</td><td align="left">void *__retres;</td></tr><tr><td align="right">248</td><td align="left">stdThread thread = (struct _stdThread *)args;</td></tr><tr><td align="right">249</td><td align="left">(*(thread-&gt;start))(thread-&gt;args);</td></tr><tr><td align="right">250</td><td align="left">pthread_exit((void *)0);</td></tr><tr><td align="right">251</td><td align="left">__retres = (void *)0;</td></tr><tr><td align="right">252</td><td align="left">return __retres;</td></tr></table>>]
+247 -> 245[label=""]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_cpy_65_good {
+373 [shape="circle" label="N373\n2"]
+374 [shape="circle" label="N374\n1"]
+372 [shape="circle" label="N372\n3"]
+371 [shape="circle" label="N371\n0"]
+100032 [shape="component" label="goodG2B"]
+373 -> 100032 [label="goodG2B();" fontname="Courier New"]
+100032 -> 374 [label="" fontname="Courier New"]
+372 -> 373 [label="Function start dummy edge" fontname="Courier New"]
+374 -> 371 [label="return;" fontname="Courier New"]
+}

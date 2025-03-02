@@ -1,0 +1,7 @@
+digraph globalReturnsTrue {
+154 [shape="circle" label="N154\n4"]
+155 [shape="circle" label="N155\n3"]
+155 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">155</td><td align="left">int __retres;</td></tr><tr><td align="right">156</td><td align="left">__retres = 1;</td></tr><tr><td align="right">157</td><td align="left">return __retres;</td></tr></table>>]
+155 -> 153[label=""]
+154 -> 155 [label="Function start dummy edge" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_memcpy_52_bad {
+251 [shape="circle" label="N251\n2"]
+252 [shape="circle" label="N252\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">twoIntsStruct *data;</td></tr><tr><td align="right">248</td><td align="left">twoIntsStruct dataBadBuffer[50U];</td></tr><tr><td align="right">249</td><td align="left">twoIntsStruct dataGoodBuffer[100U];</td></tr><tr><td align="right">250</td><td align="left">data = (twoIntsStruct *)(&amp;dataBadBuffer);</td></tr></table>>]
+246 -> 251[label=""]
+100021 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_memcpy_52b_badSink"]
+251 -> 100021 [label="CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_memcpy_52b_badSink(data);" fontname="Courier New"]
+100021 -> 252 [label="" fontname="Courier New"]
+252 -> 245 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,17 @@
+digraph ldv_undef_int_negative {
+647 [shape="circle" label="N647\n5"]
+648 [shape="circle" label="N648\n4"]
+649 [shape="circle" label="N649\n3"]
+650 [shape="circle" label="N650\n2"]
+651 [shape="circle" label="N651\n1"]
+646 [shape="circle" label="N646\n0"]
+647 -> 648 [label="Function start dummy edge" fontname="Courier New"]
+100012 [shape="component" label="ldv_undef_int"]
+649 -> 100012 [label="ret = ldv_undef_int();" fontname="Courier New"]
+100012 -> 650 [label="" fontname="Courier New"]
+100013 [shape="component" label="assume_abort_if_not"]
+650 -> 100013 [label="assume_abort_if_not(ret < 0);" fontname="Courier New"]
+100013 -> 651 [label="" fontname="Courier New"]
+648 -> 649 [label="int ret;" fontname="Courier New"]
+651 -> 646 [label="return ret;" fontname="Courier New"]
+}

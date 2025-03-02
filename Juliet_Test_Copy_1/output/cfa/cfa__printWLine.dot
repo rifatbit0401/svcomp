@@ -1,0 +1,15 @@
+digraph printWLine {
+9 [shape="circle" label="N9\n6"]
+10 [shape="diamond" label="N10\n5"]
+12 [shape="circle" label="N12\n3"]
+13 [shape="circle" label="N13\n4"]
+11 [shape="circle" label="N11\n1"]
+8 [shape="circle" label="N8\n0"]
+12 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">12</td><td align="left">wprintf((const wchar_t *)L\&quot;%ls\\n\&quot;, line);</td></tr><tr><td align="right">14</td><td align="left"></td></tr></table>>]
+12 -> 11[label=""]
+9 -> 10 [label="Function start dummy edge" fontname="Courier New"]
+10 -> 12 [label="[line != ((const wchar_t *)0)]" fontname="Courier New"]
+10 -> 13 [label="[!(line != ((const wchar_t *)0))]" fontname="Courier New"]
+11 -> 8 [label="return;" fontname="Courier New"]
+13 -> 11 [label="" fontname="Courier New"]
+}

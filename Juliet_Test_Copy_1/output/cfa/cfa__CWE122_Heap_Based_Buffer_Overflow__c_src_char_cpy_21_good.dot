@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_21_good {
+397 [shape="circle" label="N397\n3"]
+398 [shape="circle" label="N398\n2"]
+399 [shape="circle" label="N399\n1"]
+396 [shape="circle" label="N396\n4"]
+395 [shape="circle" label="N395\n0"]
+100005 [shape="component" label="goodG2B1"]
+397 -> 100005 [label="goodG2B1();" fontname="Courier New"]
+100005 -> 398 [label="" fontname="Courier New"]
+100006 [shape="component" label="goodG2B2"]
+398 -> 100006 [label="goodG2B2();" fontname="Courier New"]
+100006 -> 399 [label="" fontname="Courier New"]
+396 -> 397 [label="Function start dummy edge" fontname="Courier New"]
+399 -> 395 [label="return;" fontname="Courier New"]
+}

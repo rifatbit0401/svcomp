@@ -1,0 +1,17 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_ncpy_02_bad {
+355 [shape="circle" label="N355\n4"]
+356 [shape="circle" label="N356\n3"]
+357 [shape="circle" label="N357\n2"]
+358 [shape="circle" label="N358\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">348</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">349</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">350</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">351</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr><tr><td align="right">352</td><td align="left">char source[100U];</td></tr><tr><td align="right">353</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">354</td><td align="left">source[99] = 0;</td></tr></table>>]
+345 -> 355[label=""]
+100014 [shape="component" label="ldv_strncpy_1"]
+355 -> 100014 [label="ldv_strncpy_1(data, (const char *)(&source), 99UL);" fontname="Courier New"]
+100014 -> 356 [label="" fontname="Courier New"]
+100015 [shape="component" label="printLine"]
+357 -> 100015 [label="printLine((const char *)data);" fontname="Courier New"]
+100015 -> 358 [label="" fontname="Courier New"]
+356 -> 357 [label="*(data + 99U) = 0;" fontname="Courier New"]
+358 -> 344 [label="return;" fontname="Courier New"]
+}

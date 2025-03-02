@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_alloca_memcpy_53b_goodG2BSink {
+269 [shape="circle" label="N269\n3"]
+270 [shape="circle" label="N270\n2"]
+271 [shape="circle" label="N271\n1"]
+268 [shape="circle" label="N268\n0"]
+269 -> 270 [label="Function start dummy edge" fontname="Courier New"]
+100010 [shape="component" label="CWE126_Buffer_Overread__char_alloca_memcpy_53c_goodG2BSink"]
+270 -> 100010 [label="CWE126_Buffer_Overread__char_alloca_memcpy_53c_goodG2BSink(data);" fontname="Courier New"]
+100010 -> 271 [label="" fontname="Courier New"]
+271 -> 268 [label="return;" fontname="Courier New"]
+}

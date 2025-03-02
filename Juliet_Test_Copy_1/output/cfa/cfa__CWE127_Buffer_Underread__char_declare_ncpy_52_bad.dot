@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_declare_ncpy_52_bad {
+380 [shape="circle" label="N380\n2"]
+381 [shape="circle" label="N381\n1"]
+373 [shape="circle" label="N373\n0"]
+374 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">374</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">375</td><td align="left">char *data = 0;</td></tr><tr><td align="right">376</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">377</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">378</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">379</td><td align="left">data = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr></table>>]
+374 -> 380[label=""]
+100025 [shape="component" label="CWE127_Buffer_Underread__char_declare_ncpy_52b_badSink"]
+380 -> 100025 [label="CWE127_Buffer_Underread__char_declare_ncpy_52b_badSink(data);" fontname="Courier New"]
+100025 -> 381 [label="" fontname="Courier New"]
+381 -> 373 [label="return;" fontname="Courier New"]
+}

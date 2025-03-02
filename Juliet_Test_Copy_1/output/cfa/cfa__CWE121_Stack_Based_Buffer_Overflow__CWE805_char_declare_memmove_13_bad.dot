@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_memmove_13_bad {
+15 [shape="circle" label="N15\n2"]
+16 [shape="circle" label="N16\n1"]
+0 [shape="circle" label="N0\n0"]
+1 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2</td><td align="left">char *data = 0;</td></tr><tr><td align="right">3</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">4</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">5</td><td align="left"></td></tr><tr><td align="right">7</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">9</td><td align="left">*data = 0;</td></tr><tr><td align="right">10</td><td align="left"></td></tr><tr><td align="right">6</td><td align="left">char source[100U];</td></tr><tr><td align="right">11</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">12</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">13</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 100UL);</td></tr><tr><td align="right">14</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+1 -> 15[label=""]
+100032 [shape="component" label="printLine"]
+15 -> 100032 [label="printLine((const char *)data);" fontname="Courier New"]
+100032 -> 16 [label="" fontname="Courier New"]
+16 -> 0 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_53b_goodG2BSink {
+290 [shape="circle" label="N290\n3"]
+291 [shape="circle" label="N291\n2"]
+292 [shape="circle" label="N292\n1"]
+289 [shape="circle" label="N289\n0"]
+290 -> 291 [label="Function start dummy edge" fontname="Courier New"]
+100015 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_53c_goodG2BSink"]
+291 -> 100015 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_53c_goodG2BSink(data);" fontname="Courier New"]
+100015 -> 292 [label="" fontname="Courier New"]
+292 -> 289 [label="return;" fontname="Courier New"]
+}

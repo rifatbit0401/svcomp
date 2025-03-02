@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_declare_ncpy_45_bad {
+363 [shape="circle" label="N363\n2"]
+364 [shape="circle" label="N364\n1"]
+355 [shape="circle" label="N355\n0"]
+356 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">356</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">357</td><td align="left">char *data = 0;</td></tr><tr><td align="right">358</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">359</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">360</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">361</td><td align="left">data = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr><tr><td align="right">362</td><td align="left">CWE124_Buffer_Underwrite__char_declare_ncpy_45_badData = data;</td></tr></table>>]
+356 -> 363[label=""]
+100007 [shape="component" label="badSink"]
+363 -> 100007 [label="badSink();" fontname="Courier New"]
+100007 -> 364 [label="" fontname="Courier New"]
+364 -> 355 [label="return;" fontname="Courier New"]
+}

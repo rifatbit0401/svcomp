@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_53b_badSink {
+350 [shape="circle" label="N350\n3"]
+351 [shape="circle" label="N351\n2"]
+352 [shape="circle" label="N352\n1"]
+349 [shape="circle" label="N349\n0"]
+350 -> 351 [label="Function start dummy edge" fontname="Courier New"]
+100011 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_53c_badSink"]
+351 -> 100011 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_loop_53c_badSink(data);" fontname="Courier New"]
+100011 -> 352 [label="" fontname="Courier New"]
+352 -> 349 [label="return;" fontname="Courier New"]
+}

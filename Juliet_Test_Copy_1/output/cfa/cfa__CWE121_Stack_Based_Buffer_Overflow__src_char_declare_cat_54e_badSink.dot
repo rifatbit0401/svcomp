@@ -1,0 +1,14 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cat_54e_badSink {
+386 [shape="circle" label="N386\n5"]
+387 [shape="circle" label="N387\n4"]
+389 [shape="circle" label="N389\n2"]
+390 [shape="circle" label="N390\n1"]
+385 [shape="circle" label="N385\n0"]
+387 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">387</td><td align="left">char dest[50U] = &#123; 0 &#125;;</td></tr><tr><td align="right">388</td><td align="left">strcat((char *)(&amp;dest), (const char *)data);</td></tr></table>>]
+387 -> 389[label=""]
+386 -> 387 [label="Function start dummy edge" fontname="Courier New"]
+100034 [shape="component" label="printLine"]
+389 -> 100034 [label="printLine((const char *)data);" fontname="Courier New"]
+100034 -> 390 [label="" fontname="Courier New"]
+390 -> 385 [label="return;" fontname="Courier New"]
+}

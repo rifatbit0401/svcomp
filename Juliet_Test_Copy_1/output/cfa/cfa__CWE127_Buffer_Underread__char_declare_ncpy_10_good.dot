@@ -1,0 +1,15 @@
+digraph CWE127_Buffer_Underread__char_declare_ncpy_10_good {
+387 [shape="circle" label="N387\n3"]
+388 [shape="circle" label="N388\n2"]
+389 [shape="circle" label="N389\n1"]
+386 [shape="circle" label="N386\n4"]
+385 [shape="circle" label="N385\n0"]
+100036 [shape="component" label="goodG2B1"]
+387 -> 100036 [label="goodG2B1();" fontname="Courier New"]
+100036 -> 388 [label="" fontname="Courier New"]
+100037 [shape="component" label="goodG2B2"]
+388 -> 100037 [label="goodG2B2();" fontname="Courier New"]
+100037 -> 389 [label="" fontname="Courier New"]
+386 -> 387 [label="Function start dummy edge" fontname="Courier New"]
+389 -> 385 [label="return;" fontname="Courier New"]
+}

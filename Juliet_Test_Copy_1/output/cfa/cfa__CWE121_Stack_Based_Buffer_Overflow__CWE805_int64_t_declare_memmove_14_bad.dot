@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_14_bad {
+250 [shape="diamond" label="N250\n8"]
+252 [shape="circle" label="N252\n6"]
+253 [shape="circle" label="N253\n7"]
+251 [shape="circle" label="N251\n4"]
+255 [shape="circle" label="N255\n3"]
+254 [shape="circle" label="N254\n5"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">int64_t *data = 0;</td></tr><tr><td align="right">248</td><td align="left">int64_t dataBadBuffer[50U];</td></tr><tr><td align="right">249</td><td align="left">int64_t dataGoodBuffer[100U];</td></tr></table>>]
+246 -> 250[label=""]
+255 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">255</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 800UL);</td></tr><tr><td align="right">256</td><td align="left">printLongLongLine(*data);</td></tr><tr><td align="right">257</td><td align="left">return;</td></tr></table>>]
+255 -> 245[label=""]
+250 -> 252 [label="[globalFive == 5]" fontname="Courier New"]
+250 -> 253 [label="[!(globalFive == 5)]" fontname="Courier New"]
+251 -> 255 [label="int64_t source[100U] = { 0L };" fontname="Courier New"]
+252 -> 254 [label="data = (int64_t *)(&dataBadBuffer);" fontname="Courier New"]
+253 -> 251 [label="" fontname="Courier New"]
+254 -> 251 [label="" fontname="Courier New"]
+}

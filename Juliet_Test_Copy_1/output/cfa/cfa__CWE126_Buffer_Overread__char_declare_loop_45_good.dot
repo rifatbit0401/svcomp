@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_declare_loop_45_good {
+387 [shape="circle" label="N387\n2"]
+388 [shape="circle" label="N388\n1"]
+386 [shape="circle" label="N386\n3"]
+385 [shape="circle" label="N385\n0"]
+100020 [shape="component" label="goodG2B"]
+387 -> 100020 [label="goodG2B();" fontname="Courier New"]
+100020 -> 388 [label="" fontname="Courier New"]
+386 -> 387 [label="Function start dummy edge" fontname="Courier New"]
+388 -> 385 [label="return;" fontname="Courier New"]
+}

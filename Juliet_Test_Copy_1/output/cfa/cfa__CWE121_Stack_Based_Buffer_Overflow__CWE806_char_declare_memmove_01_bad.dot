@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_01_bad {
+254 [shape="circle" label="N254\n5"]
+255 [shape="circle" label="N255\n4"]
+257 [shape="circle" label="N257\n2"]
+258 [shape="circle" label="N258\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">249</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">250</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">251</td><td align="left">*(data + 99U) = 0;</td></tr><tr><td align="right">252</td><td align="left">size_t tmp;</td></tr><tr><td align="right">253</td><td align="left">char dest[50U] = &#123; 0 &#125;;</td></tr></table>>]
+246 -> 254[label=""]
+255 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">255</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, tmp);</td></tr><tr><td align="right">256</td><td align="left">dest[49] = 0;</td></tr></table>>]
+255 -> 257[label=""]
+100025 [shape="component" label="ldv_strlen_1"]
+254 -> 100025 [label="tmp = ldv_strlen_1((const char *)data);" fontname="Courier New"]
+100025 -> 255 [label="" fontname="Courier New"]
+100026 [shape="component" label="printLine"]
+257 -> 100026 [label="printLine((const char *)data);" fontname="Courier New"]
+100026 -> 258 [label="" fontname="Courier New"]
+258 -> 245 [label="return;" fontname="Courier New"]
+}

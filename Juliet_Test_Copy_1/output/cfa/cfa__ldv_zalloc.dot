@@ -1,0 +1,13 @@
+digraph ldv_zalloc {
+570 [shape="circle" label="N570\n4"]
+571 [shape="circle" label="N571\n3"]
+572 [shape="circle" label="N572\n2"]
+573 [shape="circle" label="N573\n1"]
+569 [shape="circle" label="N569\n0"]
+570 -> 571 [label="Function start dummy edge" fontname="Courier New"]
+100038 [shape="component" label="ldv_reference_zalloc"]
+572 -> 100038 [label="tmp = ldv_reference_zalloc(size);" fontname="Courier New"]
+100038 -> 573 [label="" fontname="Courier New"]
+571 -> 572 [label="void *tmp;" fontname="Courier New"]
+573 -> 569 [label="return tmp;" fontname="Courier New"]
+}

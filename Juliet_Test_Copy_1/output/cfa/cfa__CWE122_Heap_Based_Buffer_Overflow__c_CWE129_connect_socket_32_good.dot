@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_32_good {
+486 [shape="circle" label="N486\n3"]
+487 [shape="circle" label="N487\n2"]
+488 [shape="circle" label="N488\n1"]
+485 [shape="circle" label="N485\n4"]
+484 [shape="circle" label="N484\n0"]
+100008 [shape="component" label="goodG2B"]
+486 -> 100008 [label="goodG2B();" fontname="Courier New"]
+100008 -> 487 [label="" fontname="Courier New"]
+100009 [shape="component" label="goodB2G"]
+487 -> 100009 [label="goodB2G();" fontname="Courier New"]
+100009 -> 488 [label="" fontname="Courier New"]
+485 -> 486 [label="Function start dummy edge" fontname="Courier New"]
+488 -> 484 [label="return;" fontname="Courier New"]
+}

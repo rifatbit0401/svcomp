@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__char_declare_cpy_53d_goodG2BSink {
+287 [shape="circle" label="N287\n7"]
+288 [shape="circle" label="N288\n6"]
+291 [shape="circle" label="N291\n3"]
+292 [shape="circle" label="N292\n2"]
+293 [shape="circle" label="N293\n1"]
+286 [shape="circle" label="N286\n0"]
+288 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">288</td><td align="left">char source[100U];</td></tr><tr><td align="right">289</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">290</td><td align="left">source[99] = 0;</td></tr></table>>]
+288 -> 291[label=""]
+287 -> 288 [label="Function start dummy edge" fontname="Courier New"]
+100027 [shape="component" label="ldv_strcpy_1"]
+291 -> 100027 [label="ldv_strcpy_1(data, (const char *)(&source));" fontname="Courier New"]
+100027 -> 292 [label="" fontname="Courier New"]
+100028 [shape="component" label="printLine"]
+292 -> 100028 [label="printLine((const char *)data);" fontname="Courier New"]
+100028 -> 293 [label="" fontname="Courier New"]
+293 -> 286 [label="return;" fontname="Courier New"]
+}

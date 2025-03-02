@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_declare_loop_18_good {
+34 [shape="circle" label="N34\n2"]
+35 [shape="circle" label="N35\n1"]
+33 [shape="circle" label="N33\n3"]
+32 [shape="circle" label="N32\n0"]
+100014 [shape="component" label="goodG2B"]
+34 -> 100014 [label="goodG2B();" fontname="Courier New"]
+100014 -> 35 [label="" fontname="Courier New"]
+33 -> 34 [label="Function start dummy edge" fontname="Courier New"]
+35 -> 32 [label="return;" fontname="Courier New"]
+}

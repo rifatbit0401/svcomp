@@ -1,0 +1,19 @@
+line 692:	N280 -{srand((unsigned int)tmp);}-> N281
+	GLOBAL_CONST_TRUE == 1;
+	GLOBAL_CONST_FALSE == 0;
+	GLOBAL_CONST_FIVE == 5;
+	globalTrue == 1;
+	globalFalse == 0;
+	globalFive == 5;
+	globalArgc == 0;
+	globalArgv == 0LL;
+line 694:	N281 -{printLine("Calling bad()...")}-> N1
+line 203:	N2 -{[line != ((const char *)0)]}-> N4
+line 204:	N4 -{printf("%s\n", line);}-> N6
+line 696:	N282 -{CWE124_Buffer_Underwrite__char_declare_memcpy_53_bad()}-> N266
+line 672:	N269 -{memset((void *)(&dataBuffer), 65, 99UL);}-> N270
+line 678:	N272 -{CWE124_Buffer_Underwrite__char_declare_memcpy_53b_badSink(data)}-> N261
+line 655:	N262 -{CWE124_Buffer_Underwrite__char_declare_memcpy_53c_badSink(data)}-> N256
+line 646:	N257 -{CWE124_Buffer_Underwrite__char_declare_memcpy_53d_badSink(data)}-> N246
+line 629:	N248 -{memset((void *)(&source), 67, 99UL);}-> N249
+line 633:	N250 -{memcpy((void *)data, (const void *)(&source), 100UL);}-> N251

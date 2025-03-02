@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_memmove_32_bad {
+259 [shape="circle" label="N259\n4"]
+260 [shape="circle" label="N260\n3"]
+261 [shape="circle" label="N261\n2"]
+262 [shape="circle" label="N262\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char dataBadBuffer[10U];</td></tr><tr><td align="right">249</td><td align="left">char dataGoodBuffer[11U];</td></tr><tr><td align="right">250</td><td align="left">char **dataPtr1 = &amp;data;</td></tr><tr><td align="right">251</td><td align="left">char **dataPtr2 = &amp;data;</td></tr><tr><td align="right">252</td><td align="left">char *data_0 = *dataPtr1;</td></tr><tr><td align="right">253</td><td align="left">data_0 = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">254</td><td align="left">*data_0 = 0;</td></tr><tr><td align="right">255</td><td align="left">*dataPtr1 = data_0;</td></tr><tr><td align="right">256</td><td align="left">char *data_1 = *dataPtr2;</td></tr><tr><td align="right">257</td><td align="left">size_t tmp;</td></tr><tr><td align="right">258</td><td align="left">char source[11U] = &#123; 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 0 &#125;;</td></tr></table>>]
+246 -> 259[label=""]
+100031 [shape="component" label="ldv_strlen_1"]
+259 -> 100031 [label="tmp = ldv_strlen_1((const char *)(&source));" fontname="Courier New"]
+100031 -> 260 [label="" fontname="Courier New"]
+100032 [shape="component" label="printLine"]
+261 -> 100032 [label="printLine((const char *)data_1);" fontname="Courier New"]
+100032 -> 262 [label="" fontname="Courier New"]
+260 -> 261 [label="memmove((void *)data_1, (const void *)(&source), tmp + 1UL);" fontname="Courier New"]
+262 -> 245 [label="return;" fontname="Courier New"]
+}

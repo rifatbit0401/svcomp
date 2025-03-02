@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__CWE129_large_53c_goodG2BSink {
+366 [shape="circle" label="N366\n3"]
+367 [shape="circle" label="N367\n2"]
+368 [shape="circle" label="N368\n1"]
+365 [shape="circle" label="N365\n0"]
+366 -> 367 [label="Function start dummy edge" fontname="Courier New"]
+100023 [shape="component" label="CWE126_Buffer_Overread__CWE129_large_53d_goodG2BSink"]
+367 -> 100023 [label="CWE126_Buffer_Overread__CWE129_large_53d_goodG2BSink(data);" fontname="Courier New"]
+100023 -> 368 [label="" fontname="Courier New"]
+368 -> 365 [label="return;" fontname="Courier New"]
+}

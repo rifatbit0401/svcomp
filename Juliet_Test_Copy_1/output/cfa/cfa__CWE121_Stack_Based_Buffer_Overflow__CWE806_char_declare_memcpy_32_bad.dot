@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_32_bad {
+259 [shape="circle" label="N259\n5"]
+260 [shape="circle" label="N260\n4"]
+262 [shape="circle" label="N262\n2"]
+263 [shape="circle" label="N263\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">249</td><td align="left">char **dataPtr1 = &amp;data;</td></tr><tr><td align="right">250</td><td align="left">char **dataPtr2 = &amp;data;</td></tr><tr><td align="right">251</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">252</td><td align="left">char *data_0 = *dataPtr1;</td></tr><tr><td align="right">253</td><td align="left">memset((void *)data_0, 65, 99UL);</td></tr><tr><td align="right">254</td><td align="left">*(data_0 + 99U) = 0;</td></tr><tr><td align="right">255</td><td align="left">*dataPtr1 = data_0;</td></tr><tr><td align="right">256</td><td align="left">char *data_1 = *dataPtr2;</td></tr><tr><td align="right">257</td><td align="left">size_t tmp;</td></tr><tr><td align="right">258</td><td align="left">char dest[50U] = &#123; 0 &#125;;</td></tr></table>>]
+246 -> 259[label=""]
+260 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">260</td><td align="left">memcpy((void *)(&amp;dest), (const void *)data_1, tmp);</td></tr><tr><td align="right">261</td><td align="left">dest[49] = 0;</td></tr></table>>]
+260 -> 262[label=""]
+100033 [shape="component" label="ldv_strlen_1"]
+259 -> 100033 [label="tmp = ldv_strlen_1((const char *)data_1);" fontname="Courier New"]
+100033 -> 260 [label="" fontname="Courier New"]
+100034 [shape="component" label="printLine"]
+262 -> 100034 [label="printLine((const char *)data_1);" fontname="Courier New"]
+100034 -> 263 [label="" fontname="Courier New"]
+263 -> 245 [label="return;" fontname="Courier New"]
+}

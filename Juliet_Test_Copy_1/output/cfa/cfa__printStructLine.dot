@@ -1,0 +1,7 @@
+digraph printStructLine {
+65 [shape="circle" label="N65\n3"]
+66 [shape="circle" label="N66\n2"]
+66 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">66</td><td align="left">printf(\&quot;%d -- %d\n\&quot;, structTwoIntsStruct-&gt;intOne, structTwoIntsStruct-&gt;intTwo);</td></tr><tr><td align="right">67</td><td align="left">return;</td></tr></table>>]
+66 -> 64[label=""]
+65 -> 66 [label="Function start dummy edge" fontname="Courier New"]
+}

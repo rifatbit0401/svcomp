@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE170_char_memcpy_14_good {
+31 [shape="circle" label="N31\n3"]
+32 [shape="circle" label="N32\n2"]
+33 [shape="circle" label="N33\n1"]
+30 [shape="circle" label="N30\n4"]
+29 [shape="circle" label="N29\n0"]
+100020 [shape="component" label="good1_0"]
+31 -> 100020 [label="good1_0();" fontname="Courier New"]
+100020 -> 32 [label="" fontname="Courier New"]
+100021 [shape="component" label="good2_0"]
+32 -> 100021 [label="good2_0();" fontname="Courier New"]
+100021 -> 33 [label="" fontname="Courier New"]
+30 -> 31 [label="Function start dummy edge" fontname="Courier New"]
+33 -> 29 [label="return;" fontname="Courier New"]
+}

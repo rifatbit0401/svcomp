@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE129_large_66_good {
+389 [shape="circle" label="N389\n3"]
+390 [shape="circle" label="N390\n2"]
+391 [shape="circle" label="N391\n1"]
+388 [shape="circle" label="N388\n4"]
+387 [shape="circle" label="N387\n0"]
+100039 [shape="component" label="goodG2B"]
+389 -> 100039 [label="goodG2B();" fontname="Courier New"]
+100039 -> 390 [label="" fontname="Courier New"]
+100040 [shape="component" label="goodB2G"]
+390 -> 100040 [label="goodB2G();" fontname="Courier New"]
+100040 -> 391 [label="" fontname="Courier New"]
+388 -> 389 [label="Function start dummy edge" fontname="Courier New"]
+391 -> 387 [label="return;" fontname="Courier New"]
+}

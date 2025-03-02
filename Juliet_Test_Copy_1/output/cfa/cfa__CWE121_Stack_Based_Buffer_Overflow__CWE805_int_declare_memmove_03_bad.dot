@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int_declare_memmove_03_bad {
+253 [shape="circle" label="N253\n2"]
+254 [shape="circle" label="N254\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">int *data = 0;</td></tr><tr><td align="right">248</td><td align="left">int dataBadBuffer[50U];</td></tr><tr><td align="right">249</td><td align="left">int dataGoodBuffer[100U];</td></tr><tr><td align="right">250</td><td align="left">data = (int *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">251</td><td align="left">int source[100U] = &#123; 0 &#125;;</td></tr><tr><td align="right">252</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 400UL);</td></tr></table>>]
+246 -> 253[label=""]
+100007 [shape="component" label="printIntLine"]
+253 -> 100007 [label="printIntLine(*data);" fontname="Courier New"]
+100007 -> 254 [label="" fontname="Courier New"]
+254 -> 245 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memmove_53_good {
+48 [shape="circle" label="N48\n2"]
+49 [shape="circle" label="N49\n1"]
+47 [shape="circle" label="N47\n3"]
+46 [shape="circle" label="N46\n0"]
+100025 [shape="component" label="goodG2B"]
+48 -> 100025 [label="goodG2B();" fontname="Courier New"]
+100025 -> 49 [label="" fontname="Courier New"]
+47 -> 48 [label="Function start dummy edge" fontname="Courier New"]
+49 -> 46 [label="return;" fontname="Courier New"]
+}

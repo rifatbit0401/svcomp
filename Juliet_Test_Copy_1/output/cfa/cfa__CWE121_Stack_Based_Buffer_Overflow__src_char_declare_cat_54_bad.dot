@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cat_54_bad {
+356 [shape="circle" label="N356\n2"]
+357 [shape="circle" label="N357\n1"]
+349 [shape="circle" label="N349\n0"]
+350 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">350</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">351</td><td align="left">char *data = 0;</td></tr><tr><td align="right">352</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">353</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">354</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">355</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+350 -> 356[label=""]
+100003 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cat_54b_badSink"]
+356 -> 100003 [label="CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cat_54b_badSink(data);" fontname="Courier New"]
+100003 -> 357 [label="" fontname="Courier New"]
+357 -> 349 [label="return;" fontname="Courier New"]
+}

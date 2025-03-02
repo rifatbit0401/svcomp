@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53_bad {
+391 [shape="circle" label="N391\n2"]
+392 [shape="circle" label="N392\n1"]
+384 [shape="circle" label="N384\n0"]
+385 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">385</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">386</td><td align="left">char *data = 0;</td></tr><tr><td align="right">387</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">388</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">389</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">390</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+385 -> 391[label=""]
+100038 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53b_badSink"]
+391 -> 100038 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_loop_53b_badSink(data);" fontname="Courier New"]
+100038 -> 392 [label="" fontname="Courier New"]
+392 -> 384 [label="return;" fontname="Courier New"]
+}

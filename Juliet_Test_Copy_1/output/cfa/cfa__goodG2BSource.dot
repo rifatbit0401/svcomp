@@ -1,0 +1,7 @@
+digraph goodG2BSource {
+345 [shape="circle" label="N345\n4"]
+346 [shape="circle" label="N346\n3"]
+346 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">346</td><td align="left">memset((void *)data, 65, 49UL);</td></tr><tr><td align="right">347</td><td align="left">*(data + 49U) = 0;</td></tr><tr><td align="right">348</td><td align="left">return data;</td></tr></table>>]
+346 -> 344[label=""]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+}

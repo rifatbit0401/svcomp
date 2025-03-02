@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_64_bad {
+271 [shape="circle" label="N271\n2"]
+272 [shape="circle" label="N272\n1"]
+263 [shape="circle" label="N263\n0"]
+264 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">264</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">265</td><td align="left">char *data = 0;</td></tr><tr><td align="right">266</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">267</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">268</td><td align="left">data = dataBuffer;</td></tr><tr><td align="right">269</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">270</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+264 -> 271[label=""]
+100028 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_64b_badSink"]
+271 -> 100028 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_64b_badSink((void *)(&data));" fontname="Courier New"]
+100028 -> 272 [label="" fontname="Courier New"]
+272 -> 263 [label="return;" fontname="Courier New"]
+}

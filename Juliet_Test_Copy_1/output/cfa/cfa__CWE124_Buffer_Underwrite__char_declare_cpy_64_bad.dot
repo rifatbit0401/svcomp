@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_declare_cpy_64_bad {
+368 [shape="circle" label="N368\n2"]
+369 [shape="circle" label="N369\n1"]
+361 [shape="circle" label="N361\n0"]
+362 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">362</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">363</td><td align="left">char *data = 0;</td></tr><tr><td align="right">364</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">365</td><td align="left">memset((void *)(&amp;dataBuffer), 65, 99UL);</td></tr><tr><td align="right">366</td><td align="left">dataBuffer[99] = 0;</td></tr><tr><td align="right">367</td><td align="left">data = ((char *)(&amp;dataBuffer)) + 18446744073709551608ULL;</td></tr></table>>]
+362 -> 368[label=""]
+100028 [shape="component" label="CWE124_Buffer_Underwrite__char_declare_cpy_64b_badSink"]
+368 -> 100028 [label="CWE124_Buffer_Underwrite__char_declare_cpy_64b_badSink((void *)(&data));" fontname="Courier New"]
+100028 -> 369 [label="" fontname="Courier New"]
+369 -> 361 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph ldv_reference_calloc {
+680 [shape="circle" label="N680\n4"]
+681 [shape="circle" label="N681\n3"]
+681 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">681</td><td align="left">void *tmp;</td></tr><tr><td align="right">682</td><td align="left">tmp = calloc(nmemb, size);</td></tr><tr><td align="right">683</td><td align="left">return tmp;</td></tr></table>>]
+681 -> 679[label=""]
+680 -> 681 [label="Function start dummy edge" fontname="Courier New"]
+}

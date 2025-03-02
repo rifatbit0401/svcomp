@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_52b_badSink {
+246 [shape="circle" label="N246\n3"]
+247 [shape="circle" label="N247\n2"]
+248 [shape="circle" label="N248\n1"]
+245 [shape="circle" label="N245\n0"]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+100039 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_52c_badSink"]
+247 -> 100039 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_52c_badSink(data);" fontname="Courier New"]
+100039 -> 248 [label="" fontname="Courier New"]
+248 -> 245 [label="return;" fontname="Courier New"]
+}

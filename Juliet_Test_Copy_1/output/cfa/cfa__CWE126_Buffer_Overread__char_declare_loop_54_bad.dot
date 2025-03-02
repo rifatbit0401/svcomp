@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_declare_loop_54_bad {
+369 [shape="circle" label="N369\n2"]
+370 [shape="circle" label="N370\n1"]
+359 [shape="circle" label="N359\n0"]
+360 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">360</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">361</td><td align="left">char *data = 0;</td></tr><tr><td align="right">362</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">363</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">364</td><td align="left">memset((void *)(&amp;dataBadBuffer), 65, 49UL);</td></tr><tr><td align="right">365</td><td align="left">dataBadBuffer[49] = 0;</td></tr><tr><td align="right">366</td><td align="left">memset((void *)(&amp;dataGoodBuffer), 65, 99UL);</td></tr><tr><td align="right">367</td><td align="left">dataGoodBuffer[99] = 0;</td></tr><tr><td align="right">368</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr></table>>]
+360 -> 369[label=""]
+100022 [shape="component" label="CWE126_Buffer_Overread__char_declare_loop_54b_badSink"]
+369 -> 100022 [label="CWE126_Buffer_Overread__char_declare_loop_54b_badSink(data);" fontname="Courier New"]
+100022 -> 370 [label="" fontname="Courier New"]
+370 -> 359 [label="return;" fontname="Courier New"]
+}

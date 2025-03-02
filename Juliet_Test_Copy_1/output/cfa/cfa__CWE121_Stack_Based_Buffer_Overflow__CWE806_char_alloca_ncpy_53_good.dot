@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_53_good {
+389 [shape="circle" label="N389\n2"]
+390 [shape="circle" label="N390\n1"]
+388 [shape="circle" label="N388\n3"]
+387 [shape="circle" label="N387\n0"]
+100021 [shape="component" label="goodG2B"]
+389 -> 100021 [label="goodG2B();" fontname="Courier New"]
+100021 -> 390 [label="" fontname="Courier New"]
+388 -> 389 [label="Function start dummy edge" fontname="Courier New"]
+390 -> 387 [label="return;" fontname="Courier New"]
+}

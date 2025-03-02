@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE129_rand_54_good {
+382 [shape="circle" label="N382\n3"]
+383 [shape="circle" label="N383\n2"]
+384 [shape="circle" label="N384\n1"]
+381 [shape="circle" label="N381\n4"]
+380 [shape="circle" label="N380\n0"]
+100044 [shape="component" label="goodG2B"]
+382 -> 100044 [label="goodG2B();" fontname="Courier New"]
+100044 -> 383 [label="" fontname="Courier New"]
+100045 [shape="component" label="goodB2G"]
+383 -> 100045 [label="goodB2G();" fontname="Courier New"]
+100045 -> 384 [label="" fontname="Courier New"]
+381 -> 382 [label="Function start dummy edge" fontname="Courier New"]
+384 -> 380 [label="return;" fontname="Courier New"]
+}

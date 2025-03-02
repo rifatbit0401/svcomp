@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_alloca_loop_66_bad {
+379 [shape="circle" label="N379\n2"]
+380 [shape="circle" label="N380\n1"]
+369 [shape="circle" label="N369\n0"]
+370 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">370</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">371</td><td align="left">char *data = 0;</td></tr><tr><td align="right">372</td><td align="left">char *dataArray[5U];</td></tr><tr><td align="right">373</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">374</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">375</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">376</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">377</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr><tr><td align="right">378</td><td align="left">dataArray[2] = data;</td></tr></table>>]
+370 -> 379[label=""]
+100017 [shape="component" label="CWE127_Buffer_Underread__char_alloca_loop_66b_badSink"]
+379 -> 100017 [label="CWE127_Buffer_Underread__char_alloca_loop_66b_badSink((char **)(&dataArray));" fontname="Courier New"]
+100017 -> 380 [label="" fontname="Courier New"]
+380 -> 369 [label="return;" fontname="Courier New"]
+}

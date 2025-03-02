@@ -1,0 +1,15 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE135_17_good {
+329 [shape="circle" label="N329\n3"]
+330 [shape="circle" label="N330\n2"]
+331 [shape="circle" label="N331\n1"]
+328 [shape="circle" label="N328\n4"]
+327 [shape="circle" label="N327\n0"]
+100019 [shape="component" label="goodB2G"]
+329 -> 100019 [label="goodB2G();" fontname="Courier New"]
+100019 -> 330 [label="" fontname="Courier New"]
+100020 [shape="component" label="goodG2B"]
+330 -> 100020 [label="goodG2B();" fontname="Courier New"]
+100020 -> 331 [label="" fontname="Courier New"]
+328 -> 329 [label="Function start dummy edge" fontname="Courier New"]
+331 -> 327 [label="return;" fontname="Courier New"]
+}

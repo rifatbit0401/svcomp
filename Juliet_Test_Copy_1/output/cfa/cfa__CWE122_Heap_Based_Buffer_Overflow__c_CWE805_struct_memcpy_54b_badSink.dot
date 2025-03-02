@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_54b_badSink {
+345 [shape="circle" label="N345\n3"]
+346 [shape="circle" label="N346\n2"]
+347 [shape="circle" label="N347\n1"]
+344 [shape="circle" label="N344\n0"]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+100004 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_54c_badSink"]
+346 -> 100004 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_54c_badSink(data);" fontname="Courier New"]
+100004 -> 347 [label="" fontname="Courier New"]
+347 -> 344 [label="return;" fontname="Courier New"]
+}

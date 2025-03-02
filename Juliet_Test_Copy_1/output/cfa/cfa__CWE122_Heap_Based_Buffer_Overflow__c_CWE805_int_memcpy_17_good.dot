@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memcpy_17_good {
+31 [shape="circle" label="N31\n2"]
+32 [shape="circle" label="N32\n1"]
+30 [shape="circle" label="N30\n3"]
+29 [shape="circle" label="N29\n0"]
+100027 [shape="component" label="goodG2B"]
+31 -> 100027 [label="goodG2B();" fontname="Courier New"]
+100027 -> 32 [label="" fontname="Courier New"]
+30 -> 31 [label="Function start dummy edge" fontname="Courier New"]
+32 -> 29 [label="return;" fontname="Courier New"]
+}

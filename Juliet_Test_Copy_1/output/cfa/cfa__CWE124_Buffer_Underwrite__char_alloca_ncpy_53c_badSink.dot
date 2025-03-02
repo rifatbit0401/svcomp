@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_ncpy_53c_badSink {
+393 [shape="circle" label="N393\n3"]
+394 [shape="circle" label="N394\n2"]
+395 [shape="circle" label="N395\n1"]
+392 [shape="circle" label="N392\n0"]
+393 -> 394 [label="Function start dummy edge" fontname="Courier New"]
+100025 [shape="component" label="CWE124_Buffer_Underwrite__char_alloca_ncpy_53d_badSink"]
+394 -> 100025 [label="CWE124_Buffer_Underwrite__char_alloca_ncpy_53d_badSink(data);" fontname="Courier New"]
+100025 -> 395 [label="" fontname="Courier New"]
+395 -> 392 [label="return;" fontname="Courier New"]
+}

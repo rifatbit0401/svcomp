@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__malloc_char_memmove_18_good {
+26 [shape="circle" label="N26\n2"]
+27 [shape="circle" label="N27\n1"]
+25 [shape="circle" label="N25\n3"]
+24 [shape="circle" label="N24\n0"]
+100019 [shape="component" label="goodG2B"]
+26 -> 100019 [label="goodG2B();" fontname="Courier New"]
+100019 -> 27 [label="" fontname="Courier New"]
+25 -> 26 [label="Function start dummy edge" fontname="Courier New"]
+27 -> 24 [label="return;" fontname="Courier New"]
+}

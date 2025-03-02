@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_alloca_loop_15_bad {
+372 [shape="doublecircle" label="N372\n10"]
+374 [shape="circle" label="N374\n4"]
+375 [shape="circle" label="N375\n9"]
+368 [shape="doubleoctagon" label="N368\n3"]
+369 [shape="circle" label="N369\n2"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">int64_t *data = 0;</td></tr><tr><td align="right">347</td><td align="left">int64_t *dataBadBuffer;</td></tr><tr><td align="right">348</td><td align="left">dataBadBuffer = __builtin_alloca(400UL);</td></tr><tr><td align="right">349</td><td align="left">int64_t *dataGoodBuffer;</td></tr><tr><td align="right">350</td><td align="left">dataGoodBuffer = __builtin_alloca(800UL);</td></tr><tr><td align="right">351</td><td align="left">switch (6)</td></tr><tr><td align="right">352</td><td align="left">__case__[6 == 6]</td></tr><tr><td align="right">355</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">357</td><td align="left">Goto: ldv_2927</td></tr><tr><td align="right">362</td><td align="left">Label: ldv_2927</td></tr><tr><td align="right">363</td><td align="left">int64_t source[100U] = &#123; 0L &#125;;</td></tr><tr><td align="right">364</td><td align="left">size_t i;</td></tr><tr><td align="right">365</td><td align="left">i = 0UL;</td></tr><tr><td align="right">366</td><td align="left">Goto: ldv_2932</td></tr></table>>]
+345 -> 372[label=""]
+375 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">375</td><td align="left">Goto: ldv_2933</td></tr><tr><td align="right">378</td><td align="left">Label: ldv_2933</td></tr><tr><td align="right">379</td><td align="left">printLongLongLine(*data);</td></tr><tr><td align="right">380</td><td align="left">return;</td></tr></table>>]
+375 -> 344[label=""]
+369 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">369</td><td align="left">*(data + i) = source[i];</td></tr><tr><td align="right">370</td><td align="left">i = i + 1UL;</td></tr><tr><td align="right">371</td><td align="left">Label: ldv_2932</td></tr></table>>]
+369 -> 372[label=""]
+372 -> 374 [label="[i <= 99UL]" fontname="Courier New"]
+372 -> 375 [label="[!(i <= 99UL)]" fontname="Courier New"]
+374 -> 368 [label="Goto: ldv_2931" fontname="Courier New"]
+368 -> 369 [label="Label: ldv_2931" fontname="Courier New"]
+}

@@ -1,0 +1,17 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_54e_badSink {
+246 [shape="circle" label="N246\n6"]
+247 [shape="circle" label="N247\n5"]
+248 [shape="circle" label="N248\n4"]
+249 [shape="circle" label="N249\n3"]
+250 [shape="circle" label="N250\n2"]
+250 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">250</td><td align="left">free((void *)data);</td></tr><tr><td align="right">251</td><td align="left">return;</td></tr></table>>]
+250 -> 245[label=""]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+100040 [shape="component" label="ldv_strcpy_1"]
+248 -> 100040 [label="ldv_strcpy_1((char *)(&dest), (const char *)data);" fontname="Courier New"]
+100040 -> 249 [label="" fontname="Courier New"]
+100041 [shape="component" label="printLine"]
+249 -> 100041 [label="printLine((const char *)data);" fontname="Courier New"]
+100041 -> 250 [label="" fontname="Courier New"]
+247 -> 248 [label="char dest[50U] = { 0 };" fontname="Courier New"]
+}

@@ -1,0 +1,14 @@
+digraph goodB2G {
+275 [shape="circle" label="N275\n6"]
+276 [shape="circle" label="N276\n5"]
+279 [shape="circle" label="N279\n2"]
+280 [shape="circle" label="N280\n1"]
+274 [shape="circle" label="N274\n0"]
+276 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">276</td><td align="left">int data;</td></tr><tr><td align="right">277</td><td align="left">data = -1;</td></tr><tr><td align="right">278</td><td align="left">fscanf(stdin, \&quot;%d\&quot;, &amp;data);</td></tr></table>>]
+276 -> 279[label=""]
+275 -> 276 [label="Function start dummy edge" fontname="Courier New"]
+100032 [shape="component" label="goodB2GSink"]
+279 -> 100032 [label="goodB2GSink(data);" fontname="Courier New"]
+100032 -> 280 [label="" fontname="Courier New"]
+280 -> 274 [label="return;" fontname="Courier New"]
+}

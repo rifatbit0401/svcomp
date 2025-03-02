@@ -1,0 +1,492 @@
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        5
+Successful analysis: /opt/cpachecker/config/components/smgAnalysis-symEx.properties
+
+
+Statistics for: /opt/cpachecker/config/components/smgAnalysis-symEx.properties
+==============================================================================
+
+SMGCPA statistics
+-----------------
+Number of variables per state:                     15.03 (sum: 947, count: 63, min: 0, max: 18)
+Number of global variables per state:              8.87 (sum: 559, count: 63, min: 0, max: 10)
+
+
+
+
+Number of assumptions:                                   24
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+Number of list materializations: :                 0
+Total time spent on materialization: :             0ms
+Max time spent on materialization: :               0ms
+Number of 0+ materializations:                            0
+Total time spent on 0+ materialization: :          0ms
+Max time spent on 0+ materialization: :            0ms
+Number of lists abstracted in total: :             0
+Total time spent on list abstraction: :            0ms
+Max time spent on list abstraction: :              0ms
+Total time spent on searching for list abstractions: : 0ms
+Max time spent on searching a single list abstractions: : 0ms
+
+AutomatonAnalysis (SMGCPADEREF) statistics
+------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.007s
+Total time for strengthen operator:                    0.119s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAFREE) statistics
+-----------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.006s
+Total time for strengthen operator:                    0.073s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAMEMTRACK) statistics
+---------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Total time for strengthen operator:                    0.078s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (svcompTerminatingFunctions) statistics
+---------------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.003s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            63
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   62
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.096s (Max:     1.096s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.118s
+  Time for transfer relation:         0.972s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.003s
+
+
+Statistics for: /opt/cpachecker/config/components/smgAnalysis-symEx-concrete-memory-access.properties
+=====================================================================================================
+Time spent in analysis thread /opt/cpachecker/config/components/smgAnalysis-symEx-concrete-memory-access.properties:     0.001s
+
+SMGCPA statistics
+-----------------
+Number of variables per state:                     15.03 (sum: 947, count: 63, min: 0, max: 18)
+Number of global variables per state:              8.87 (sum: 559, count: 63, min: 0, max: 10)
+
+
+
+
+Number of assumptions:                                   24
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+Number of list materializations: :                 0
+Total time spent on materialization: :             0ms
+Max time spent on materialization: :               0ms
+Number of 0+ materializations:                            0
+Total time spent on 0+ materialization: :          0ms
+Max time spent on 0+ materialization: :            0ms
+Number of lists abstracted in total: :             0
+Total time spent on list abstraction: :            0ms
+Max time spent on list abstraction: :              0ms
+Total time spent on searching for list abstractions: : 0ms
+Max time spent on searching a single list abstractions: : 0ms
+
+AutomatonAnalysis (SMGCPADEREF) statistics
+------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.036s
+Total time for strengthen operator:                    0.061s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAFREE) statistics
+-----------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.006s
+Total time for strengthen operator:                    0.093s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAMEMTRACK) statistics
+---------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Total time for strengthen operator:                    0.124s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (svcompTerminatingFunctions) statistics
+---------------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.029s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 239, count: 239, min: 1, max: 1) [1 x 239]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            63
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   62
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.124s (Max:     1.124s)
+  Time for choose from waitlist:      0.001s
+  Time for precision adjustment:      0.144s
+  Time for transfer relation:         0.959s
+  Time for stop operator:             0.003s
+  Time for adding to reached set:     0.005s
+
+
+Statistics for: /opt/cpachecker/config/components/smgValueAnalysis-abstract-concrete-values-with-cex.properties
+===============================================================================================================
+Time spent in analysis thread /opt/cpachecker/config/components/smgValueAnalysis-abstract-concrete-values-with-cex.properties:     0.323s
+
+SMGCPA statistics
+-----------------
+Number of variables per state:                     15.79 (sum: 821, count: 52, min: 0, max: 19)
+Number of global variables per state:              8.94 (sum: 465, count: 52, min: 0, max: 10)
+
+
+
+
+Number of assumptions:                                   16
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+Number of list materializations: :                 0
+Total time spent on materialization: :             0ms
+Max time spent on materialization: :               0ms
+Number of 0+ materializations:                            0
+Total time spent on 0+ materialization: :          0ms
+Max time spent on 0+ materialization: :            0ms
+Number of lists abstracted in total: :             0
+Total time spent on list abstraction: :            0ms
+Max time spent on list abstraction: :              0ms
+Total time spent on searching for list abstractions: : 0ms
+Max time spent on searching a single list abstractions: : 0ms
+
+AutomatonAnalysis (SMGCPADEREF) statistics
+------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.011s
+Total time for strengthen operator:                    0.105s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 228, count: 228, min: 1, max: 1) [1 x 228]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAFREE) statistics
+-----------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.002s
+Total time for strengthen operator:                    0.067s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 228, count: 228, min: 1, max: 1) [1 x 228]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAMEMTRACK) statistics
+---------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Total time for strengthen operator:                    0.093s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 228, count: 228, min: 1, max: 1) [1 x 228]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (svcompTerminatingFunctions) statistics
+---------------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.010s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 228, count: 228, min: 1, max: 1) [1 x 228]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            49
+Max size of waitlist:            3
+Average size of waitlist:        1
+Number of computed successors:   51
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.134s (Max:     1.134s)
+  Time for choose from waitlist:      0.019s
+  Time for precision adjustment:      0.116s
+  Time for transfer relation:         0.981s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.011s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Statistics for: /opt/cpachecker/config/components/smgValueAnalysis-with-cex.properties
+======================================================================================
+Time spent in analysis thread /opt/cpachecker/config/components/smgValueAnalysis-with-cex.properties:     0.369s
+
+SMGCPA statistics
+-----------------
+Number of variables per state:                     15.28 (sum: 718, count: 47, min: 0, max: 18)
+Number of global variables per state:              8.60 (sum: 404, count: 47, min: 0, max: 9)
+
+
+
+
+Number of assumptions:                                   20
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+Number of list materializations: :                 0
+Total time spent on materialization: :             0ms
+Max time spent on materialization: :               0ms
+Number of 0+ materializations:                            0
+Total time spent on 0+ materialization: :          0ms
+Max time spent on 0+ materialization: :            0ms
+Number of lists abstracted in total: :             0
+Total time spent on list abstraction: :            0ms
+Max time spent on list abstraction: :              0ms
+Total time spent on searching for list abstractions: : 0ms
+Max time spent on searching a single list abstractions: : 0ms
+
+AutomatonAnalysis (SMGCPADEREF) statistics
+------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.010s
+Total time for strengthen operator:                    0.077s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 223, count: 223, min: 1, max: 1) [1 x 223]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAFREE) statistics
+-----------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.008s
+Total time for strengthen operator:                    0.066s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 223, count: 223, min: 1, max: 1) [1 x 223]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAMEMTRACK) statistics
+---------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.002s
+Total time for strengthen operator:                    0.038s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 223, count: 223, min: 1, max: 1) [1 x 223]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (svcompTerminatingFunctions) statistics
+---------------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.008s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 223, count: 223, min: 1, max: 1) [1 x 223]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            46
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   46
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.129s (Max:     1.129s)
+  Time for choose from waitlist:      0.011s
+  Time for precision adjustment:      0.189s
+  Time for transfer relation:         0.909s
+  Time for stop operator:             0.001s
+  Time for adding to reached set:     0.001s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Statistics for: /opt/cpachecker/config/components/smgAnalysis-symEx-overapproximating-with-cex.properties
+=========================================================================================================
+Time spent in analysis thread /opt/cpachecker/config/components/smgAnalysis-symEx-overapproximating-with-cex.properties:     0.292s
+
+SMGCPA statistics
+-----------------
+Number of variables per state:                     14.82 (sum: 593, count: 40, min: 0, max: 18)
+Number of global variables per state:              8.52 (sum: 341, count: 40, min: 0, max: 9)
+
+
+
+
+Number of assumptions:                                   16
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+Number of list materializations: :                 0
+Total time spent on materialization: :             0ms
+Max time spent on materialization: :               0ms
+Number of 0+ materializations:                            0
+Total time spent on 0+ materialization: :          0ms
+Max time spent on 0+ materialization: :            0ms
+Number of lists abstracted in total: :             0
+Total time spent on list abstraction: :            0ms
+Max time spent on list abstraction: :              0ms
+Total time spent on searching for list abstractions: : 0ms
+Max time spent on searching a single list abstractions: : 0ms
+
+AutomatonAnalysis (SMGCPADEREF) statistics
+------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.026s
+Total time for strengthen operator:                    0.124s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 217, count: 217, min: 1, max: 1) [1 x 217]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAFREE) statistics
+-----------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.010s
+Total time for strengthen operator:                    0.095s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 217, count: 217, min: 1, max: 1) [1 x 217]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (SMGCPAMEMTRACK) statistics
+---------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.004s
+Total time for strengthen operator:                    0.044s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 217, count: 217, min: 1, max: 1) [1 x 217]
+Number of states with assumption transitions:      0
+
+AutomatonAnalysis (svcompTerminatingFunctions) statistics
+---------------------------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 217, count: 217, min: 1, max: 1) [1 x 217]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            40
+Max size of waitlist:            1
+Average size of waitlist:        1
+Number of computed successors:   40
+Max successors for one state:    1
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.164s (Max:     1.164s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.094s
+  Time for transfer relation:         1.065s
+  Time for stop operator:             0.000s
+  Time for adding to reached set:     0.000s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.089
+  Visited lines:          125
+  Total lines:            470
+  Line coverage:          0.266
+  Visited conditions:     3
+  Total conditions:       56
+  Condition coverage:     0.054
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       735
+Number of CFA edges (per node):                         717 (count: 735, min: 0, max: 8, avg: 0.98)
+Number of relevant variables:                      109
+Number of functions:                               79
+Number of loops (and loop nodes):                         6 (sum: 52, min: 5, max: 14, avg: 8.67)
+Size of reached set:             63
+  Number of reached locations:   45 (6%)
+    Avg states per location:     1
+    Max states per location:     4 (at node N0)
+  Number of reached functions:   7 (9%)
+  Number of partitions:          63
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+
+Time for analysis setup:          5.621s
+  Time for loading CPAs:          1.402s
+  Time for loading parser:        0.699s
+  Time for CFA construction:      2.679s
+    Time for parsing file(s):     0.867s
+    Time for AST to CFA:          0.904s
+    Time for CFA sanity check:    0.064s
+    Time for post-processing:     0.725s
+    Time for loop structure:      0.017s
+    Time for AST structure:       0.000s
+    Time for CFA export:          1.330s
+      Time for function pointers resolving:            0.009s
+        Function calls via function pointers:             1 (count: 1, min: 1, max: 1, avg: 1.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.235s
+        Time for collecting variables:                 0.121s
+        Time for solving dependencies:                 0.003s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.062s
+        Time for exporting data:                       0.049s
+Time for Analysis:                1.257s
+CPU time for analysis:            4.060s
+Time for analyzing result:        0.003s
+Total time for CPAchecker:        6.880s
+Total CPU time for CPAchecker:   16.080s
+Time for statistics:              0.267s
+
+Time for Garbage Collector:       0.180s (in 2 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                215MB (   205 MiB) max;     96MB (    92 MiB) avg;    230MB (   219 MiB) peak
+Used non-heap memory:             51MB (    48 MiB) max;     32MB (    30 MiB) avg;     51MB (    49 MiB) peak
+Used in PS Old Gen pool:          15MB (    14 MiB) max;      7MB (     7 MiB) avg;     15MB (    14 MiB) peak
+Allocated heap memory:          1002MB (   956 MiB) max;   1002MB (   956 MiB) avg
+Allocated non-heap memory:        53MB (    50 MiB) max;     35MB (    33 MiB) avg
+Total process virtual memory:   5606MB (  5346 MiB) max;   4579MB (  4367 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.

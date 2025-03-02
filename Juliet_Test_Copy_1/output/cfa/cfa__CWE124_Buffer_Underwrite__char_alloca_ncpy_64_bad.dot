@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_ncpy_64_bad {
+370 [shape="circle" label="N370\n2"]
+371 [shape="circle" label="N371\n1"]
+362 [shape="circle" label="N362\n0"]
+363 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">363</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">364</td><td align="left">char *data = 0;</td></tr><tr><td align="right">365</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">366</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">367</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">368</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">369</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr></table>>]
+363 -> 370[label=""]
+100025 [shape="component" label="CWE124_Buffer_Underwrite__char_alloca_ncpy_64b_badSink"]
+370 -> 100025 [label="CWE124_Buffer_Underwrite__char_alloca_ncpy_64b_badSink((void *)(&data));" fontname="Courier New"]
+100025 -> 371 [label="" fontname="Courier New"]
+371 -> 362 [label="return;" fontname="Courier New"]
+}

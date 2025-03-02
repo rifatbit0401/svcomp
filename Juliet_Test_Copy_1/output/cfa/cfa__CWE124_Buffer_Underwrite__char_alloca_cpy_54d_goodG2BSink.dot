@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_cpy_54d_goodG2BSink {
+303 [shape="circle" label="N303\n3"]
+304 [shape="circle" label="N304\n2"]
+305 [shape="circle" label="N305\n1"]
+302 [shape="circle" label="N302\n0"]
+303 -> 304 [label="Function start dummy edge" fontname="Courier New"]
+100027 [shape="component" label="CWE124_Buffer_Underwrite__char_alloca_cpy_54e_goodG2BSink"]
+304 -> 100027 [label="CWE124_Buffer_Underwrite__char_alloca_cpy_54e_goodG2BSink(data);" fontname="Courier New"]
+100027 -> 305 [label="" fontname="Courier New"]
+305 -> 302 [label="return;" fontname="Courier New"]
+}

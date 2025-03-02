@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cpy_41_goodG2BSink {
+345 [shape="circle" label="N345\n5"]
+346 [shape="circle" label="N346\n4"]
+347 [shape="circle" label="N347\n3"]
+348 [shape="circle" label="N348\n2"]
+349 [shape="circle" label="N349\n1"]
+344 [shape="circle" label="N344\n0"]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+100028 [shape="component" label="ldv_strcpy_1"]
+347 -> 100028 [label="ldv_strcpy_1((char *)(&dest), (const char *)data);" fontname="Courier New"]
+100028 -> 348 [label="" fontname="Courier New"]
+100029 [shape="component" label="printLine"]
+348 -> 100029 [label="printLine((const char *)data);" fontname="Courier New"]
+100029 -> 349 [label="" fontname="Courier New"]
+346 -> 347 [label="char dest[50U] = { 0 };" fontname="Courier New"]
+349 -> 344 [label="return;" fontname="Courier New"]
+}

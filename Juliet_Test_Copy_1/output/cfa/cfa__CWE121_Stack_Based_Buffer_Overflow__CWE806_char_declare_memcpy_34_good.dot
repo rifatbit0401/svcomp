@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_34_good {
+364 [shape="circle" label="N364\n2"]
+365 [shape="circle" label="N365\n1"]
+363 [shape="circle" label="N363\n3"]
+362 [shape="circle" label="N362\n0"]
+100028 [shape="component" label="goodG2B"]
+364 -> 100028 [label="goodG2B();" fontname="Courier New"]
+100028 -> 365 [label="" fontname="Courier New"]
+363 -> 364 [label="Function start dummy edge" fontname="Courier New"]
+365 -> 362 [label="return;" fontname="Courier New"]
+}

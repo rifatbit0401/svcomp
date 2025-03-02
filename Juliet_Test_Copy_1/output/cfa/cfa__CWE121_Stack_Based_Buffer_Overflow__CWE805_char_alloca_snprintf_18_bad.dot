@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_18_bad {
+261 [shape="circle" label="N261\n2"]
+262 [shape="circle" label="N262\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char *dataBadBuffer;</td></tr><tr><td align="right">249</td><td align="left">dataBadBuffer = __builtin_alloca(50UL);</td></tr><tr><td align="right">250</td><td align="left">char *dataGoodBuffer;</td></tr><tr><td align="right">251</td><td align="left">dataGoodBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">252</td><td align="left">Goto: source</td></tr><tr><td align="right">254</td><td align="left">Label: source</td></tr><tr><td align="right">255</td><td align="left">data = dataBadBuffer;</td></tr><tr><td align="right">256</td><td align="left">*data = 0;</td></tr><tr><td align="right">257</td><td align="left">char source[100U];</td></tr><tr><td align="right">258</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">259</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">260</td><td align="left">snprintf(data, 100UL, \&quot;%s\&quot;, (char *)(&amp;source));</td></tr></table>>]
+246 -> 261[label=""]
+100023 [shape="component" label="printLine"]
+261 -> 100023 [label="printLine((const char *)data);" fontname="Courier New"]
+100023 -> 262 [label="" fontname="Courier New"]
+262 -> 245 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_snprintf_68_good {
+374 [shape="circle" label="N374\n2"]
+375 [shape="circle" label="N375\n1"]
+373 [shape="circle" label="N373\n3"]
+372 [shape="circle" label="N372\n0"]
+100014 [shape="component" label="goodG2B"]
+374 -> 100014 [label="goodG2B();" fontname="Courier New"]
+100014 -> 375 [label="" fontname="Courier New"]
+373 -> 374 [label="Function start dummy edge" fontname="Courier New"]
+375 -> 372 [label="return;" fontname="Courier New"]
+}

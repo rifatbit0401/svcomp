@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68_bad {
+302 [shape="circle" label="N302\n2"]
+303 [shape="circle" label="N303\n1"]
+296 [shape="circle" label="N296\n0"]
+297 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">297</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">298</td><td align="left">int data;</td></tr><tr><td align="right">299</td><td align="left">data = -1;</td></tr><tr><td align="right">300</td><td align="left">data = 10;</td></tr><tr><td align="right">301</td><td align="left">CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68_badData = data;</td></tr></table>>]
+297 -> 302[label=""]
+100022 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68b_badSink"]
+302 -> 100022 [label="CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_68b_badSink();" fontname="Courier New"]
+100022 -> 303 [label="" fontname="Courier New"]
+303 -> 296 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_03_good {
+275 [shape="circle" label="N275\n3"]
+276 [shape="circle" label="N276\n2"]
+277 [shape="circle" label="N277\n1"]
+274 [shape="circle" label="N274\n4"]
+273 [shape="circle" label="N273\n0"]
+100002 [shape="component" label="goodG2B1"]
+275 -> 100002 [label="goodG2B1();" fontname="Courier New"]
+100002 -> 276 [label="" fontname="Courier New"]
+100003 [shape="component" label="goodG2B2"]
+276 -> 100003 [label="goodG2B2();" fontname="Courier New"]
+100003 -> 277 [label="" fontname="Courier New"]
+274 -> 275 [label="Function start dummy edge" fontname="Courier New"]
+277 -> 273 [label="return;" fontname="Courier New"]
+}

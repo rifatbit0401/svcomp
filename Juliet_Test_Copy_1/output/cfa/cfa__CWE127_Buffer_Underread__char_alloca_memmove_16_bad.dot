@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_alloca_memmove_16_bad {
+362 [shape="circle" label="N362\n2"]
+363 [shape="circle" label="N363\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">char *data = 0;</td></tr><tr><td align="right">347</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">348</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">349</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">350</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">351</td><td align="left">Label: ldv_3201</td></tr><tr><td align="right">352</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr><tr><td align="right">353</td><td align="left">Goto: ldv_3200</td></tr><tr><td align="right">356</td><td align="left">Label: ldv_3200</td></tr><tr><td align="right">357</td><td align="left">char dest[100U];</td></tr><tr><td align="right">358</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">359</td><td align="left">dest[99] = 0;</td></tr><tr><td align="right">360</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, 100UL);</td></tr><tr><td align="right">361</td><td align="left">dest[99] = 0;</td></tr></table>>]
+345 -> 362[label=""]
+100001 [shape="component" label="printLine"]
+362 -> 100001 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100001 -> 363 [label="" fontname="Courier New"]
+363 -> 344 [label="return;" fontname="Courier New"]
+}

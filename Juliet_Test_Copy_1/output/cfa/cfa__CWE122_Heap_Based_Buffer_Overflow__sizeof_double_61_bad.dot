@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__sizeof_double_61_bad {
+264 [shape="circle" label="N264\n4"]
+265 [shape="circle" label="N265\n3"]
+266 [shape="circle" label="N266\n2"]
+261 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">261</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">262</td><td align="left">double *data;</td></tr><tr><td align="right">263</td><td align="left">data = (double *)0;</td></tr></table>>]
+261 -> 264[label=""]
+266 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">266</td><td align="left">free((void *)data);</td></tr><tr><td align="right">267</td><td align="left">return;</td></tr></table>>]
+266 -> 260[label=""]
+100027 [shape="component" label="CWE122_Heap_Based_Buffer_Overflow__sizeof_double_61b_badSource"]
+264 -> 100027 [label="data = CWE122_Heap_Based_Buffer_Overflow__sizeof_double_61b_badSource(data);" fontname="Courier New"]
+100027 -> 265 [label="" fontname="Courier New"]
+100028 [shape="component" label="printDoubleLine"]
+265 -> 100028 [label="printDoubleLine(*data);" fontname="Courier New"]
+100028 -> 266 [label="" fontname="Courier New"]
+}

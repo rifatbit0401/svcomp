@@ -1,0 +1,13 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__sizeof_struct_66b_goodG2BSink {
+288 [shape="circle" label="N288\n5"]
+289 [shape="circle" label="N289\n4"]
+290 [shape="circle" label="N290\n3"]
+291 [shape="circle" label="N291\n2"]
+291 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">291</td><td align="left">free((void *)data);</td></tr><tr><td align="right">292</td><td align="left">return;</td></tr></table>>]
+291 -> 287[label=""]
+288 -> 289 [label="Function start dummy edge" fontname="Courier New"]
+100008 [shape="component" label="printStructLine"]
+290 -> 100008 [label="printStructLine((const twoIntsStruct *)data);" fontname="Courier New"]
+100008 -> 291 [label="" fontname="Courier New"]
+289 -> 290 [label="twoIntsStruct *data = *(dataArray + 2U);" fontname="Courier New"]
+}

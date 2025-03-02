@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE129_large_41_bad {
+295 [shape="circle" label="N295\n2"]
+296 [shape="circle" label="N296\n1"]
+290 [shape="circle" label="N290\n0"]
+291 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">291</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">292</td><td align="left">int data;</td></tr><tr><td align="right">293</td><td align="left">data = -1;</td></tr><tr><td align="right">294</td><td align="left">data = 10;</td></tr></table>>]
+291 -> 295[label=""]
+100018 [shape="component" label="badSink"]
+295 -> 100018 [label="badSink(data);" fontname="Courier New"]
+100018 -> 296 [label="" fontname="Courier New"]
+296 -> 290 [label="return;" fontname="Courier New"]
+}

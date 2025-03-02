@@ -1,0 +1,14 @@
+digraph CWE127_Buffer_Underread__char_alloca_memmove_63b_goodG2BSink {
+278 [shape="circle" label="N278\n9"]
+279 [shape="circle" label="N279\n8"]
+285 [shape="circle" label="N285\n2"]
+286 [shape="circle" label="N286\n1"]
+277 [shape="circle" label="N277\n0"]
+279 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">279</td><td align="left">char *data = *dataPtr;</td></tr><tr><td align="right">280</td><td align="left">char dest[100U];</td></tr><tr><td align="right">281</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">282</td><td align="left">dest[99] = 0;</td></tr><tr><td align="right">283</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, 100UL);</td></tr><tr><td align="right">284</td><td align="left">dest[99] = 0;</td></tr></table>>]
+279 -> 285[label=""]
+278 -> 279 [label="Function start dummy edge" fontname="Courier New"]
+100026 [shape="component" label="printLine"]
+285 -> 100026 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100026 -> 286 [label="" fontname="Courier New"]
+286 -> 277 [label="return;" fontname="Courier New"]
+}

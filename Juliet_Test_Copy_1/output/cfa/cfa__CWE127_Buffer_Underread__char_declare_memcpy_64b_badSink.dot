@@ -1,0 +1,14 @@
+digraph CWE127_Buffer_Underread__char_declare_memcpy_64b_badSink {
+246 [shape="circle" label="N246\n10"]
+247 [shape="circle" label="N247\n9"]
+254 [shape="circle" label="N254\n2"]
+255 [shape="circle" label="N255\n1"]
+245 [shape="circle" label="N245\n0"]
+247 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">247</td><td align="left">char **dataPtr = (char **)dataVoidPtr;</td></tr><tr><td align="right">248</td><td align="left">char *data = *dataPtr;</td></tr><tr><td align="right">249</td><td align="left">char dest[100U];</td></tr><tr><td align="right">250</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">251</td><td align="left">dest[99] = 0;</td></tr><tr><td align="right">252</td><td align="left">memcpy((void *)(&amp;dest), (const void *)data, 100UL);</td></tr><tr><td align="right">253</td><td align="left">dest[99] = 0;</td></tr></table>>]
+247 -> 254[label=""]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+100001 [shape="component" label="printLine"]
+254 -> 100001 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100001 -> 255 [label="" fontname="Courier New"]
+255 -> 245 [label="return;" fontname="Courier New"]
+}

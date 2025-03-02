@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__CWE129_connect_socket_53c_badSink {
+360 [shape="circle" label="N360\n3"]
+361 [shape="circle" label="N361\n2"]
+362 [shape="circle" label="N362\n1"]
+359 [shape="circle" label="N359\n0"]
+360 -> 361 [label="Function start dummy edge" fontname="Courier New"]
+100027 [shape="component" label="CWE126_Buffer_Overread__CWE129_connect_socket_53d_badSink"]
+361 -> 100027 [label="CWE126_Buffer_Overread__CWE129_connect_socket_53d_badSink(data);" fontname="Courier New"]
+100027 -> 362 [label="" fontname="Courier New"]
+362 -> 359 [label="return;" fontname="Courier New"]
+}

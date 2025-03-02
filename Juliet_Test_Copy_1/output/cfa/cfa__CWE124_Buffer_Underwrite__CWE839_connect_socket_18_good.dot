@@ -1,0 +1,15 @@
+digraph CWE124_Buffer_Underwrite__CWE839_connect_socket_18_good {
+448 [shape="circle" label="N448\n3"]
+449 [shape="circle" label="N449\n2"]
+450 [shape="circle" label="N450\n1"]
+447 [shape="circle" label="N447\n4"]
+446 [shape="circle" label="N446\n0"]
+100001 [shape="component" label="goodB2G"]
+448 -> 100001 [label="goodB2G();" fontname="Courier New"]
+100001 -> 449 [label="" fontname="Courier New"]
+100002 [shape="component" label="goodG2B"]
+449 -> 100002 [label="goodG2B();" fontname="Courier New"]
+100002 -> 450 [label="" fontname="Courier New"]
+447 -> 448 [label="Function start dummy edge" fontname="Courier New"]
+450 -> 446 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph CWE126_Buffer_Overread__CWE129_fscanf_44_good {
+286 [shape="circle" label="N286\n3"]
+287 [shape="circle" label="N287\n2"]
+288 [shape="circle" label="N288\n1"]
+285 [shape="circle" label="N285\n4"]
+284 [shape="circle" label="N284\n0"]
+100010 [shape="component" label="goodG2B"]
+286 -> 100010 [label="goodG2B();" fontname="Courier New"]
+100010 -> 287 [label="" fontname="Courier New"]
+100011 [shape="component" label="goodB2G"]
+287 -> 100011 [label="goodB2G();" fontname="Courier New"]
+100011 -> 288 [label="" fontname="Courier New"]
+285 -> 286 [label="Function start dummy edge" fontname="Courier New"]
+288 -> 284 [label="return;" fontname="Courier New"]
+}

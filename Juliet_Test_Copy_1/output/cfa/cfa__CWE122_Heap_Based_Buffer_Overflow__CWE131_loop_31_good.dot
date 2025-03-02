@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__CWE131_loop_31_good {
+278 [shape="circle" label="N278\n2"]
+279 [shape="circle" label="N279\n1"]
+277 [shape="circle" label="N277\n3"]
+276 [shape="circle" label="N276\n0"]
+100008 [shape="component" label="goodG2B"]
+278 -> 100008 [label="goodG2B();" fontname="Courier New"]
+100008 -> 279 [label="" fontname="Courier New"]
+277 -> 278 [label="Function start dummy edge" fontname="Courier New"]
+279 -> 276 [label="return;" fontname="Courier New"]
+}

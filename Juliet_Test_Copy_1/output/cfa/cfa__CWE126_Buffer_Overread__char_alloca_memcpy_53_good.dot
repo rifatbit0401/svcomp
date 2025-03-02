@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__char_alloca_memcpy_53_good {
+290 [shape="circle" label="N290\n2"]
+291 [shape="circle" label="N291\n1"]
+289 [shape="circle" label="N289\n3"]
+288 [shape="circle" label="N288\n0"]
+100031 [shape="component" label="goodG2B"]
+290 -> 100031 [label="goodG2B();" fontname="Courier New"]
+100031 -> 291 [label="" fontname="Courier New"]
+289 -> 290 [label="Function start dummy edge" fontname="Courier New"]
+291 -> 288 [label="return;" fontname="Courier New"]
+}

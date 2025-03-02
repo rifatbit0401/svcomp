@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__malloc_char_ncpy_54c_goodG2BSink {
+421 [shape="circle" label="N421\n3"]
+422 [shape="circle" label="N422\n2"]
+423 [shape="circle" label="N423\n1"]
+420 [shape="circle" label="N420\n0"]
+421 -> 422 [label="Function start dummy edge" fontname="Courier New"]
+100029 [shape="component" label="CWE127_Buffer_Underread__malloc_char_ncpy_54d_goodG2BSink"]
+422 -> 100029 [label="CWE127_Buffer_Underread__malloc_char_ncpy_54d_goodG2BSink(data);" fontname="Courier New"]
+100029 -> 423 [label="" fontname="Courier New"]
+423 -> 420 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph CWE127_Buffer_Underread__char_alloca_memcpy_03_good {
+378 [shape="circle" label="N378\n3"]
+379 [shape="circle" label="N379\n2"]
+380 [shape="circle" label="N380\n1"]
+377 [shape="circle" label="N377\n4"]
+376 [shape="circle" label="N376\n0"]
+100002 [shape="component" label="goodG2B1"]
+378 -> 100002 [label="goodG2B1();" fontname="Courier New"]
+100002 -> 379 [label="" fontname="Courier New"]
+100003 [shape="component" label="goodG2B2"]
+379 -> 100003 [label="goodG2B2();" fontname="Courier New"]
+100003 -> 380 [label="" fontname="Courier New"]
+377 -> 378 [label="Function start dummy edge" fontname="Courier New"]
+380 -> 376 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,14 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE131_memmove_53d_badSink {
+246 [shape="circle" label="N246\n5"]
+247 [shape="circle" label="N247\n4"]
+249 [shape="circle" label="N249\n2"]
+250 [shape="circle" label="N250\n1"]
+245 [shape="circle" label="N245\n0"]
+247 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">247</td><td align="left">int source[10U] = &#123; 0 &#125;;</td></tr><tr><td align="right">248</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 40UL);</td></tr></table>>]
+247 -> 249[label=""]
+246 -> 247 [label="Function start dummy edge" fontname="Courier New"]
+100011 [shape="component" label="printIntLine"]
+249 -> 100011 [label="printIntLine(*data);" fontname="Courier New"]
+100011 -> 250 [label="" fontname="Courier New"]
+250 -> 245 [label="return;" fontname="Courier New"]
+}

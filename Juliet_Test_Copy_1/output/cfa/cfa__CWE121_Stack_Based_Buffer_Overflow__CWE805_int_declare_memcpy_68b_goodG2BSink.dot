@@ -1,0 +1,14 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int_declare_memcpy_68b_goodG2BSink {
+345 [shape="circle" label="N345\n6"]
+346 [shape="circle" label="N346\n5"]
+349 [shape="circle" label="N349\n2"]
+350 [shape="circle" label="N350\n1"]
+344 [shape="circle" label="N344\n0"]
+346 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">346</td><td align="left">int *data = CWE121_Stack_Based_Buffer_Overflow__CWE805_int_declare_memcpy_68_goodG2BData;</td></tr><tr><td align="right">347</td><td align="left">int source[100U] = &#123; 0 &#125;;</td></tr><tr><td align="right">348</td><td align="left">memcpy((void *)data, (const void *)(&amp;source), 400UL);</td></tr></table>>]
+346 -> 349[label=""]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+100011 [shape="component" label="printIntLine"]
+349 -> 100011 [label="printIntLine(*data);" fontname="Courier New"]
+100011 -> 350 [label="" fontname="Courier New"]
+350 -> 344 [label="return;" fontname="Courier New"]
+}

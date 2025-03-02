@@ -1,0 +1,11 @@
+digraph CWE127_Buffer_Underread__char_declare_ncpy_68_good {
+258 [shape="circle" label="N258\n2"]
+259 [shape="circle" label="N259\n1"]
+257 [shape="circle" label="N257\n3"]
+256 [shape="circle" label="N256\n0"]
+100039 [shape="component" label="goodG2B"]
+258 -> 100039 [label="goodG2B();" fontname="Courier New"]
+100039 -> 259 [label="" fontname="Courier New"]
+257 -> 258 [label="Function start dummy edge" fontname="Courier New"]
+259 -> 256 [label="return;" fontname="Courier New"]
+}

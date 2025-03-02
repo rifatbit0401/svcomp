@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__char_declare_cpy_51b_badSink {
+272 [shape="circle" label="N272\n7"]
+273 [shape="circle" label="N273\n6"]
+276 [shape="circle" label="N276\n3"]
+277 [shape="circle" label="N277\n2"]
+278 [shape="circle" label="N278\n1"]
+271 [shape="circle" label="N271\n0"]
+273 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">273</td><td align="left">char source[100U];</td></tr><tr><td align="right">274</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">275</td><td align="left">source[99] = 0;</td></tr></table>>]
+273 -> 276[label=""]
+272 -> 273 [label="Function start dummy edge" fontname="Courier New"]
+100010 [shape="component" label="ldv_strcpy_1"]
+276 -> 100010 [label="ldv_strcpy_1(data, (const char *)(&source));" fontname="Courier New"]
+100010 -> 277 [label="" fontname="Courier New"]
+100011 [shape="component" label="printLine"]
+277 -> 100011 [label="printLine((const char *)data);" fontname="Courier New"]
+100011 -> 278 [label="" fontname="Courier New"]
+278 -> 271 [label="return;" fontname="Courier New"]
+}

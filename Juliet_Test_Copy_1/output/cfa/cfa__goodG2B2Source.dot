@@ -1,0 +1,15 @@
+digraph goodG2B2Source {
+370 [shape="circle" label="N370\n7"]
+371 [shape="diamond" label="N371\n6"]
+373 [shape="circle" label="N373\n4"]
+374 [shape="circle" label="N374\n5"]
+372 [shape="circle" label="N372\n1"]
+369 [shape="circle" label="N369\n0"]
+373 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">373</td><td align="left">memset((void *)data, 65, 49UL);</td></tr><tr><td align="right">375</td><td align="left">*(data + 49U) = 0;</td></tr><tr><td align="right">376</td><td align="left"></td></tr></table>>]
+373 -> 372[label=""]
+370 -> 371 [label="Function start dummy edge" fontname="Courier New"]
+371 -> 373 [label="[goodG2B2Static != 0]" fontname="Courier New"]
+371 -> 374 [label="[!(goodG2B2Static != 0)]" fontname="Courier New"]
+372 -> 369 [label="return data;" fontname="Courier New"]
+374 -> 372 [label="" fontname="Courier New"]
+}

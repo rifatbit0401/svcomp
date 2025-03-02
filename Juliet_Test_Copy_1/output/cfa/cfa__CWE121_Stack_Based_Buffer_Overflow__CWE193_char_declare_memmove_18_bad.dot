@@ -1,0 +1,17 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_memmove_18_bad {
+257 [shape="circle" label="N257\n4"]
+258 [shape="circle" label="N258\n3"]
+259 [shape="circle" label="N259\n2"]
+260 [shape="circle" label="N260\n1"]
+245 [shape="circle" label="N245\n0"]
+246 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">246</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">247</td><td align="left">char *data = 0;</td></tr><tr><td align="right">248</td><td align="left">char dataBadBuffer[10U];</td></tr><tr><td align="right">249</td><td align="left">char dataGoodBuffer[11U];</td></tr><tr><td align="right">250</td><td align="left">Goto: source</td></tr><tr><td align="right">252</td><td align="left">Label: source</td></tr><tr><td align="right">253</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">254</td><td align="left">*data = 0;</td></tr><tr><td align="right">255</td><td align="left">size_t tmp;</td></tr><tr><td align="right">256</td><td align="left">char source[11U] = &#123; 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 0 &#125;;</td></tr></table>>]
+246 -> 257[label=""]
+100024 [shape="component" label="ldv_strlen_1"]
+257 -> 100024 [label="tmp = ldv_strlen_1((const char *)(&source));" fontname="Courier New"]
+100024 -> 258 [label="" fontname="Courier New"]
+100025 [shape="component" label="printLine"]
+259 -> 100025 [label="printLine((const char *)data);" fontname="Courier New"]
+100025 -> 260 [label="" fontname="Courier New"]
+258 -> 259 [label="memmove((void *)data, (const void *)(&source), tmp + 1UL);" fontname="Courier New"]
+260 -> 245 [label="return;" fontname="Courier New"]
+}

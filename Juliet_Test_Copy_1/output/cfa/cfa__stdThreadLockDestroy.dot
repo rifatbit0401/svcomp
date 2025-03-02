@@ -1,0 +1,7 @@
+digraph stdThreadLockDestroy {
+339 [shape="circle" label="N339\n4"]
+340 [shape="circle" label="N340\n3"]
+340 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">340</td><td align="left">pthread_mutex_destroy(&amp;(lock-&gt;mutex));</td></tr><tr><td align="right">341</td><td align="left">free((void *)lock);</td></tr><tr><td align="right">342</td><td align="left">return;</td></tr></table>>]
+340 -> 338[label=""]
+339 -> 340 [label="Function start dummy edge" fontname="Courier New"]
+}

@@ -1,0 +1,13 @@
+digraph ldv_realloc {
+593 [shape="circle" label="N593\n4"]
+594 [shape="circle" label="N594\n3"]
+595 [shape="circle" label="N595\n2"]
+596 [shape="circle" label="N596\n1"]
+592 [shape="circle" label="N592\n0"]
+593 -> 594 [label="Function start dummy edge" fontname="Courier New"]
+100009 [shape="component" label="ldv_reference_realloc"]
+595 -> 100009 [label="tmp = ldv_reference_realloc(ptr, size);" fontname="Courier New"]
+100009 -> 596 [label="" fontname="Courier New"]
+594 -> 595 [label="void *tmp;" fontname="Courier New"]
+596 -> 592 [label="return tmp;" fontname="Courier New"]
+}

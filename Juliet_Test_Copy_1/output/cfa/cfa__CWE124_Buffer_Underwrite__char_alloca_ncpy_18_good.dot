@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_ncpy_18_good {
+365 [shape="circle" label="N365\n2"]
+366 [shape="circle" label="N366\n1"]
+364 [shape="circle" label="N364\n3"]
+363 [shape="circle" label="N363\n0"]
+100033 [shape="component" label="goodG2B"]
+365 -> 100033 [label="goodG2B();" fontname="Courier New"]
+100033 -> 366 [label="" fontname="Courier New"]
+364 -> 365 [label="Function start dummy edge" fontname="Courier New"]
+366 -> 363 [label="return;" fontname="Courier New"]
+}

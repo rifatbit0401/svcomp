@@ -1,0 +1,14 @@
+digraph ldv_reference_xzalloc {
+738 [shape="circle" label="N738\n5"]
+739 [shape="circle" label="N739\n4"]
+741 [shape="circle" label="N741\n2"]
+742 [shape="circle" label="N742\n1"]
+737 [shape="circle" label="N737\n0"]
+739 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">739</td><td align="left">void *res;</td></tr><tr><td align="right">740</td><td align="left">res = calloc(1UL, size);</td></tr></table>>]
+739 -> 741[label=""]
+738 -> 739 [label="Function start dummy edge" fontname="Courier New"]
+100019 [shape="component" label="assume_abort_if_not"]
+741 -> 100019 [label="assume_abort_if_not(res != ((void *)0));" fontname="Courier New"]
+100019 -> 742 [label="" fontname="Courier New"]
+742 -> 737 [label="return res;" fontname="Courier New"]
+}

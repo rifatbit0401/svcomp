@@ -1,0 +1,15 @@
+digraph CWE124_Buffer_Underwrite__char_declare_memcpy_11_good {
+288 [shape="circle" label="N288\n3"]
+289 [shape="circle" label="N289\n2"]
+290 [shape="circle" label="N290\n1"]
+287 [shape="circle" label="N287\n4"]
+286 [shape="circle" label="N286\n0"]
+100030 [shape="component" label="goodG2B1"]
+288 -> 100030 [label="goodG2B1();" fontname="Courier New"]
+100030 -> 289 [label="" fontname="Courier New"]
+100031 [shape="component" label="goodG2B2"]
+289 -> 100031 [label="goodG2B2();" fontname="Courier New"]
+100031 -> 290 [label="" fontname="Courier New"]
+287 -> 288 [label="Function start dummy edge" fontname="Courier New"]
+290 -> 286 [label="return;" fontname="Courier New"]
+}

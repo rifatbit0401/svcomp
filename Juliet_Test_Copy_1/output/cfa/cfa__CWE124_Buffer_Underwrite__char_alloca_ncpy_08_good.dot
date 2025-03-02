@@ -1,0 +1,15 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_ncpy_08_good {
+302 [shape="circle" label="N302\n3"]
+303 [shape="circle" label="N303\n2"]
+304 [shape="circle" label="N304\n1"]
+301 [shape="circle" label="N301\n4"]
+300 [shape="circle" label="N300\n0"]
+100033 [shape="component" label="goodG2B1"]
+302 -> 100033 [label="goodG2B1();" fontname="Courier New"]
+100033 -> 303 [label="" fontname="Courier New"]
+100034 [shape="component" label="goodG2B2"]
+303 -> 100034 [label="goodG2B2();" fontname="Courier New"]
+100034 -> 304 [label="" fontname="Courier New"]
+301 -> 302 [label="Function start dummy edge" fontname="Courier New"]
+304 -> 300 [label="return;" fontname="Courier New"]
+}

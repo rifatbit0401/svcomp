@@ -1,0 +1,14 @@
+digraph CWE124_Buffer_Underwrite__malloc_char_memmove_67b_goodG2BSink {
+1 [shape="circle" label="N1\n9"]
+2 [shape="circle" label="N2\n8"]
+8 [shape="circle" label="N8\n2"]
+9 [shape="circle" label="N9\n1"]
+0 [shape="circle" label="N0\n0"]
+2 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">2</td><td align="left">char *data = myStruct.structFirst;</td></tr><tr><td align="right">3</td><td align="left">char source[100U];</td></tr><tr><td align="right">4</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">5</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">6</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 100UL);</td></tr><tr><td align="right">7</td><td align="left">*(data + 99U) = 0;</td></tr></table>>]
+2 -> 8[label=""]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+100004 [shape="component" label="printLine"]
+8 -> 100004 [label="printLine((const char *)data);" fontname="Courier New"]
+100004 -> 9 [label="" fontname="Courier New"]
+9 -> 0 [label="return;" fontname="Courier New"]
+}

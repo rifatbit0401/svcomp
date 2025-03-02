@@ -1,0 +1,11 @@
+digraph CWE124_Buffer_Underwrite__malloc_char_memmove_67_good {
+31 [shape="circle" label="N31\n2"]
+32 [shape="circle" label="N32\n1"]
+30 [shape="circle" label="N30\n3"]
+29 [shape="circle" label="N29\n0"]
+100001 [shape="component" label="goodG2B"]
+31 -> 100001 [label="goodG2B();" fontname="Courier New"]
+100001 -> 32 [label="" fontname="Courier New"]
+30 -> 31 [label="Function start dummy edge" fontname="Courier New"]
+32 -> 29 [label="return;" fontname="Courier New"]
+}

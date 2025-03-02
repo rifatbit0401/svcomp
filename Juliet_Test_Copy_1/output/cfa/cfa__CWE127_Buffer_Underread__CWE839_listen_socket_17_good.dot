@@ -1,0 +1,15 @@
+digraph CWE127_Buffer_Underread__CWE839_listen_socket_17_good {
+478 [shape="circle" label="N478\n3"]
+479 [shape="circle" label="N479\n2"]
+480 [shape="circle" label="N480\n1"]
+477 [shape="circle" label="N477\n4"]
+476 [shape="circle" label="N476\n0"]
+100008 [shape="component" label="goodB2G"]
+478 -> 100008 [label="goodB2G();" fontname="Courier New"]
+100008 -> 479 [label="" fontname="Courier New"]
+100009 [shape="component" label="goodG2B"]
+479 -> 100009 [label="goodG2B();" fontname="Courier New"]
+100009 -> 480 [label="" fontname="Courier New"]
+477 -> 478 [label="Function start dummy edge" fontname="Courier New"]
+480 -> 476 [label="return;" fontname="Courier New"]
+}

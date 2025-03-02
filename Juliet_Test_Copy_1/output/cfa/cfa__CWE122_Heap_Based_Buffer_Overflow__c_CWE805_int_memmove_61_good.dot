@@ -1,0 +1,11 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memmove_61_good {
+272 [shape="circle" label="N272\n2"]
+273 [shape="circle" label="N273\n1"]
+271 [shape="circle" label="N271\n3"]
+270 [shape="circle" label="N270\n0"]
+100027 [shape="component" label="goodG2B"]
+272 -> 100027 [label="goodG2B();" fontname="Courier New"]
+100027 -> 273 [label="" fontname="Courier New"]
+271 -> 272 [label="Function start dummy edge" fontname="Courier New"]
+273 -> 270 [label="return;" fontname="Courier New"]
+}

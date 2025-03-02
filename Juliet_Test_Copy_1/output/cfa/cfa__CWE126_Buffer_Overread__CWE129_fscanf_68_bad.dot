@@ -1,0 +1,11 @@
+digraph CWE126_Buffer_Overread__CWE129_fscanf_68_bad {
+361 [shape="circle" label="N361\n2"]
+362 [shape="circle" label="N362\n1"]
+355 [shape="circle" label="N355\n0"]
+356 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">356</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">357</td><td align="left">int data;</td></tr><tr><td align="right">358</td><td align="left">data = -1;</td></tr><tr><td align="right">359</td><td align="left">fscanf(stdin, \&quot;%d\&quot;, &amp;data);</td></tr><tr><td align="right">360</td><td align="left">CWE126_Buffer_Overread__CWE129_fscanf_68_badData = data;</td></tr></table>>]
+356 -> 361[label=""]
+100010 [shape="component" label="CWE126_Buffer_Overread__CWE129_fscanf_68b_badSink"]
+361 -> 100010 [label="CWE126_Buffer_Overread__CWE129_fscanf_68b_badSink();" fontname="Courier New"]
+100010 -> 362 [label="" fontname="Courier New"]
+362 -> 355 [label="return;" fontname="Courier New"]
+}

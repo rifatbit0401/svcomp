@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncpy_41_bad {
+361 [shape="circle" label="N361\n2"]
+362 [shape="circle" label="N362\n1"]
+354 [shape="circle" label="N354\n0"]
+355 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">355</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">356</td><td align="left">char *data = 0;</td></tr><tr><td align="right">357</td><td align="left">char dataBadBuffer[50U];</td></tr><tr><td align="right">358</td><td align="left">char dataGoodBuffer[100U];</td></tr><tr><td align="right">359</td><td align="left">data = (char *)(&amp;dataBadBuffer);</td></tr><tr><td align="right">360</td><td align="left">*data = 0;</td></tr></table>>]
+355 -> 361[label=""]
+100036 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncpy_41_badSink"]
+361 -> 100036 [label="CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncpy_41_badSink(data);" fontname="Courier New"]
+100036 -> 362 [label="" fontname="Courier New"]
+362 -> 354 [label="return;" fontname="Courier New"]
+}

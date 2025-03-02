@@ -1,0 +1,7 @@
+digraph good3 {
+182 [shape="circle" label="N182\n2"]
+183 [shape="circle" label="N183\n1"]
+181 [shape="circle" label="N181\n0"]
+182 -> 183 [label="Function start dummy edge" fontname="Courier New"]
+183 -> 181 [label="return;" fontname="Courier New"]
+}

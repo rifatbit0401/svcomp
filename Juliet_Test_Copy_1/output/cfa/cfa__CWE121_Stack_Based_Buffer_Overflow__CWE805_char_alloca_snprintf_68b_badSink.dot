@@ -1,0 +1,14 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_68b_badSink {
+374 [shape="circle" label="N374\n8"]
+375 [shape="circle" label="N375\n7"]
+380 [shape="circle" label="N380\n2"]
+381 [shape="circle" label="N381\n1"]
+373 [shape="circle" label="N373\n0"]
+375 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">375</td><td align="left">char *data = CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_68_badData;</td></tr><tr><td align="right">376</td><td align="left">char source[100U];</td></tr><tr><td align="right">377</td><td align="left">memset((void *)(&amp;source), 67, 99UL);</td></tr><tr><td align="right">378</td><td align="left">source[99] = 0;</td></tr><tr><td align="right">379</td><td align="left">snprintf(data, 100UL, \&quot;%s\&quot;, (char *)(&amp;source));</td></tr></table>>]
+375 -> 380[label=""]
+374 -> 375 [label="Function start dummy edge" fontname="Courier New"]
+100014 [shape="component" label="printLine"]
+380 -> 100014 [label="printLine((const char *)data);" fontname="Courier New"]
+100014 -> 381 [label="" fontname="Courier New"]
+381 -> 373 [label="return;" fontname="Courier New"]
+}

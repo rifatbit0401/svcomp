@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_67_bad {
+370 [shape="circle" label="N370\n2"]
+371 [shape="circle" label="N371\n1"]
+361 [shape="circle" label="N361\n0"]
+362 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">362</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">363</td><td align="left">char *data = 0;</td></tr><tr><td align="right">364</td><td align="left">CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_67_structType myStruct;</td></tr><tr><td align="right">365</td><td align="left">char dataBuffer[100U];</td></tr><tr><td align="right">366</td><td align="left">data = (char *)(&amp;dataBuffer);</td></tr><tr><td align="right">367</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">368</td><td align="left">*(data + 99U) = 0;</td></tr><tr><td align="right">369</td><td align="left">myStruct.structFirst = data;</td></tr></table>>]
+362 -> 370[label=""]
+100018 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_67b_badSink"]
+370 -> 100018 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_67b_badSink(myStruct);" fontname="Courier New"]
+100018 -> 371 [label="" fontname="Courier New"]
+371 -> 361 [label="return;" fontname="Courier New"]
+}

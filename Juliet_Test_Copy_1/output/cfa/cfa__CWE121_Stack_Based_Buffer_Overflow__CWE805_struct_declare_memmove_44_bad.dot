@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_struct_declare_memmove_44_bad {
+374 [shape="diamond" label="N374\n5"]
+697 [shape="circle" label="N697\n3"]
+698 [shape="circle" label="N698\n4"]
+375 [shape="circle" label="N375\n1"]
+367 [shape="circle" label="N367\n0"]
+699 [shape="circle" label="N699\n2"]
+368 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">368</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">369</td><td align="left">twoIntsStruct *data;</td></tr><tr><td align="right">370</td><td align="left">twoIntsStruct dataBadBuffer[50U];</td></tr><tr><td align="right">371</td><td align="left">twoIntsStruct dataGoodBuffer[100U];</td></tr><tr><td align="right">372</td><td align="left">void (*funcPtr)(twoIntsStruct *) = &amp;badSink;</td></tr><tr><td align="right">373</td><td align="left">data = (twoIntsStruct *)(&amp;dataBadBuffer);</td></tr></table>>]
+368 -> 374[label=""]
+374 -> 697 [label="[funcPtr == (&badSink)]" fontname="Courier New"]
+374 -> 698 [label="[!(funcPtr == (&badSink))]" fontname="Courier New"]
+375 -> 367 [label="return;" fontname="Courier New"]
+100032 [shape="component" label="badSink"]
+697 -> 100032 [label="badSink(data);" fontname="Courier New"]
+100032 -> 699 [label="" fontname="Courier New"]
+698 -> 375 [label="(*funcPtr)(data);" fontname="Courier New"]
+699 -> 375 [label="skip" fontname="Courier New"]
+}

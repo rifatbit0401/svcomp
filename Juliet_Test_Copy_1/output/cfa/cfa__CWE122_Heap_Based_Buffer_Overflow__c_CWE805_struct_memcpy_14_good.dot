@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_struct_memcpy_14_good {
+415 [shape="circle" label="N415\n3"]
+416 [shape="circle" label="N416\n2"]
+417 [shape="circle" label="N417\n1"]
+414 [shape="circle" label="N414\n4"]
+413 [shape="circle" label="N413\n0"]
+100031 [shape="component" label="goodG2B1"]
+415 -> 100031 [label="goodG2B1();" fontname="Courier New"]
+100031 -> 416 [label="" fontname="Courier New"]
+100032 [shape="component" label="goodG2B2"]
+416 -> 100032 [label="goodG2B2();" fontname="Courier New"]
+100032 -> 417 [label="" fontname="Courier New"]
+414 -> 415 [label="Function start dummy edge" fontname="Courier New"]
+417 -> 413 [label="return;" fontname="Courier New"]
+}

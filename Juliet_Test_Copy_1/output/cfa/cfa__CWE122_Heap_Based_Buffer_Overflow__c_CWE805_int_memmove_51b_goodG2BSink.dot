@@ -1,0 +1,14 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE805_int_memmove_51b_goodG2BSink {
+39 [shape="circle" label="N39\n6"]
+40 [shape="circle" label="N40\n5"]
+42 [shape="circle" label="N42\n3"]
+43 [shape="circle" label="N43\n2"]
+40 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">40</td><td align="left">int source[100U] = &#123; 0 &#125;;</td></tr><tr><td align="right">41</td><td align="left">memmove((void *)data, (const void *)(&amp;source), 400UL);</td></tr></table>>]
+40 -> 42[label=""]
+43 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">43</td><td align="left">free((void *)data);</td></tr><tr><td align="right">44</td><td align="left">return;</td></tr></table>>]
+43 -> 38[label=""]
+39 -> 40 [label="Function start dummy edge" fontname="Courier New"]
+100029 [shape="component" label="printIntLine"]
+42 -> 100029 [label="printIntLine(*data);" fontname="Courier New"]
+100029 -> 43 [label="" fontname="Courier New"]
+}

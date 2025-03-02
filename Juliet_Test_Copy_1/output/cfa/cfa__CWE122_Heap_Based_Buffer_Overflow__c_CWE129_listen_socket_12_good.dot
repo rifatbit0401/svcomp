@@ -1,0 +1,15 @@
+digraph CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_12_good {
+646 [shape="circle" label="N646\n3"]
+647 [shape="circle" label="N647\n2"]
+648 [shape="circle" label="N648\n1"]
+645 [shape="circle" label="N645\n4"]
+644 [shape="circle" label="N644\n0"]
+100035 [shape="component" label="goodB2G"]
+646 -> 100035 [label="goodB2G();" fontname="Courier New"]
+100035 -> 647 [label="" fontname="Courier New"]
+100036 [shape="component" label="goodG2B"]
+647 -> 100036 [label="goodG2B();" fontname="Courier New"]
+100036 -> 648 [label="" fontname="Courier New"]
+645 -> 646 [label="Function start dummy edge" fontname="Courier New"]
+648 -> 644 [label="return;" fontname="Courier New"]
+}

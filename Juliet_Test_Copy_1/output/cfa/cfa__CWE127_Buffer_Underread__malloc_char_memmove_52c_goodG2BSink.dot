@@ -1,0 +1,14 @@
+digraph CWE127_Buffer_Underread__malloc_char_memmove_52c_goodG2BSink {
+345 [shape="circle" label="N345\n8"]
+346 [shape="circle" label="N346\n7"]
+351 [shape="circle" label="N351\n2"]
+352 [shape="circle" label="N352\n1"]
+344 [shape="circle" label="N344\n0"]
+346 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">346</td><td align="left">char dest[100U];</td></tr><tr><td align="right">347</td><td align="left">memset((void *)(&amp;dest), 67, 99UL);</td></tr><tr><td align="right">348</td><td align="left">dest[99] = 0;</td></tr><tr><td align="right">349</td><td align="left">memmove((void *)(&amp;dest), (const void *)data, 100UL);</td></tr><tr><td align="right">350</td><td align="left">dest[99] = 0;</td></tr></table>>]
+346 -> 351[label=""]
+345 -> 346 [label="Function start dummy edge" fontname="Courier New"]
+100009 [shape="component" label="printLine"]
+351 -> 100009 [label="printLine((const char *)(&dest));" fontname="Courier New"]
+100009 -> 352 [label="" fontname="Courier New"]
+352 -> 344 [label="return;" fontname="Courier New"]
+}

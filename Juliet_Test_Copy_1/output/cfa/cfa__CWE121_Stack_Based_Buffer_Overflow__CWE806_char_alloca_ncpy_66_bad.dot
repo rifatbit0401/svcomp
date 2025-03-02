@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_66_bad {
+278 [shape="circle" label="N278\n2"]
+279 [shape="circle" label="N279\n1"]
+268 [shape="circle" label="N268\n0"]
+269 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">269</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">270</td><td align="left">char *data = 0;</td></tr><tr><td align="right">271</td><td align="left">char *dataArray[5U];</td></tr><tr><td align="right">272</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">273</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">274</td><td align="left">data = dataBuffer;</td></tr><tr><td align="right">275</td><td align="left">memset((void *)data, 65, 99UL);</td></tr><tr><td align="right">276</td><td align="left">*(data + 99U) = 0;</td></tr><tr><td align="right">277</td><td align="left">dataArray[2] = data;</td></tr></table>>]
+269 -> 278[label=""]
+100008 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_66b_badSink"]
+278 -> 100008 [label="CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_66b_badSink((char **)(&dataArray));" fontname="Courier New"]
+100008 -> 279 [label="" fontname="Courier New"]
+279 -> 268 [label="return;" fontname="Courier New"]
+}

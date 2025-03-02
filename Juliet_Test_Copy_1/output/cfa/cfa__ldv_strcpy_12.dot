@@ -1,0 +1,13 @@
+digraph ldv_strcpy_12 {
+557 [shape="circle" label="N557\n4"]
+558 [shape="circle" label="N558\n3"]
+559 [shape="circle" label="N559\n2"]
+560 [shape="circle" label="N560\n1"]
+556 [shape="circle" label="N556\n0"]
+557 -> 558 [label="Function start dummy edge" fontname="Courier New"]
+100060 [shape="component" label="ldv_strcpy"]
+559 -> 100060 [label="tmp = ldv_strcpy(ldv_func_arg1, ldv_func_arg2);" fontname="Courier New"]
+100060 -> 560 [label="" fontname="Courier New"]
+558 -> 559 [label="char *tmp;" fontname="Courier New"]
+560 -> 556 [label="return tmp;" fontname="Courier New"]
+}

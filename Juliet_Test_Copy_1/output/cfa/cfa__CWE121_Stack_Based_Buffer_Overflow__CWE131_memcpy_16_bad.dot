@@ -1,0 +1,11 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE131_memcpy_16_bad {
+356 [shape="circle" label="N356\n2"]
+357 [shape="circle" label="N357\n1"]
+344 [shape="circle" label="N344\n0"]
+345 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">345</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">346</td><td align="left">int *data = 0;</td></tr><tr><td align="right">347</td><td align="left">data = (int *)0;</td></tr><tr><td align="right">348</td><td align="left">Label: ldv_2925</td></tr><tr><td align="right">349</td><td align="left">data = __builtin_alloca(10UL);</td></tr><tr><td align="right">350</td><td align="left">Goto: ldv_2924</td></tr><tr><td align="right">353</td><td align="left">Label: ldv_2924</td></tr><tr><td align="right">354</td><td align="left">int source[10U] = &#123; 0 &#125;;</td></tr><tr><td align="right">355</td><td align="left">memcpy((void *)data, (const void *)(&amp;source), 40UL);</td></tr></table>>]
+345 -> 356[label=""]
+100030 [shape="component" label="printIntLine"]
+356 -> 100030 [label="printIntLine(*data);" fontname="Courier New"]
+100030 -> 357 [label="" fontname="Courier New"]
+357 -> 344 [label="return;" fontname="Courier New"]
+}

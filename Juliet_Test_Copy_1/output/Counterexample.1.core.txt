@@ -1,0 +1,25 @@
+line 917:	N385 -{srand((unsigned int)tmp);}-> N386
+	GLOBAL_CONST_TRUE == 1;
+	GLOBAL_CONST_FALSE == 0;
+	GLOBAL_CONST_FIVE == 5;
+	globalTrue == 1;
+	globalFalse == 0;
+	globalFive == 5;
+	globalArgc == 0;
+	globalArgv == 0LL;
+line 919:	N386 -{printLine("Calling good()...")}-> N1
+line 203:	N2 -{[line != ((const char *)0)]}-> N4
+line 204:	N4 -{printf("%s\n", line);}-> N6
+line 921:	N387 -{CWE127_Buffer_Underread__malloc_char_memmove_52_good()}-> N376
+line 903:	N377 -{goodG2B()}-> N360
+line 882:	N364 -{dataBuffer = malloc(100UL);}-> N365
+line 884:	N365 -{[!(dataBuffer == ((char *)0))]}-> N368
+line 887:	N366 -{memset((void *)dataBuffer, 65, 99UL);}-> N370
+line 894:	N372 -{CWE127_Buffer_Underread__malloc_char_memmove_52b_goodG2BSink(data)}-> N355
+line 857:	N356 -{CWE127_Buffer_Underread__malloc_char_memmove_52c_goodG2BSink(data)}-> N345
+line 838:	N346 -{char dest[100U];}-> N347
+line 840:	N347 -{memset((void *)(&dest), 67, 99UL);}-> N348
+line 844:	N349 -{memmove((void *)(&dest), (const void *)data, 100UL);}-> N350
+line 848:	N351 -{printLine((const char *)(&dest))}-> N1
+line 203:	N2 -{[line != ((const char *)0)]}-> N4
+line 204:	N4 -{printf("%s\n", line);}-> N6

@@ -1,0 +1,15 @@
+digraph CWE127_Buffer_Underread__malloc_char_memmove_06_good {
+51 [shape="circle" label="N51\n3"]
+52 [shape="circle" label="N52\n2"]
+53 [shape="circle" label="N53\n1"]
+50 [shape="circle" label="N50\n4"]
+49 [shape="circle" label="N49\n0"]
+100031 [shape="component" label="goodG2B1"]
+51 -> 100031 [label="goodG2B1();" fontname="Courier New"]
+100031 -> 52 [label="" fontname="Courier New"]
+100032 [shape="component" label="goodG2B2"]
+52 -> 100032 [label="goodG2B2();" fontname="Courier New"]
+100032 -> 53 [label="" fontname="Courier New"]
+50 -> 51 [label="Function start dummy edge" fontname="Courier New"]
+53 -> 49 [label="return;" fontname="Courier New"]
+}

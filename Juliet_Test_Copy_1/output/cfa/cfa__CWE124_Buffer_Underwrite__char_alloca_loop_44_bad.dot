@@ -1,0 +1,18 @@
+digraph CWE124_Buffer_Underwrite__char_alloca_loop_44_bad {
+377 [shape="diamond" label="N377\n5"]
+700 [shape="circle" label="N700\n3"]
+701 [shape="circle" label="N701\n4"]
+378 [shape="circle" label="N378\n1"]
+368 [shape="circle" label="N368\n0"]
+702 [shape="circle" label="N702\n2"]
+369 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">369</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">370</td><td align="left">char *data = 0;</td></tr><tr><td align="right">371</td><td align="left">void (*funcPtr)(char *) = &amp;badSink;</td></tr><tr><td align="right">372</td><td align="left">char *dataBuffer;</td></tr><tr><td align="right">373</td><td align="left">dataBuffer = __builtin_alloca(100UL);</td></tr><tr><td align="right">374</td><td align="left">memset((void *)dataBuffer, 65, 99UL);</td></tr><tr><td align="right">375</td><td align="left">*(dataBuffer + 99U) = 0;</td></tr><tr><td align="right">376</td><td align="left">data = dataBuffer + 18446744073709551608ULL;</td></tr></table>>]
+369 -> 377[label=""]
+377 -> 700 [label="[funcPtr == (&badSink)]" fontname="Courier New"]
+377 -> 701 [label="[!(funcPtr == (&badSink))]" fontname="Courier New"]
+378 -> 368 [label="return;" fontname="Courier New"]
+100017 [shape="component" label="badSink"]
+700 -> 100017 [label="badSink(data);" fontname="Courier New"]
+100017 -> 702 [label="" fontname="Courier New"]
+701 -> 378 [label="(*funcPtr)(data);" fontname="Courier New"]
+702 -> 378 [label="skip" fontname="Courier New"]
+}

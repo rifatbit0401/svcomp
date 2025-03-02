@@ -1,0 +1,18 @@
+digraph CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65_bad {
+7 [shape="diamond" label="N7\n5"]
+681 [shape="circle" label="N681\n3"]
+682 [shape="circle" label="N682\n4"]
+8 [shape="circle" label="N8\n1"]
+0 [shape="circle" label="N0\n0"]
+683 [shape="circle" label="N683\n2"]
+1 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2</td><td align="left">int64_t *data = 0;</td></tr><tr><td align="right">3</td><td align="left">int64_t dataBadBuffer[50U];</td></tr><tr><td align="right">4</td><td align="left">int64_t dataGoodBuffer[100U];</td></tr><tr><td align="right">5</td><td align="left">void (*funcPtr)(int64_t *) = &amp;CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65b_badSink;</td></tr><tr><td align="right">6</td><td align="left">data = (int64_t *)(&amp;dataBadBuffer);</td></tr></table>>]
+1 -> 7[label=""]
+7 -> 681 [label="[funcPtr == (&CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65b_badSink)]" fontname="Courier New"]
+7 -> 682 [label="[!(funcPtr == (&CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65b_badSink))]" fontname="Courier New"]
+8 -> 0 [label="return;" fontname="Courier New"]
+100014 [shape="component" label="CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65b_badSink"]
+681 -> 100014 [label="CWE121_Stack_Based_Buffer_Overflow__CWE805_int64_t_declare_memmove_65b_badSink(data);" fontname="Courier New"]
+100014 -> 683 [label="" fontname="Courier New"]
+682 -> 8 [label="(*funcPtr)(data);" fontname="Courier New"]
+683 -> 8 [label="skip" fontname="Courier New"]
+}
